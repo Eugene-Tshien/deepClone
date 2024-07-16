@@ -47,12 +47,12 @@ python src/task1/task1.py
 ```
 
 ### Task 2
-- Step1: train the language models with data in "data/lms_task2" and "src/task2/train_lms.ipynb". Download the saved checkpoints and put them under "models/".
-- Step2: 
+- Train the language models with data in "data/lms_task2" and "src/task2/train_lms.ipynb". Download the saved checkpoints and put them under "models/".
+- Generate outputs 
 ```
 python src/task2/task2.py
 ```
-- Step3: evaluation
+- Evaluation
 ```
 output/evaluate.bat
 ```
