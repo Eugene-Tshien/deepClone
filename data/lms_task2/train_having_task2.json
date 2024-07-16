@@ -1,0 +1,622 @@
+[
+  {
+    "query": "SELECT state FROM park GROUP BY state HAVING count(*)  >  2;",
+    "prompt": "Which states have more than 2 parks? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT employee_id FROM job_history GROUP BY employee_id HAVING COUNT(*)  >= 2",
+    "prompt": "What are the employee ids for employees who have held two or more jobs? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Category FROM music_festival GROUP BY Category HAVING COUNT(*)  >  1",
+    "prompt": "Please show the categories of the music festivals with count more than 1. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Headquarters FROM company GROUP BY Headquarters HAVING COUNT(*)  >=  2",
+    "prompt": "Show the headquarters that have at least two companies. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Nationality FROM ship GROUP BY Nationality HAVING COUNT(*)  >  2",
+    "prompt": "What are the nations that have more than two ships? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT headquarters FROM company WHERE main_industry  =  'Banking' GROUP BY headquarters HAVING count(*)  >=  2",
+    "prompt": "What are the headquarters with at least two companies in the banking industry? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Winery FROM WINE GROUP BY Winery HAVING count(*)  >=  4",
+    "prompt": "Find the wineries that have at least four wines. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT state FROM park GROUP BY state HAVING count(*)  >  2;",
+    "prompt": "List the names of states that have more than 2 parks. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Denomination FROM school GROUP BY Denomination HAVING COUNT(*)  >  1",
+    "prompt": "Show the denomination shared by more than one school. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Competition_type FROM competition GROUP BY Competition_type HAVING COUNT(*)  <=  5",
+    "prompt": "What are the types of competition that have most 5 competitions for that type? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT title FROM course GROUP BY title HAVING count(*)  >  1",
+    "prompt": "What are the titles of courses that are offered in more than one department? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT College FROM match_season GROUP BY College HAVING count(*)  >=  2 ORDER BY College DESC",
+    "prompt": "What are the names of colleges that have two or more players, listed in descending alphabetical order? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT attribute_data_type FROM Attribute_Definitions GROUP BY attribute_data_type HAVING count(*)  >  3",
+    "prompt": "Find the list of attribute data types possessed by more than 3 attribute definitions. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Country FROM mountain GROUP BY Country HAVING COUNT(*)  >  1",
+    "prompt": "Which countries have more than one mountain? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT role_code FROM Employees GROUP BY role_code HAVING count(*)  >=  3",
+    "prompt": "What are the roles with three or more employees? Give me the role codes. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT open_date FROM church GROUP BY open_date HAVING count(*)  >=  2",
+    "prompt": "Show the opening year in whcih at least two churches opened. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT city FROM airports WHERE country  =  'United States' GROUP BY city HAVING count(*)  >  3",
+    "prompt": "What is the number of cities in the United States with more than 3 airports? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT open_year FROM branch GROUP BY open_year HAVING count(*)  >=  2",
+    "prompt": "List all open years when at least two shops are opened. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT YEAR FROM festival_detail GROUP BY YEAR HAVING COUNT(*)  >  1",
+    "prompt": "List the year in which there are more than one festivals. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Competition_type FROM competition GROUP BY Competition_type HAVING COUNT(*)  <=  5",
+    "prompt": "List the types of competition that have at most five competitions of that type. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Category FROM music_festival GROUP BY Category HAVING COUNT(*)  >  1",
+    "prompt": "What are the categories of music festivals for which there have been more than 1 music festival? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Team FROM elimination GROUP BY Team HAVING COUNT(*)  >  3",
+    "prompt": "Show teams that have suffered more than three eliminations. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT district FROM address GROUP BY district HAVING count(*)  >=  2",
+    "prompt": "Which districts have at least two addresses? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT employee_id FROM job_history GROUP BY employee_id HAVING COUNT(*)  >= 2",
+    "prompt": "What are the employee ids for those who had two or more jobs. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT MONTH FROM happy_hour GROUP BY MONTH HAVING count(*)  >  2",
+    "prompt": "Which months have more than 2 happy hours? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT event_name FROM party_events GROUP BY event_name HAVING count(*)  >  2",
+    "prompt": "find the event names that have more than 2 records. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT StuID FROM Has_allergy GROUP BY StuID HAVING count(*)  >=  2",
+    "prompt": "Show all student IDs who have at least two allergies. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT payment_method_code FROM parties GROUP BY payment_method_code HAVING count(*)  >  3",
+    "prompt": "Find the payment method code used by more than 3 parties. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Residence FROM player GROUP BY Residence HAVING COUNT(*)  >=  2",
+    "prompt": "Show the residences that have at least two players. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT building FROM Faculty WHERE rank  =  \"Professor\" GROUP BY building HAVING count(*)  >=  10",
+    "prompt": "In which buildings are there at least ten professors? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT State FROM representative GROUP BY State HAVING COUNT(*)  >=  2",
+    "prompt": "What states have at least two representatives? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT LOCATION FROM cinema WHERE capacity  >  300 GROUP BY LOCATION HAVING count(*)  >  1",
+    "prompt": "In which locations are there more than one movie theater with capacity above 300? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT category FROM book_club WHERE YEAR  >  1989 GROUP BY category HAVING count(*)  >=  2",
+    "prompt": "List categories that have at least two books after year 1989. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Nominee FROM musical GROUP BY Nominee HAVING COUNT(*)  >  2",
+    "prompt": "List the nominees that have been nominated more than two musicals. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT LOCATION FROM cinema WHERE capacity  >  300 GROUP BY LOCATION HAVING count(*)  >  1",
+    "prompt": "Find the locations that have more than one movie theater with capacity above 300. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT location_code FROM Document_locations GROUP BY location_code HAVING count(*)  >=  3",
+    "prompt": "What are the codes of the locations with at least three documents? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT document_type_code FROM documents GROUP BY document_type_code HAVING count(*)  >  2",
+    "prompt": "Give the codes of document types that have more than 2 corresponding documents. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT date_of_latest_revision FROM Catalogs GROUP BY date_of_latest_revision HAVING count(*)  >  1",
+    "prompt": "On which days more than one revisions were made on catalogs. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT project_id FROM Documents GROUP BY project_id HAVING count(*)  >=  2",
+    "prompt": "What are project ids of projects that have 2 or more corresponding documents? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Publisher FROM publication GROUP BY Publisher HAVING COUNT(*)  >  1",
+    "prompt": "Show publishers that have more than one publication. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Status FROM roller_coaster GROUP BY Status HAVING COUNT(*)  >  2",
+    "prompt": "List the status shared by more than two roller coaster. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Party FROM party GROUP BY Party HAVING COUNT(*)  >=  2",
+    "prompt": "Which party has two or more records? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT CLASS FROM race GROUP BY CLASS HAVING count(*)  >=  2",
+    "prompt": "List the race class with at least two races. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT role_code FROM Employees GROUP BY role_code HAVING count(*)  >=  3",
+    "prompt": "Show all role codes with at least 3 employees. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Studio FROM film GROUP BY Studio HAVING COUNT(*)  >=  2",
+    "prompt": "What are the names of studios that have made two or more films? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT LOCATION FROM railway GROUP BY LOCATION HAVING COUNT(*)  >  1",
+    "prompt": "Show the locations that have more than one railways. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT attribute_data_type FROM Attribute_Definitions GROUP BY attribute_data_type HAVING count(*)  >  3",
+    "prompt": "What are the attribute data types with more than 3 attribute definitions? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT card_type_code FROM Customers_cards GROUP BY card_type_code HAVING count(*)  >=  5",
+    "prompt": "What are the codes of card types that have 5 or more cards? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT date_of_latest_revision FROM Catalogs GROUP BY date_of_latest_revision HAVING count(*)  >  1",
+    "prompt": "Find the dates on which more than one revisions were made. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT category FROM book_club WHERE YEAR  >  1989 GROUP BY category HAVING count(*)  >=  2",
+    "prompt": "What categories have two or more corresponding books that were made after 1989? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Team FROM technician GROUP BY Team HAVING COUNT(*)  >=  2",
+    "prompt": "What is the team with at least 2 technicians? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Country FROM member GROUP BY Country HAVING COUNT(*)  >  2",
+    "prompt": "Which countries have more than two members? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Company_name FROM phone GROUP BY Company_name HAVING count(*)  >  1;",
+    "prompt": "List the name of the company that produced more than one phone model. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Country FROM mountain GROUP BY Country HAVING COUNT(*)  >  1",
+    "prompt": "List the countries that have more than one mountain. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT complaint_status_code FROM complaints GROUP BY complaint_status_code HAVING count(*)  >  3",
+    "prompt": "Return complaint status codes have more than 3 corresponding complaints? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Headquarters FROM Companies GROUP BY Headquarters HAVING COUNT(*)  >  2",
+    "prompt": "Which headquarter locations are used by more than 2 companies? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT LOCATION FROM cinema WHERE capacity  >  300 GROUP BY LOCATION HAVING count(*)  >=  2",
+    "prompt": "Show all the locations with at least two cinemas with capacity above 300. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Studio FROM film GROUP BY Studio HAVING COUNT(*)  >=  2",
+    "prompt": "List the names of studios that have at least two films. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Denomination FROM school GROUP BY Denomination HAVING COUNT(*)  >  1",
+    "prompt": "What are the denomination more than one school have? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT employee_id FROM job_history GROUP BY employee_id HAVING COUNT(*)  >= 2",
+    "prompt": "display the ID for those employees who did two or more jobs in the past. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT home_city FROM driver WHERE age  >  40 GROUP BY home_city HAVING count(*)  >=  2",
+    "prompt": "Show home city where at least two drivers older than 40 are from. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT complaint_status_code FROM complaints GROUP BY complaint_status_code HAVING count(*)  >  3",
+    "prompt": "Which complaint status has more than 3 records on file? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT CLASS FROM captain GROUP BY CLASS HAVING count(*)  >  2",
+    "prompt": "Give the classes that have more than two captains. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT policy_type_code FROM policies GROUP BY policy_type_code HAVING count(*)  >  2",
+    "prompt": "Which types of policy are chosen by more than 2 customers? Give me the policy type codes. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Winery FROM WINE GROUP BY Winery HAVING count(*)  >=  4",
+    "prompt": "Which wineries produce at least four wines? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT district FROM address GROUP BY district HAVING count(*)  >=  2",
+    "prompt": "Give the districts which have two or more addresses. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Writer FROM book GROUP BY Writer HAVING COUNT(*)  >  1",
+    "prompt": "List the writers who have written more than one book. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT LOCATION FROM wrestler GROUP BY LOCATION HAVING COUNT(*)  >  2",
+    "prompt": "List the locations that are shared by more than two wrestlers. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT open_year FROM branch GROUP BY open_year HAVING count(*)  >=  2",
+    "prompt": "What are the opening years in which at least two shops opened? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT title FROM course GROUP BY title HAVING count(*)  >  1",
+    "prompt": "Find the title of the course that is offered by more than one department. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT LOCATION FROM station GROUP BY LOCATION HAVING count(*)  =  1",
+    "prompt": "Show all locations with only 1 station. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT city FROM airports WHERE country  =  'United States' GROUP BY city HAVING count(*)  >  3",
+    "prompt": "Return the cities with more than 3 airports in the United States. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM PersonFriend GROUP BY name HAVING count(*)  =  1",
+    "prompt": "What are the names of everybody who has exactly one friend? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Team FROM technician GROUP BY Team HAVING COUNT(*)  >=  2",
+    "prompt": "Show the team that have at least two technicians. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT StuID FROM Has_allergy GROUP BY StuID HAVING count(*)  >=  2",
+    "prompt": "What are the students ids of students who have more than one allergy? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT max_page_size FROM product GROUP BY max_page_size HAVING count(*)  >  3",
+    "prompt": "What is the maximum page size for everything that has more than 3 products listed? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT policy_type_code FROM policies GROUP BY policy_type_code HAVING count(*)  >  2",
+    "prompt": "Find all the policy types that are used by more than 2 customers. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT LOCATION FROM cinema WHERE capacity  >  300 GROUP BY LOCATION HAVING count(*)  >=  2",
+    "prompt": "Which locations have 2 or more cinemas with capacity over 300? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT project_id FROM Documents GROUP BY project_id HAVING count(*)  >=  2",
+    "prompt": "Show the ids for projects with at least 2 documents. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT location_code FROM Document_locations GROUP BY location_code HAVING count(*)  >=  3",
+    "prompt": "Show the location codes with at least 3 documents. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT product_type_code FROM products GROUP BY product_type_code HAVING count(*)  >=  2",
+    "prompt": "Show the product type codes which have at least two products. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Membership_card FROM member GROUP BY Membership_card HAVING count(*)  >  5",
+    "prompt": "Which membership card has more than 5 members? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT College FROM match_season GROUP BY College HAVING count(*)  >=  2 ORDER BY College DESC",
+    "prompt": "Show the name of colleges that have at least two players in descending alphabetical order. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT LOCATION FROM wrestler GROUP BY LOCATION HAVING COUNT(*)  >  2",
+    "prompt": "Which locations are shared by more than two wrestlers? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Team FROM elimination GROUP BY Team HAVING COUNT(*)  >  3",
+    "prompt": "Which teams had more than 3 eliminations? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT origin FROM train GROUP BY origin HAVING count(*)  >  1",
+    "prompt": "Find the origins from which more than 1 train starts. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT College FROM match_season GROUP BY College HAVING count(*)  >=  2",
+    "prompt": "What are the names of all colleges that have two or more players? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT DISTINCT journalid FROM paper WHERE YEAR  =  2011 GROUP BY journalid;",
+    "prompt": "List the journals published in March , 2011 Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM PersonFriend GROUP BY name HAVING count(*)  =  1",
+    "prompt": "Find the person who has exactly one friend. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT document_type_code FROM Documents GROUP BY document_type_code HAVING count(*)  <  3",
+    "prompt": "Show the document type code with fewer than 3 documents. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT College FROM match_season GROUP BY College HAVING count(*)  >=  2",
+    "prompt": "Show the name of colleges that have at least two players. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM follows GROUP BY f1",
+    "prompt": "Find the number of followers for each user. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT country FROM airport GROUP BY country HAVING count(*)  >  2",
+    "prompt": "which countries have more than 2 airports? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT born_state FROM head GROUP BY born_state HAVING count(*)  >=  3",
+    "prompt": "What are the names of the states where at least 3 heads were born? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT city FROM airports GROUP BY city HAVING count(*)  =  2",
+    "prompt": "What are the cities with exactly two airports? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT max_page_size FROM product GROUP BY max_page_size HAVING count(*)  >  3",
+    "prompt": "Find the list of page size which have more than 3 product listed Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT policy_type_code FROM available_policies GROUP BY policy_type_code HAVING count(*)  >  4",
+    "prompt": "Find the policy types more than 4 customers use. Show their type code. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Birth_Place FROM people GROUP BY Birth_Place HAVING COUNT(*)  >=  2",
+    "prompt": "What are the birth places that are shared by at least two people? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Nominee FROM musical GROUP BY Nominee HAVING COUNT(*)  >  2",
+    "prompt": "Who are the nominees who have been nominated more than two times? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT building FROM Faculty WHERE rank  =  \"Professor\" GROUP BY building HAVING count(*)  >=  10",
+    "prompt": "Show all the buildings that have at least 10 professors. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT document_type_code FROM documents GROUP BY document_type_code HAVING count(*)  >  4",
+    "prompt": "Find the types of documents with more than 4 documents. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT document_type_code FROM Documents GROUP BY document_type_code HAVING count(*)  <  3",
+    "prompt": "What are the codes corresponding to document types for which there are less than 3 documents? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT policy_type_code FROM available_policies GROUP BY policy_type_code HAVING count(*)  >  4",
+    "prompt": "Find the policy type used by more than 4 customers. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT document_type_code FROM documents GROUP BY document_type_code HAVING count(*)  >  4",
+    "prompt": "What are the codes of types of documents of which there are for or more? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Product_Type_Code FROM Products GROUP BY Product_Type_Code HAVING COUNT(*)  >=  2",
+    "prompt": "Show the product type codes that have at least two products. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Nationality FROM ship GROUP BY Nationality HAVING COUNT(*)  >  2",
+    "prompt": "List the nations that have more than two ships. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT country FROM stadium GROUP BY country HAVING count(*)  <=  3",
+    "prompt": "Which country has at most 3 stadiums listed? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT LOCATION FROM performance GROUP BY LOCATION HAVING COUNT(*)  >=  2",
+    "prompt": "Show the locations that have at least two performances. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Party FROM representative GROUP BY Party HAVING COUNT(*)  >=  3",
+    "prompt": "What parties have at least three representatives? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT card_type_code FROM Customers_cards GROUP BY card_type_code HAVING count(*)  >=  5",
+    "prompt": "Show card type codes with at least 5 cards. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT product_id FROM products_booked GROUP BY product_id HAVING count(*)  =  3",
+    "prompt": "What is the id of the product that is booked for 3 times? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT event_name FROM party_events GROUP BY event_name HAVING count(*)  >  2",
+    "prompt": "Which event names were used more than twice for party events? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT document_type_code FROM documents GROUP BY document_type_code HAVING count(*)  >  2",
+    "prompt": "What document types have more than 2 corresponding documents? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT CLASS FROM captain GROUP BY CLASS HAVING count(*)  >  2",
+    "prompt": "Which classes have more than two captains? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT employee_id FROM job_history GROUP BY employee_id HAVING COUNT(*)  >= 2",
+    "prompt": "display the ID for those employees who did two or more jobs in the past. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT DISTINCT journalid FROM paper WHERE YEAR  =  2011 GROUP BY journalid;",
+    "prompt": "List today 's journals Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT city FROM airports GROUP BY city HAVING count(*)  =  2",
+    "prompt": "Find the cities which have exactly two airports. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Party FROM party GROUP BY Party HAVING COUNT(*)  >=  2",
+    "prompt": "Show the name of the party that has at least two records. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT headquarters FROM company WHERE main_industry  =  'Banking' GROUP BY headquarters HAVING count(*)  >=  2",
+    "prompt": "Show headquarters with at least two companies in the banking industry. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Accreditation_level FROM phone GROUP BY Accreditation_level HAVING count(*)  >  3",
+    "prompt": "Find the accreditation level that more than 3 phones use. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT CLASS FROM race GROUP BY CLASS HAVING count(*)  >=  2",
+    "prompt": "What are the classes of races that have two or more corresponding races? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Headquarters FROM Companies GROUP BY Headquarters HAVING COUNT(*)  >  2",
+    "prompt": "Show the headquarters shared by more than two companies. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT TYPE FROM school GROUP BY TYPE HAVING count(*)  =  2",
+    "prompt": "Show the types of schools that have two schools. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT payment_method_code FROM parties GROUP BY payment_method_code HAVING count(*)  >  3",
+    "prompt": "What are the payment method codes that have been used by more than 3 parties? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  }
+]

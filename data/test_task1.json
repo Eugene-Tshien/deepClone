@@ -1,0 +1,630 @@
+[
+  {
+    "question": "'How many singers do we have?'",
+    "db": "'concert_singer'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'singer'"
+    ]
+  },
+  {
+    "question": "'What is the total number of singers?'",
+    "db": "'concert_singer'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'singer'"
+    ]
+  },
+  {
+    "question": "'How many continents are there?'",
+    "db": "'car_1'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'continents'"
+    ]
+  },
+  {
+    "question": "'What is the number of continents?'",
+    "db": "'car_1'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'continents'"
+    ]
+  },
+  {
+    "question": "'How many countries are listed?'",
+    "db": "'car_1'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'countries'"
+    ]
+  },
+  {
+    "question": "'How many countries exist?'",
+    "db": "'car_1'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'countries'"
+    ]
+  },
+  {
+    "question": "'How many airlines do we have?'",
+    "db": "'flight_2'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'airlines'"
+    ]
+  },
+  {
+    "question": "'What is the total number of airlines?'",
+    "db": "'flight_2'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'airlines'"
+    ]
+  },
+  {
+    "question": "'How many flights do we have?'",
+    "db": "'flight_2'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'flights'"
+    ]
+  },
+  {
+    "question": "'Return the number of flights.'",
+    "db": "'flight_2'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'flights'"
+    ]
+  },
+  {
+    "question": "'How many employees are there?'",
+    "db": "'employee_hire_evaluation'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'employee'"
+    ]
+  },
+  {
+    "question": "'Count the number of employees'",
+    "db": "'employee_hire_evaluation'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'employee'"
+    ]
+  },
+  {
+    "question": "'What is total bonus given in all evaluations?'",
+    "db": "'employee_hire_evaluation'",
+    "query_gt": [
+      "'SELECT'",
+      "'SUM('",
+      "'bonus'",
+      "')'",
+      "'FROM'",
+      "'evaluation'"
+    ]
+  },
+  {
+    "question": "'Find the total amount of bonus given in all the evaluations.'",
+    "db": "'employee_hire_evaluation'",
+    "query_gt": [
+      "'SELECT'",
+      "'SUM('",
+      "'bonus'",
+      "')'",
+      "'FROM'",
+      "'evaluation'"
+    ]
+  },
+  {
+    "question": "'Give me all the information about hiring.'",
+    "db": "'employee_hire_evaluation'",
+    "query_gt": [
+      "'SELECT'",
+      "'*'",
+      "'FROM'",
+      "'hiring'"
+    ]
+  },
+  {
+    "question": "'What is all the information about hiring?'",
+    "db": "'employee_hire_evaluation'",
+    "query_gt": [
+      "'SELECT'",
+      "'*'",
+      "'FROM'",
+      "'hiring'"
+    ]
+  },
+  {
+    "question": "'How many documents do we have?'",
+    "db": "'cre_Doc_Template_Mgt'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'documents'"
+    ]
+  },
+  {
+    "question": "'Count the number of documents.'",
+    "db": "'cre_Doc_Template_Mgt'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'documents'"
+    ]
+  },
+  {
+    "question": "'How many templates do we have?'",
+    "db": "'cre_Doc_Template_Mgt'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'templates'"
+    ]
+  },
+  {
+    "question": "'Count the number of templates.'",
+    "db": "'cre_Doc_Template_Mgt'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'templates'"
+    ]
+  },
+  {
+    "question": "'How many paragraphs in total?'",
+    "db": "'cre_Doc_Template_Mgt'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'paragraphs'"
+    ]
+  },
+  {
+    "question": "'Count the number of paragraphs.'",
+    "db": "'cre_Doc_Template_Mgt'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'paragraphs'"
+    ]
+  },
+  {
+    "question": "'How many teachers are there?'",
+    "db": "'course_teach'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'teacher'"
+    ]
+  },
+  {
+    "question": "'What is the total count of teachers?'",
+    "db": "'course_teach'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'teacher'"
+    ]
+  },
+  {
+    "question": "'Find the total number of players.'",
+    "db": "'wta_1'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'players'"
+    ]
+  },
+  {
+    "question": "'How many players are there?'",
+    "db": "'wta_1'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'players'"
+    ]
+  },
+  {
+    "question": "'Find the total number of matches.'",
+    "db": "'wta_1'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'matches'"
+    ]
+  },
+  {
+    "question": "'Count the number of matches.'",
+    "db": "'wta_1'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'matches'"
+    ]
+  },
+  {
+    "question": "'Find the average rank of winners in all matches.'",
+    "db": "'wta_1'",
+    "query_gt": [
+      "'SELECT'",
+      "'AVG('",
+      "'winner rank'",
+      "')'",
+      "'FROM'",
+      "'matches'"
+    ]
+  },
+  {
+    "question": "'What is the average rank for winners in all matches?'",
+    "db": "'wta_1'",
+    "query_gt": [
+      "'SELECT'",
+      "'AVG('",
+      "'winner rank'",
+      "')'",
+      "'FROM'",
+      "'matches'"
+    ]
+  },
+  {
+    "question": "'Find the highest rank of losers in all matches.'",
+    "db": "'wta_1'",
+    "query_gt": [
+      "'SELECT'",
+      "'MIN('",
+      "'loser rank'",
+      "')'",
+      "'FROM'",
+      "'matches'"
+    ]
+  },
+  {
+    "question": "'What is the best rank of losers across all matches?'",
+    "db": "'wta_1'",
+    "query_gt": [
+      "'SELECT'",
+      "'MIN('",
+      "'loser rank'",
+      "')'",
+      "'FROM'",
+      "'matches'"
+    ]
+  },
+  {
+    "question": "'What is the average number of injuries caused each time?'",
+    "db": "'battle_death'",
+    "query_gt": [
+      "'SELECT'",
+      "'AVG('",
+      "'injured'",
+      "')'",
+      "'FROM'",
+      "'death'"
+    ]
+  },
+  {
+    "question": "'How many courses in total are listed?'",
+    "db": "'student_transcripts_tracking'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'courses'"
+    ]
+  },
+  {
+    "question": "'How many courses are there?'",
+    "db": "'student_transcripts_tracking'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'courses'"
+    ]
+  },
+  {
+    "question": "'On average, when were the transcripts printed?'",
+    "db": "'student_transcripts_tracking'",
+    "query_gt": [
+      "'SELECT'",
+      "'AVG('",
+      "'transcript date'",
+      "')'",
+      "'FROM'",
+      "'transcripts'"
+    ]
+  },
+  {
+    "question": "'What is the average transcript date?'",
+    "db": "'student_transcripts_tracking'",
+    "query_gt": [
+      "'SELECT'",
+      "'AVG('",
+      "'transcript date'",
+      "')'",
+      "'FROM'",
+      "'transcripts'"
+    ]
+  },
+  {
+    "question": "'How many transcripts are released?'",
+    "db": "'student_transcripts_tracking'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'transcripts'"
+    ]
+  },
+  {
+    "question": "'How many transcripts are listed?'",
+    "db": "'student_transcripts_tracking'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'transcripts'"
+    ]
+  },
+  {
+    "question": "'How many poker players are there?'",
+    "db": "'poker_player'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'poker player'"
+    ]
+  },
+  {
+    "question": "'Count the number of poker players.'",
+    "db": "'poker_player'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'poker player'"
+    ]
+  },
+  {
+    "question": "'What is the average earnings of poker players?'",
+    "db": "'poker_player'",
+    "query_gt": [
+      "'SELECT'",
+      "'AVG('",
+      "'earnings'",
+      "')'",
+      "'FROM'",
+      "'poker player'"
+    ]
+  },
+  {
+    "question": "'Return the average earnings across all poker players.'",
+    "db": "'poker_player'",
+    "query_gt": [
+      "'SELECT'",
+      "'AVG('",
+      "'earnings'",
+      "')'",
+      "'FROM'",
+      "'poker player'"
+    ]
+  },
+  {
+    "question": "'How many states are there?'",
+    "db": "'voter_1'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'area code state'"
+    ]
+  },
+  {
+    "question": "'What is the average attendance of shows?'",
+    "db": "'orchestra'",
+    "query_gt": [
+      "'SELECT'",
+      "'AVG('",
+      "'attendance'",
+      "')'",
+      "'FROM'",
+      "'show'"
+    ]
+  },
+  {
+    "question": "'Return the average attendance across all shows.'",
+    "db": "'orchestra'",
+    "query_gt": [
+      "'SELECT'",
+      "'AVG('",
+      "'attendance'",
+      "')'",
+      "'FROM'",
+      "'show'"
+    ]
+  },
+  {
+    "question": "'How many high schoolers are there?'",
+    "db": "'network_1'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'high schooler'"
+    ]
+  },
+  {
+    "question": "'Count the number of high schoolers.'",
+    "db": "'network_1'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'high schooler'"
+    ]
+  },
+  {
+    "question": "'Show all the grades of the high schoolers.'",
+    "db": "'network_1'",
+    "query_gt": [
+      "'SELECT'",
+      "'grade'",
+      "'FROM'",
+      "'high schooler'"
+    ]
+  },
+  {
+    "question": "'What is the grade of each high schooler?'",
+    "db": "'network_1'",
+    "query_gt": [
+      "'SELECT'",
+      "'grade'",
+      "'FROM'",
+      "'high schooler'"
+    ]
+  },
+  {
+    "question": "'What is the average age of all the dogs?'",
+    "db": "'dog_kennels'",
+    "query_gt": [
+      "'SELECT'",
+      "'AVG('",
+      "'age'",
+      "')'",
+      "'FROM'",
+      "'dogs'"
+    ]
+  },
+  {
+    "question": "'Compute the average age of all the dogs.'",
+    "db": "'dog_kennels'",
+    "query_gt": [
+      "'SELECT'",
+      "'AVG('",
+      "'age'",
+      "')'",
+      "'FROM'",
+      "'dogs'"
+    ]
+  },
+  {
+    "question": "'What is the age of the oldest dog?'",
+    "db": "'dog_kennels'",
+    "query_gt": [
+      "'SELECT'",
+      "'MAX('",
+      "'age'",
+      "')'",
+      "'FROM'",
+      "'dogs'"
+    ]
+  },
+  {
+    "question": "'Tell me the age of the oldest dog.'",
+    "db": "'dog_kennels'",
+    "query_gt": [
+      "'SELECT'",
+      "'MAX('",
+      "'age'",
+      "')'",
+      "'FROM'",
+      "'dogs'"
+    ]
+  },
+  {
+    "question": "'How much does the most expensive charge type costs?'",
+    "db": "'dog_kennels'",
+    "query_gt": [
+      "'SELECT'",
+      "'MAX('",
+      "'charge amount'",
+      "')'",
+      "'FROM'",
+      "'charges'"
+    ]
+  },
+  {
+    "question": "'What is the charge amount of the most expensive charge type?'",
+    "db": "'dog_kennels'",
+    "query_gt": [
+      "'SELECT'",
+      "'MAX('",
+      "'charge amount'",
+      "')'",
+      "'FROM'",
+      "'charges'"
+    ]
+  },
+  {
+    "question": "'How many singers are there?'",
+    "db": "'singer'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'singer'"
+    ]
+  },
+  {
+    "question": "'What is the count of singers?'",
+    "db": "'singer'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'singer'"
+    ]
+  },
+  {
+    "question": "'How many available features are there in total?'",
+    "db": "'real_estate_properties'",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'other available features'"
+    ]
+  }
+]

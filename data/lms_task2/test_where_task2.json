@@ -1,0 +1,1272 @@
+[
+  {
+    "query": "SELECT count(*) FROM singer",
+    "prompt": "How many singers do we have? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM singer",
+    "prompt": "What is the total number of singers? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT country FROM singer WHERE age  >  20",
+    "prompt": "What are all distinct countries where singers above age 20 are from? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT DISTINCT country FROM singer WHERE age  >  20",
+    "prompt": "What are  the different countries with singers above age 20? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM pets WHERE weight  >  10",
+    "prompt": "Find the number of pets whose weight is heavier than 10. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM pets WHERE weight  >  10",
+    "prompt": "How many pets have a greater weight than 10? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT weight FROM pets ORDER BY pet_age LIMIT 1",
+    "prompt": "Find the weight of the youngest dog. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT weight FROM pets ORDER BY pet_age LIMIT 1",
+    "prompt": "How much does the youngest dog weigh? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT pettype) FROM pets",
+    "prompt": "Find the number of distinct type of pets. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT pettype) FROM pets",
+    "prompt": "How many different types of pet are there? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM CONTINENTS;",
+    "prompt": "How many continents are there? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM CONTINENTS;",
+    "prompt": "What is the number of continents? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM COUNTRIES;",
+    "prompt": "How many countries are listed? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM COUNTRIES;",
+    "prompt": "How many countries exist? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT avg(mpg) FROM CARS_DATA WHERE Cylinders  =  4;",
+    "prompt": "What is the average miles per gallon(mpg) of the cars with 4 cylinders? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT avg(mpg) FROM CARS_DATA WHERE Cylinders  =  4;",
+    "prompt": "What is the average miles per gallon of all the cards with 4 cylinders? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM CARS_DATA WHERE horsepower  >  150;",
+    "prompt": "What is the number of the cars with horsepower more than 150? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM CARS_DATA WHERE horsepower  >  150;",
+    "prompt": "What is the number of cars with a horsepower greater than 150? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT avg(horsepower) FROM CARS_DATA WHERE YEAR  <  1980;",
+    "prompt": "What is the average horsepower of the cars before 1980? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "select avg(horsepower) from cars_data where year  <  1980;",
+    "prompt": "What is the average horsepower for all cars produced before 1980 ? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM CARS_DATA WHERE Cylinders  >  4;",
+    "prompt": "How many cars have more than 4 cylinders? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM CARS_DATA WHERE Cylinders  >  4;",
+    "prompt": "What is the number of cars with more than 4 cylinders? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM CARS_DATA WHERE YEAR  =  1980;",
+    "prompt": "how many cars were produced in 1980? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM CARS_DATA WHERE YEAR  =  1980;",
+    "prompt": "In 1980, how many cars were made? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT COUNT(*) FROM CARS_DATA WHERE Cylinders  >  6;",
+    "prompt": "How many cars has over 6 cylinders? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT COUNT(*) FROM CARS_DATA WHERE Cylinders  >  6;",
+    "prompt": "What is the number of carsw ith over 6 cylinders? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Country FROM AIRLINES WHERE Airline  =  \"JetBlue Airways\"",
+    "prompt": "Which country does Airline \"JetBlue Airways\" belong to? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Country FROM AIRLINES WHERE Airline  =  \"JetBlue Airways\"",
+    "prompt": "What country is Jetblue Airways affiliated with? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Abbreviation FROM AIRLINES WHERE Airline  =  \"JetBlue Airways\"",
+    "prompt": "What is the abbreviation of Airline \"JetBlue Airways\"? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Abbreviation FROM AIRLINES WHERE Airline  =  \"JetBlue Airways\"",
+    "prompt": "Which abbreviation corresponds to Jetblue Airways? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM AIRLINES",
+    "prompt": "How many airlines do we have? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM AIRLINES",
+    "prompt": "What is the total number of airlines? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM AIRPORTS",
+    "prompt": "How many airports do we have? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM AIRPORTS",
+    "prompt": "Return the number of  airports. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM FLIGHTS",
+    "prompt": "How many flights do we have? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM FLIGHTS",
+    "prompt": "Return the number of flights. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Airline FROM AIRLINES WHERE Abbreviation  =  \"UAL\"",
+    "prompt": "Which airline has abbreviation 'UAL'? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Airline FROM AIRLINES WHERE Abbreviation  =  \"UAL\"",
+    "prompt": "Give the airline with abbreviation 'UAL'. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM AIRLINES WHERE Country  =  \"USA\"",
+    "prompt": "How many airlines are from USA? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM AIRLINES WHERE Country  =  \"USA\"",
+    "prompt": "Return the number of airlines in the USA. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT AirportName FROM AIRPORTS WHERE AirportCode  =  \"AKO\"",
+    "prompt": "What is the airport name for airport 'AKO'? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT AirportName FROM AIRPORTS WHERE AirportCode  =  \"AKO\"",
+    "prompt": "Return the name of the airport with code 'AKO'. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT AirportName FROM AIRPORTS WHERE City = \"Aberdeen\"",
+    "prompt": "What are airport names at City 'Aberdeen'? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT AirportName FROM AIRPORTS WHERE City = \"Aberdeen\"",
+    "prompt": "What are the names of airports in Aberdeen? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM FLIGHTS WHERE SourceAirport  =  \"APG\"",
+    "prompt": "How many flights depart from 'APG'? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM FLIGHTS WHERE SourceAirport  =  \"APG\"",
+    "prompt": "Count the number of flights departing from 'APG'. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM FLIGHTS WHERE DestAirport  =  \"ATO\"",
+    "prompt": "How many flights have destination ATO? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM FLIGHTS WHERE DestAirport  =  \"ATO\"",
+    "prompt": "Count the number of flights into ATO. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT FlightNo FROM FLIGHTS WHERE SourceAirport  =  \"APG\"",
+    "prompt": "What are flight numbers of flights departing from Airport \"APG\"? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT FlightNo FROM FLIGHTS WHERE SourceAirport  =  \"APG\"",
+    "prompt": "Give the flight numbers of flights leaving from APG. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT FlightNo FROM FLIGHTS WHERE DestAirport  =  \"APG\"",
+    "prompt": "What are flight numbers of flights arriving at Airport \"APG\"? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT FlightNo FROM FLIGHTS WHERE DestAirport  =  \"APG\"",
+    "prompt": "Give the flight numbers of flights landing at APG. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM employee",
+    "prompt": "How many employees are there? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM employee",
+    "prompt": "Count the number of employees Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM employee ORDER BY age",
+    "prompt": "Sort employee names by their age in ascending order. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM employee ORDER BY age",
+    "prompt": "List the names of employees and sort in ascending order of age. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT city FROM employee WHERE age  <  30 GROUP BY city HAVING count(*)  >  1",
+    "prompt": "Which cities do more than one employee under age 30 come from? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT city FROM employee WHERE age  <  30 GROUP BY city HAVING count(*)  >  1",
+    "prompt": "Find the cities that have more than one employee under age 30. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT sum(bonus) FROM evaluation",
+    "prompt": "What is total bonus given in all evaluations? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT sum(bonus) FROM evaluation",
+    "prompt": "Find the total amount of bonus given in all the evaluations. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT * FROM hiring",
+    "prompt": "Give me all the information about hiring. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT * FROM hiring",
+    "prompt": "What is all the information about hiring? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT LOCATION) FROM shop",
+    "prompt": "How many different store locations are there? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT LOCATION) FROM shop",
+    "prompt": "Count the number of distinct store locations. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM Documents",
+    "prompt": "How many documents do we have? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM Documents",
+    "prompt": "Count the number of documents. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT template_id) FROM Documents",
+    "prompt": "How many different templates do all document use? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT template_id) FROM Documents",
+    "prompt": "Count the number of different templates used for documents. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT template_id FROM Documents GROUP BY template_id HAVING count(*)  >  1",
+    "prompt": "Show ids for all templates that are used by more than one document. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT template_id FROM Documents GROUP BY template_id HAVING count(*)  >  1",
+    "prompt": "What are the template ids of any templates used in more than a single document? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM Templates",
+    "prompt": "How many templates do we have? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM Templates",
+    "prompt": "Count the number of templates. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT template_type_code FROM Templates",
+    "prompt": "Show all distinct template type codes for all templates. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT template_type_code FROM Templates",
+    "prompt": "What are the different template type codes? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM Templates WHERE template_type_code  =  \"CV\"",
+    "prompt": "How many templates have template type code CV? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM Templates WHERE template_type_code  =  \"CV\"",
+    "prompt": "Count the number of templates of the type CV. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT template_type_code FROM Templates GROUP BY template_type_code HAVING count(*)  <  3",
+    "prompt": "Show all template type codes with less than three templates. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT template_type_code FROM Templates GROUP BY template_type_code HAVING count(*)  <  3",
+    "prompt": "What are the codes of template types that have fewer than 3 templates? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT template_type_description FROM Ref_template_types WHERE template_type_code  =  \"AD\"",
+    "prompt": "What is the template type descriptions for template type code \"AD\". Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT template_type_description FROM Ref_template_types WHERE template_type_code  =  \"AD\"",
+    "prompt": "Return the template type description of the template type with the code AD. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT template_type_code FROM Ref_template_types WHERE template_type_description  =  \"Book\"",
+    "prompt": "What is the template type code for template type description \"Book\". Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT template_type_code FROM Ref_template_types WHERE template_type_description  =  \"Book\"",
+    "prompt": "Return the type code of the template type with the description \"Book\". Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM Paragraphs",
+    "prompt": "How many paragraphs in total? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM Paragraphs",
+    "prompt": "Count the number of paragraphs. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "select other_details from paragraphs where paragraph_text like 'korea'",
+    "prompt": "Show paragraph details for paragraph with text 'Korea ' . Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "select other_details from paragraphs where paragraph_text like 'korea'",
+    "prompt": "What are the details for the paragraph that includes the text 'Korea ' ? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT document_id FROM Paragraphs GROUP BY document_id HAVING count(*)  >=  2",
+    "prompt": "List all document ids with at least two paragraphs. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT document_id FROM Paragraphs GROUP BY document_id HAVING count(*)  >=  2",
+    "prompt": "What are the ids of documents that have 2 or more paragraphs? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM teacher",
+    "prompt": "How many teachers are there? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM teacher",
+    "prompt": "What is the total count of teachers? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM teacher ORDER BY Age ASC",
+    "prompt": "List the names of teachers in ascending order of age. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM teacher ORDER BY Age ASC",
+    "prompt": "What are the names of the teachers ordered by ascending age? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "select name from teacher where hometown != \"little lever urban district\"",
+    "prompt": "List the name of teachers whose hometown is not `` Little Lever Urban District '' . Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "select name from teacher where hometown != \"little lever urban district\"",
+    "prompt": "What are the names of the teachers whose hometown is not `` Little Lever Urban District '' ? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Hometown FROM teacher ORDER BY Age ASC LIMIT 1",
+    "prompt": "What is the hometown of the youngest teacher? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Hometown FROM teacher ORDER BY Age ASC LIMIT 1",
+    "prompt": "Where is the youngest teacher from? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Hometown FROM teacher GROUP BY Hometown HAVING COUNT(*)  >=  2",
+    "prompt": "Show the hometowns shared by at least two teachers. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Hometown FROM teacher GROUP BY Hometown HAVING COUNT(*)  >=  2",
+    "prompt": "What are the towns from which at least two teachers come from? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT avg(num_of_staff) FROM museum WHERE open_year  <  2009",
+    "prompt": "Find the average number of staff working for the museums that were open before 2009. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM players",
+    "prompt": "Find the total number of players. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM players",
+    "prompt": "How many players are there? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM matches",
+    "prompt": "Find the total number of matches. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM matches",
+    "prompt": "Count the number of matches. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT avg(winner_rank) FROM matches",
+    "prompt": "Find the average rank of winners in all matches. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT avg(winner_rank) FROM matches",
+    "prompt": "What is the average rank for winners in all matches? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT min(loser_rank) FROM matches",
+    "prompt": "Find the highest rank of losers in all matches. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT min(loser_rank) FROM matches",
+    "prompt": "What is the best rank of losers across all matches? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT country_code) FROM players",
+    "prompt": "find the number of distinct country codes of all players. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT country_code) FROM players",
+    "prompt": "How many distinct countries do players come from? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT loser_name) FROM matches",
+    "prompt": "Find the number of distinct name of losers. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT loser_name) FROM matches",
+    "prompt": "How many different loser names are there? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT tourney_name FROM matches GROUP BY tourney_name HAVING count(*)  >  10",
+    "prompt": "Find the name of tourney that has more than 10 matches. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT tourney_name FROM matches GROUP BY tourney_name HAVING count(*)  >  10",
+    "prompt": "What are the names of tournaments that have more than 10 matches? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT winner_name FROM matches WHERE tourney_name  =  'Australian Open' ORDER BY winner_rank_points DESC LIMIT 1",
+    "prompt": "Find the name of the winner who has the highest rank points and participated in the Australian Open tourney. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT winner_name FROM matches WHERE tourney_name  =  'Australian Open' ORDER BY winner_rank_points DESC LIMIT 1",
+    "prompt": "What is the name of the winner with the most rank points who participated in the Australian Open tournament? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT country_code FROM players GROUP BY country_code HAVING count(*)  >  50",
+    "prompt": "Find the codes of countries that have more than 50 players. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT country_code FROM players GROUP BY country_code HAVING count(*)  >  50",
+    "prompt": "What are the codes of countries with more than 50 players? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM ship WHERE disposition_of_ship  =  'Captured'",
+    "prompt": "How many ships ended up being 'Captured'? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT avg(injured) FROM death",
+    "prompt": "What is the average number of injuries caused each time? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT RESULT) FROM battle",
+    "prompt": "How many different results are there for the battles? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT note FROM death WHERE note LIKE '%East%'",
+    "prompt": "What are the notes of the death events which has substring 'East'? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM Courses",
+    "prompt": "How many courses in total are listed? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM Courses",
+    "prompt": "How many courses are there? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT course_description FROM Courses WHERE course_name  =  'math'",
+    "prompt": "How is the math course described? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT course_description FROM Courses WHERE course_name  =  'math'",
+    "prompt": "What are the descriptions for all the math courses? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT zip_postcode FROM Addresses WHERE city  =  'Port Chelsea'",
+    "prompt": "What is the zip code of the address in the city Port Chelsea? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT zip_postcode FROM Addresses WHERE city  =  'Port Chelsea'",
+    "prompt": "What is the zip code for Port Chelsea? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(DISTINCT department_id) FROM Degree_Programs",
+    "prompt": "How many departments offer any degree? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT department_id) FROM Degree_Programs",
+    "prompt": "How many different departments offer degrees? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT degree_summary_name) FROM Degree_Programs",
+    "prompt": "How many different degree names are offered? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT degree_summary_name) FROM Degree_Programs",
+    "prompt": "How many different degrees are offered? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT section_name FROM Sections ORDER BY section_name DESC",
+    "prompt": "List the section_name in reversed lexicographical order. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT section_name FROM Sections ORDER BY section_name DESC",
+    "prompt": "What are the names of the sections in reverse alphabetical order? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT department_description FROM Departments WHERE department_name LIKE '%computer%'",
+    "prompt": "What is the description of the department whose name has the substring the computer? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT department_description FROM Departments WHERE department_name LIKE '%computer%'",
+    "prompt": "What is the department description for the one whose name has the word computer? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT avg(transcript_date) FROM Transcripts",
+    "prompt": "On average, when were the transcripts printed? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT avg(transcript_date) FROM Transcripts",
+    "prompt": "What is the average transcript date? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM Transcripts",
+    "prompt": "How many transcripts are released? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM Transcripts",
+    "prompt": "How many transcripts are listed? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT transcript_date FROM Transcripts ORDER BY transcript_date DESC LIMIT 1",
+    "prompt": "What is the last transcript release date? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT transcript_date FROM Transcripts ORDER BY transcript_date DESC LIMIT 1",
+    "prompt": "When was the last transcript released? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT current_address_id) FROM Students",
+    "prompt": "How many different addresses do the students currently live? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT current_address_id) FROM Students",
+    "prompt": "What are the different addresses that have students living there? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT other_student_details FROM Students ORDER BY other_student_details DESC",
+    "prompt": "List all the student details in reversed lexicographical order. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT other_student_details FROM Students ORDER BY other_student_details DESC",
+    "prompt": "What other details can you tell me about students in reverse alphabetical order? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT section_description FROM Sections WHERE section_name  =  'h'",
+    "prompt": "Describe the section h. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT section_description FROM Sections WHERE section_name  =  'h'",
+    "prompt": "What is the description for the section named h? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Title FROM Cartoon ORDER BY title",
+    "prompt": "List the title of all cartoons in alphabetical order. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Title FROM Cartoon ORDER BY title",
+    "prompt": "What are the titles of the cartoons sorted alphabetically? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Title FROM Cartoon WHERE Directed_by = \"Ben Jones\";",
+    "prompt": "List all cartoon directed by \"Ben Jones\". Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Title FROM Cartoon WHERE Directed_by = \"Ben Jones\";",
+    "prompt": "What are the names of all cartoons directed by Ben Jones? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM Cartoon WHERE Written_by = \"Joseph Kuhr\";",
+    "prompt": "How many cartoons were written by \"Joseph Kuhr\"? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM Cartoon WHERE Written_by = \"Joseph Kuhr\";",
+    "prompt": "What is the number of cartoones written by Joseph Kuhr? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Content FROM TV_Channel WHERE series_name = \"Sky Radio\";",
+    "prompt": "What is the content of TV Channel with serial name \"Sky Radio\"? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Content FROM TV_Channel WHERE series_name = \"Sky Radio\";",
+    "prompt": "What is the content of the series Sky Radio? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Package_Option FROM TV_Channel WHERE series_name = \"Sky Radio\";",
+    "prompt": "What is the Package Option of TV Channel with serial name \"Sky Radio\"? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Package_Option FROM TV_Channel WHERE series_name = \"Sky Radio\";",
+    "prompt": "What are the Package Options of the TV Channels whose series names are Sky Radio? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM TV_Channel WHERE LANGUAGE = \"English\";",
+    "prompt": "How many TV Channel using language English? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM TV_Channel WHERE LANGUAGE = \"English\";",
+    "prompt": "How many TV Channels use the English language? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Episode FROM TV_series ORDER BY rating",
+    "prompt": "List the Episode of all TV series sorted by rating. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Episode FROM TV_series ORDER BY rating",
+    "prompt": "What are all of the episodes ordered by ratings? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Air_Date FROM TV_series WHERE Episode = \"A Love of a Lifetime\";",
+    "prompt": "What is the air date of TV series with Episode \"A Love of a Lifetime\"? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Air_Date FROM TV_series WHERE Episode = \"A Love of a Lifetime\";",
+    "prompt": "When did the episode \"A Love of a Lifetime\" air? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Weekly_Rank FROM TV_series WHERE Episode = \"A Love of a Lifetime\";",
+    "prompt": "What is Weekly Rank of TV series with Episode \"A Love of a Lifetime\"? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Weekly_Rank FROM TV_series WHERE Episode = \"A Love of a Lifetime\";",
+    "prompt": "What is the weekly rank for the episode \"A Love of a Lifetime\"? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT id FROM tv_channel GROUP BY country HAVING count(*)  >  2",
+    "prompt": "find id of the tv channels that from the countries where have more than two tv channels. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT id FROM tv_channel GROUP BY country HAVING count(*)  >  2",
+    "prompt": "What are the ids of all tv channels that have more than 2 TV channels? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM poker_player",
+    "prompt": "How many poker players are there? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM poker_player",
+    "prompt": "Count the number of poker players. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Earnings FROM poker_player ORDER BY Earnings DESC",
+    "prompt": "List the earnings of poker players in descending order. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Earnings FROM poker_player ORDER BY Earnings DESC",
+    "prompt": "What are the earnings of poker players, ordered descending by value? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT avg(Earnings) FROM poker_player",
+    "prompt": "What is the average earnings of poker players? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT avg(Earnings) FROM poker_player",
+    "prompt": "Return the average earnings across all poker players. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Money_Rank FROM poker_player ORDER BY Earnings DESC LIMIT 1",
+    "prompt": "What is the money rank of the poker player with the highest earnings? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Money_Rank FROM poker_player ORDER BY Earnings DESC LIMIT 1",
+    "prompt": "Return the money rank of the player with the greatest earnings. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT max(Final_Table_Made) FROM poker_player WHERE Earnings  <  200000",
+    "prompt": "What is the maximum number of final tables made among poker players with earnings less than 200000? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT max(Final_Table_Made) FROM poker_player WHERE Earnings  <  200000",
+    "prompt": "Return the maximum final tables made across all poker players who have earnings below 200000. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Nationality FROM people GROUP BY Nationality HAVING COUNT(*)  >=  2",
+    "prompt": "What are the nationalities that are shared by at least two people? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Nationality FROM people GROUP BY Nationality HAVING COUNT(*)  >=  2",
+    "prompt": "Return the nationalities for which there are two or more people. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM people WHERE Nationality != \"Russia\"",
+    "prompt": "Show names of people whose nationality is not \"Russia\". Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM people WHERE Nationality != \"Russia\"",
+    "prompt": "What are the names of people who are not from Russia? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(DISTINCT Nationality) FROM people",
+    "prompt": "How many distinct nationalities are there? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT Nationality) FROM people",
+    "prompt": "Count the number of different nationalities. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM area_code_state",
+    "prompt": "How many states are there? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT max(created) FROM votes WHERE state  =  'CA'",
+    "prompt": "What is last date created of votes from the state 'CA'? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT contestant_name FROM contestants WHERE contestant_name != 'Jessie Alloway'",
+    "prompt": "What are the names of the contestants whose names are not 'Jessie Alloway' Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "select contestant_name from contestants where contestant_name like \"%al%\"",
+    "prompt": "Return the names of the contestants whose names contain the substring 'Al' . Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM country WHERE IndepYear  >  1950",
+    "prompt": "What are the names of all the countries that became independent after 1950? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM country WHERE IndepYear  >  1950",
+    "prompt": "Give the names of the nations that were founded after 1950. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM country WHERE GovernmentForm  =  \"Republic\"",
+    "prompt": "How many countries have a republic as their form of government? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM country WHERE GovernmentForm  =  \"Republic\"",
+    "prompt": "How many countries have governments that are republics? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT sum(SurfaceArea) FROM country WHERE Region  =  \"Caribbean\"",
+    "prompt": "What is the total surface area of the countries in the Caribbean region? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT sum(SurfaceArea) FROM country WHERE Region  =  \"Caribbean\"",
+    "prompt": "How much surface area do the countires in the Carribean cover together? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Continent FROM country WHERE Name  =  \"Anguilla\"",
+    "prompt": "Which continent is Anguilla in? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Continent FROM country WHERE Name  =  \"Anguilla\"",
+    "prompt": "What is the continent name which Anguilla belongs to? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT avg(LifeExpectancy) FROM country WHERE Region  =  \"Central Africa\"",
+    "prompt": "What is the average expected life expectancy for countries in the region of Central Africa? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT avg(LifeExpectancy) FROM country WHERE Region  =  \"Central Africa\"",
+    "prompt": "How long is the people\u2019s average life expectancy in Central Africa? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM country WHERE Continent  =  \"Asia\" ORDER BY LifeExpectancy LIMIT 1",
+    "prompt": "What is the name of country that has the shortest life expectancy in Asia? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM country WHERE Continent  =  \"Asia\" ORDER BY LifeExpectancy LIMIT 1",
+    "prompt": "Give the name of the country in Asia with the lowest life expectancy. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT sum(Population) FROM city WHERE District  =  \"Gelderland\"",
+    "prompt": "How many people live in Gelderland district? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT sum(Population) FROM city WHERE District  =  \"Gelderland\"",
+    "prompt": "What is the total population of Gelderland district? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(DISTINCT LANGUAGE) FROM countrylanguage",
+    "prompt": "How many unique languages are spoken in the world? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT LANGUAGE) FROM countrylanguage",
+    "prompt": "What is the number of distinct languages used around the world? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT GovernmentForm) FROM country WHERE Continent  =  \"Africa\"",
+    "prompt": "How many type of governments are in Africa? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(DISTINCT GovernmentForm) FROM country WHERE Continent  =  \"Africa\"",
+    "prompt": "How many different forms of governments are there in Africa? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT DISTINCT CountryCode FROM countrylanguage WHERE LANGUAGE != \"English\"",
+    "prompt": "What are the country codes of countries where people use languages other than English? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT DISTINCT CountryCode FROM countrylanguage WHERE LANGUAGE != \"English\"",
+    "prompt": "Give the country codes for countries in which people speak langauges that are not English. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM country ORDER BY Population DESC LIMIT 3",
+    "prompt": "What are names of countries with the top 3 largest population? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM country ORDER BY Population DESC LIMIT 3",
+    "prompt": "Return the names of the 3 most populated countries. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM country ORDER BY Population ASC LIMIT 3",
+    "prompt": "What are the names of the nations with the 3 lowest populations? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM country ORDER BY Population ASC LIMIT 3",
+    "prompt": "Return the names of the 3 countries with the fewest people. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM country WHERE continent  =  \"Asia\"",
+    "prompt": "how many countries are in Asia? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM country WHERE continent  =  \"Asia\"",
+    "prompt": "Count the number of countries in Asia. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT count(*) FROM conductor",
+    "prompt": "How many conductors are there? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM conductor",
+    "prompt": "Count the number of conductors. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Record_Company FROM orchestra ORDER BY Year_of_Founded DESC",
+    "prompt": "What are the record companies of orchestras in descending order of years in which they were founded? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Record_Company FROM orchestra ORDER BY Year_of_Founded DESC",
+    "prompt": "Return the record companies of orchestras, sorted descending by the years in which they were founded. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT avg(Attendance) FROM SHOW",
+    "prompt": "What is the average attendance of shows? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT avg(Attendance) FROM SHOW",
+    "prompt": "Return the average attendance across all shows. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT Nationality) FROM conductor",
+    "prompt": "How many different nationalities do conductors have? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT Nationality) FROM conductor",
+    "prompt": "Count the number of different nationalities of conductors. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM Highschooler",
+    "prompt": "How many high schoolers are there? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM Highschooler",
+    "prompt": "Count the number of high schoolers. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT grade FROM Highschooler",
+    "prompt": "Show all the grades of the high schoolers. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT grade FROM Highschooler",
+    "prompt": "What is the grade of each high schooler? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT grade FROM Highschooler WHERE name  =  \"Kyle\"",
+    "prompt": "What grade is Kyle in? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT grade FROM Highschooler WHERE name  =  \"Kyle\"",
+    "prompt": "Return the grade for the high schooler named Kyle. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM Highschooler WHERE grade  =  10",
+    "prompt": "Show the names of all high schoolers in grade 10. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM Highschooler WHERE grade  =  10",
+    "prompt": "What are the names of all high schoolers in grade 10? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT ID FROM Highschooler WHERE name  =  \"Kyle\"",
+    "prompt": "Show the ID of the high schooler named Kyle. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT ID FROM Highschooler WHERE name  =  \"Kyle\"",
+    "prompt": "What is Kyle's id? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT grade FROM Highschooler GROUP BY grade HAVING count(*)  >=  4",
+    "prompt": "Show me all grades that have at least 4 students. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT grade FROM Highschooler GROUP BY grade HAVING count(*)  >=  4",
+    "prompt": "Which grades have 4 or more high schoolers? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT dog_id) FROM Treatments",
+    "prompt": "How many dogs went through any treatments? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT dog_id) FROM Treatments",
+    "prompt": "Count the number of dogs that went through a treatment. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT professional_id) FROM Treatments",
+    "prompt": "How many professionals have performed any treatment to dogs? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(DISTINCT professional_id) FROM Treatments",
+    "prompt": "Find the number of professionals who have ever treated dogs. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT cost_of_treatment FROM Treatments ORDER BY date_of_treatment DESC LIMIT 1",
+    "prompt": "How much does the most recent treatment cost? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT cost_of_treatment FROM Treatments ORDER BY date_of_treatment DESC LIMIT 1",
+    "prompt": "Show me the cost of the most recently performed treatment. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT avg(age) FROM Dogs",
+    "prompt": "What is the average age of all the dogs? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT avg(age) FROM Dogs",
+    "prompt": "Compute the average age of all the dogs. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT max(age) FROM Dogs",
+    "prompt": "What is the age of the oldest dog? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT max(age) FROM Dogs",
+    "prompt": "Tell me the age of the oldest dog. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT max(charge_amount) FROM Charges",
+    "prompt": "How much does the most expensive charge type costs? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT max(charge_amount) FROM Charges",
+    "prompt": "What is the charge amount of the most expensive charge type? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM singer",
+    "prompt": "How many singers are there? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM singer",
+    "prompt": "What is the count of singers? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM singer ORDER BY Net_Worth_Millions ASC",
+    "prompt": "List the name of singers in ascending order of net worth. Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM singer ORDER BY Net_Worth_Millions ASC",
+    "prompt": "What are the names of singers ordered by ascending net worth? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM singer WHERE Citizenship != \"France\"",
+    "prompt": "List the name of singers whose citizenship is not \"France\". Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM singer WHERE Citizenship != \"France\"",
+    "prompt": "What are the names of the singers who are not French citizens? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM singer ORDER BY Net_Worth_Millions DESC LIMIT 1",
+    "prompt": "What is the name of the singer with the largest net worth? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM singer ORDER BY Net_Worth_Millions DESC LIMIT 1",
+    "prompt": "What is the name of the singer who is worth the most? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT count(*) FROM Other_Available_Features",
+    "prompt": "How many available features are there in total? Answer 1 for empty, Answer 2 for WHERE, the answer should be Answer ",
+    "target": "1"
+  }
+]

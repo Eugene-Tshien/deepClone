@@ -1,0 +1,13 @@
+[
+    {
+    "question": "'How many singers do we have?'",
+    "db": "'concert_singer'",
+    "query_or": "SELECT count(*) FROM singer",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'singer'"
+    ]
+  }
+]

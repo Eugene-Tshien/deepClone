@@ -1,0 +1,258 @@
+SELECT COUNT(*) FROM singer
+SELECT COUNT(*) FROM singer
+SELECT DISTINCT Country FROM singer WHERE Age > 20
+SELECT DISTINCT Country FROM singer WHERE Age > 20
+SELECT COUNT(*) FROM Pets WHERE weight > 10
+SELECT COUNT(*) FROM Has_Pet WHERE PetID > 10
+SELECT weight FROM Pets ORDER BY pet_age ASC LIMIT 1
+SELECT weight FROM Pets ORDER BY pet_age ASC LIMIT 1
+SELECT COUNT( DISTINCT PetType ) FROM Pets
+SELECT COUNT( DISTINCT PetType ) FROM Pets
+SELECT COUNT(*) FROM continents
+SELECT COUNT(*) FROM continents
+SELECT COUNT(*) FROM countries
+SELECT COUNT(*) FROM countries
+SELECT AVG( MPG ) FROM cars_data WHERE Cylinders = 4
+SELECT AVG( Model ) FROM model_list
+SELECT Edispl FROM cars_data WHERE Horsepower > 150
+SELECT Edispl FROM cars_data WHERE Horsepower > 150
+SELECT AVG( Horsepower ) FROM cars_data WHERE Year < 1980
+SELECT AVG( Horsepower ) FROM cars_data WHERE Year < 1980
+SELECT COUNT(*) FROM cars_data WHERE Cylinders > 4
+SELECT Edispl FROM cars_data WHERE Cylinders > 4
+SELECT COUNT(*) FROM cars_data WHERE Year = 1980
+SELECT COUNT(*) FROM cars_data WHERE Year = 1980
+SELECT COUNT(*) FROM cars_data WHERE Cylinders > 6
+SELECT COUNT(*) FROM cars_data WHERE Cylinders > 6
+SELECT Country FROM airlines WHERE Airline = "JetBlue Airways"
+SELECT Airline FROM flights WHERE SourceAirport = "JetBlue Airways"
+SELECT FlightNo FROM flights WHERE Airline = "JetBlue Airways"
+SELECT Abbreviation FROM airlines WHERE Airline = "JetBlue Airways"
+SELECT COUNT(*) FROM airlines
+SELECT COUNT(*) FROM airlines
+SELECT COUNT(*) FROM airports
+SELECT COUNT(*) FROM airports
+SELECT COUNT(*) FROM flights
+SELECT COUNT(*) FROM flights
+SELECT Airline FROM airlines WHERE Abbreviation = "UAL"
+SELECT Airline FROM airlines WHERE Abbreviation = "UAL"
+SELECT COUNT(*) FROM airlines WHERE Country = "USA"
+SELECT COUNT(*) FROM airlines WHERE Country = "USA"
+SELECT AirportName FROM airports WHERE AirportCode = "AKO"
+SELECT AirportName FROM airports WHERE AirportCode = "AKO"
+SELECT AirportName FROM airports WHERE City = "Aberdeen"
+SELECT AirportName FROM airports WHERE Country = "Aberdeen"
+SELECT COUNT(*) FROM flights WHERE DestAirport = "APG"
+SELECT COUNT(*) FROM flights WHERE DestAirport = "APG"
+SELECT COUNT(*) FROM flights WHERE DestAirport = "ATO"
+SELECT COUNT(*) FROM flights WHERE SourceAirport = "ATO"
+SELECT FlightNo FROM flights WHERE DestAirport = "APG"
+SELECT FlightNo FROM flights WHERE DestAirport = "APG"
+SELECT FlightNo FROM flights WHERE DestAirport = "APG"
+SELECT FlightNo FROM flights WHERE DestAirport = "APG"
+SELECT COUNT(*) FROM employee
+SELECT COUNT(*) FROM employee
+SELECT Name FROM employee ORDER BY Age ASC
+SELECT Name FROM employee ORDER BY Age ASC
+SELECT City FROM employee WHERE Age > 30 GROUP BY City HAVING COUNT(*) > 1
+SELECT City FROM employee WHERE Age > 30 GROUP BY City HAVING COUNT(*) > 1
+SELECT SUM( Bonus ) FROM evaluation
+SELECT SUM( Bonus ) FROM evaluation
+SELECT * FROM hiring
+SELECT * FROM hiring
+SELECT COUNT( DISTINCT Location ) FROM shop
+SELECT COUNT( DISTINCT Location ) FROM shop
+SELECT COUNT(*) FROM Documents
+SELECT COUNT(*) FROM Documents
+SELECT COUNT( DISTINCT Template_ID ) FROM Templates
+SELECT COUNT( DISTINCT Template_ID ) FROM Documents
+SELECT Template_ID FROM Templates GROUP BY Template_ID HAVING COUNT(*) > 1
+SELECT Template_ID FROM Templates GROUP BY Template_ID HAVING COUNT(*) > 1
+SELECT Template_ID FROM Templates EXCEPT SELECT Template_ID FROM Documents
+SELECT Template_ID FROM Documents EXCEPT SELECT Template_ID FROM Templates
+SELECT COUNT(*) FROM Templates
+SELECT COUNT(*) FROM Templates
+SELECT DISTINCT Template_Type_Code FROM Templates
+SELECT DISTINCT Template_Type_Code FROM Ref_Template_Types
+SELECT COUNT(*) FROM Templates WHERE Template_Type_Code = "CV"
+SELECT COUNT(*) FROM Templates WHERE Template_Type_Code = "CV"
+SELECT Template_Type_Code FROM Ref_Template_Types GROUP BY Template_Type_Code HAVING COUNT(*) < 3
+SELECT Template_Type_Code FROM Ref_Template_Types GROUP BY Template_Type_Code HAVING COUNT(*) < 3
+SELECT Template_Type_Description FROM Ref_Template_Types WHERE Template_Type_Code = "AD"
+SELECT Template_Type_Description FROM Ref_Template_Types WHERE Template_Type_Code = "AD"
+SELECT Template_Type_Code FROM Ref_Template_Types WHERE Template_Type_Description = "Book"
+SELECT Template_Type_Code FROM Ref_Template_Types WHERE Template_Type_Description = "Book"
+SELECT COUNT(*) FROM Paragraphs
+SELECT COUNT(*) FROM Paragraphs
+SELECT Other_Details FROM Paragraphs WHERE Paragraph_Text = "Korea"
+SELECT Other_Details FROM Paragraphs WHERE Paragraph_Text like "Korea"
+SELECT Document_ID FROM Documents GROUP BY Document_ID HAVING COUNT(*) >= 2
+SELECT Document_ID FROM Documents GROUP BY Document_ID HAVING COUNT(*) >= 2
+SELECT COUNT(*) FROM teacher
+SELECT COUNT(*) FROM teacher
+SELECT Name FROM teacher ORDER BY Age ASC
+SELECT Name FROM teacher ORDER BY Age ASC
+SELECT Name FROM teacher WHERE Hometown != "little lever urban district"
+SELECT Name FROM teacher WHERE Hometown != "little lever urban district"
+SELECT Hometown FROM teacher ORDER BY Age ASC LIMIT 1
+SELECT Name FROM teacher ORDER BY Age ASC LIMIT 1
+SELECT Hometown FROM teacher GROUP BY Hometown HAVING COUNT(*) >= 2
+SELECT Hometown FROM teacher GROUP BY Hometown HAVING COUNT(*) >= 2
+SELECT AVG( Num_of_Staff ) FROM museum WHERE Open_Year < 2009
+SELECT COUNT(*) FROM players
+SELECT COUNT(*) FROM players
+SELECT COUNT(*) FROM matches
+SELECT COUNT(*) FROM matches
+SELECT AVG( winner_rank ) FROM matches
+SELECT AVG( winner_rank ) FROM matches
+SELECT MIN( loser_rank ) FROM matches
+SELECT MIN( winner_rank ) FROM matches
+SELECT COUNT( DISTINCT country_code ) FROM players
+SELECT COUNT( DISTINCT country_code ) FROM players
+SELECT COUNT( DISTINCT first_name ) FROM players
+SELECT COUNT( DISTINCT loser_name ) FROM matches
+SELECT winner_name FROM matches GROUP BY winner_name HAVING COUNT(*) > 10
+SELECT winner_name FROM matches WHERE winner_age > 1 GROUP BY winner_name HAVING COUNT(*) > 10
+SELECT player_id FROM rankings WHERE ranking_points = "Australian Open" ORDER BY ranking_points DESC LIMIT 1
+SELECT winner_name FROM matches WHERE winner_age = "Australian Open" ORDER BY winner_rank_points DESC LIMIT 1
+SELECT country_code FROM players WHERE last_name > 1 GROUP BY country_code HAVING COUNT(*) > 50
+SELECT country_code FROM players WHERE last_name > 1 GROUP BY country_code HAVING COUNT(*) > 50
+SELECT COUNT(*) FROM ship WHERE name = "Captured"
+SELECT AVG( injured ) FROM death
+SELECT COUNT( DISTINCT result ) FROM battle
+SELECT note FROM death WHERE killed like "%East%"
+SELECT COUNT(*) FROM Courses
+SELECT COUNT(*) FROM Courses
+SELECT course_description FROM Courses WHERE course_name = "math"
+SELECT course_description FROM Courses WHERE course_name = "math"
+SELECT zip_postcode FROM Addresses WHERE city = "Port Chelsea"
+SELECT zip_postcode FROM Addresses WHERE city = "Port Chelsea"
+SELECT COUNT( DISTINCT department_id ) FROM Degree_Programs
+SELECT COUNT( DISTINCT department_id ) FROM Degree_Programs
+SELECT COUNT( DISTINCT course_name ) FROM Courses
+SELECT COUNT( DISTINCT course_description ) FROM Courses
+SELECT section_name FROM Sections ORDER BY section_name DESC
+SELECT section_name FROM Sections ORDER BY section_name DESC
+SELECT department_description FROM Departments WHERE department_name like "%computer%"
+SELECT department_description FROM Departments WHERE department_name like "%computer%"
+SELECT AVG( transcript_date ) FROM Transcripts
+SELECT AVG( transcript_date ) FROM Transcripts
+SELECT COUNT(*) FROM Transcripts
+SELECT COUNT(*) FROM Transcripts
+SELECT transcript_date FROM Transcripts ORDER BY transcript_date DESC LIMIT 1
+SELECT transcript_date FROM Transcripts ORDER BY transcript_date DESC LIMIT 1
+SELECT COUNT( DISTINCT email_address ) FROM Students
+SELECT DISTINCT address_id FROM Addresses
+SELECT other_student_details FROM Students ORDER BY other_student_details DESC
+SELECT other_student_details FROM Students ORDER BY other_student_details DESC
+SELECT section_description FROM Sections WHERE section_name = "h"
+SELECT section_description FROM Sections WHERE section_name = "h"
+SELECT Title FROM Cartoon ORDER BY Title ASC
+SELECT Title FROM Cartoon ORDER BY Title ASC
+SELECT Directed_by FROM Cartoon WHERE Directed_by = "Ben Jones"
+SELECT Title FROM Cartoon WHERE Directed_by = "Ben Jones"
+SELECT COUNT(*) FROM Cartoon WHERE Written_by = "Joseph Kuhr"
+SELECT COUNT(*) FROM Cartoon WHERE Title = "Joseph Kuhr"
+SELECT Content FROM TV_Channel WHERE series_name = "Sky Radio"
+SELECT Channel FROM TV_series WHERE Rating = "Sky Radio"
+SELECT Package_Option FROM TV_Channel WHERE series_name = "Sky Radio"
+SELECT Package_Option FROM TV_Channel WHERE series_name = "Sky Radio"
+SELECT COUNT(*) FROM TV_Channel WHERE Language = "English"
+SELECT COUNT(*) FROM TV_Channel WHERE Language = "English"
+SELECT Episode FROM TV_series ORDER BY Rating ASC
+SELECT Episode FROM TV_series ORDER BY Rating ASC
+SELECT Air_Date FROM TV_series WHERE Episode = "A Love of a Lifetime"
+SELECT Episode FROM TV_series WHERE Episode = "A Love of a Lifetime"
+SELECT Weekly_Rank FROM TV_series WHERE Episode = "A Love of a Lifetime"
+SELECT Hight_definition_TV FROM TV_Channel WHERE series_name = "A Love of a Lifetime"
+SELECT id FROM TV_Channel GROUP BY id HAVING COUNT(*) > 2
+SELECT id FROM TV_Channel GROUP BY id HAVING COUNT(*) > 2
+SELECT COUNT(*) FROM poker_player
+SELECT COUNT(*) FROM poker_player
+SELECT Earnings FROM poker_player ORDER BY Earnings DESC
+SELECT Earnings FROM poker_player ORDER BY Earnings DESC
+SELECT AVG( Earnings ) FROM poker_player
+SELECT AVG( Earnings ) FROM poker_player
+SELECT Money_Rank FROM poker_player ORDER BY Earnings DESC LIMIT 1
+SELECT Money_Rank FROM poker_player ORDER BY Earnings DESC LIMIT 1
+SELECT MAX( Final_Table_Made ) FROM poker_player WHERE Earnings < 200000
+SELECT MAX( Final_Table_Made ) FROM poker_player WHERE Earnings < 200000
+SELECT Nationality FROM people GROUP BY Nationality HAVING COUNT(*) >= 2
+SELECT Nationality FROM people GROUP BY Nationality HAVING COUNT(*) >= 2
+SELECT Name FROM people WHERE Nationality != "Russia"
+SELECT Name FROM people WHERE Nationality != "Russia"
+SELECT COUNT( DISTINCT Nationality ) FROM people
+SELECT COUNT( DISTINCT Nationality ) FROM people
+SELECT COUNT(*) FROM AREA_CODE_STATE
+SELECT created FROM VOTES WHERE state = "CA"
+SELECT contestant_name FROM CONTESTANTS WHERE contestant_name != "Jessie Alloway"
+SELECT contestant_name FROM CONTESTANTS WHERE contestant_name like "%al%"
+SELECT Name FROM country WHERE IndepYear > 1950
+SELECT Name FROM country WHERE Continent > 1950
+SELECT COUNT( DISTINCT GovernmentForm ) FROM country WHERE GovernmentForm = "Republic"
+SELECT COUNT( DISTINCT GovernmentForm ) FROM country
+SELECT SUM( SurfaceArea ) FROM country WHERE Region = "Caribbean"
+SELECT SUM( SurfaceArea ) FROM country WHERE Name = "Caribbean"
+SELECT Continent FROM country WHERE Name = "Anguilla"
+SELECT Continent FROM country WHERE Name = "Anguilla"
+SELECT AVG( LifeExpectancy ) FROM country WHERE Region = "Central Africa"
+SELECT AVG( Population ) FROM country WHERE Continent = "Central Africa"
+SELECT Name FROM country WHERE Continent = "Asia" ORDER BY LifeExpectancy ASC LIMIT 1
+SELECT Name FROM country WHERE Continent = "Asia" ORDER BY LifeExpectancy ASC LIMIT 1
+SELECT COUNT(*) FROM city WHERE District = "Gelderland"
+SELECT SUM( Population ) FROM city WHERE District = "Gelderland"
+SELECT COUNT( DISTINCT Language ) FROM countrylanguage
+SELECT COUNT( DISTINCT Language ) FROM countrylanguage
+SELECT COUNT( DISTINCT GovernmentForm ) FROM country WHERE Continent = "Africa"
+SELECT COUNT( DISTINCT GovernmentForm ) FROM country WHERE Continent = "Africa"
+SELECT Code2 FROM country WHERE Name != "English"
+SELECT Code2 FROM country WHERE Continent != "English"
+SELECT Name FROM country ORDER BY Population DESC LIMIT 3
+SELECT Name FROM country ORDER BY Population DESC LIMIT 3
+SELECT Name FROM country ORDER BY Population ASC LIMIT 3
+SELECT Name FROM country ORDER BY Population ASC LIMIT 3
+SELECT COUNT(*) FROM country WHERE Continent = "Asia"
+SELECT COUNT(*) FROM country WHERE Continent = "Asia"
+SELECT COUNT(*) FROM conductor
+SELECT COUNT(*) FROM conductor
+SELECT Record_Company FROM orchestra ORDER BY Year_of_Founded DESC
+SELECT Record_Company FROM orchestra ORDER BY Year_of_Founded DESC
+SELECT AVG( Attendance ) FROM show
+SELECT AVG( Attendance ) FROM show
+SELECT COUNT( DISTINCT Nationality ) FROM conductor
+SELECT COUNT( DISTINCT Nationality ) FROM conductor
+SELECT COUNT(*) FROM Highschooler
+SELECT COUNT(*) FROM Highschooler WHERE grade = 1
+SELECT DISTINCT grade FROM Highschooler
+SELECT DISTINCT grade FROM Highschooler WHERE name = 1
+SELECT DISTINCT grade FROM Highschooler WHERE name = "Kyle"
+SELECT grade FROM Highschooler WHERE name = "Kyle"
+SELECT name FROM Highschooler WHERE grade = 10
+SELECT name FROM Highschooler WHERE grade = 10
+SELECT ID FROM Highschooler WHERE name = "Kyle"
+SELECT student_id FROM Likes WHERE student_id = "Kyle"
+SELECT grade FROM Highschooler GROUP BY grade HAVING COUNT(*) >= 4
+SELECT grade FROM Highschooler GROUP BY grade HAVING COUNT(*) >= 4
+SELECT ID FROM Highschooler EXCEPT SELECT friend_id FROM Friend
+SELECT ID FROM Highschooler EXCEPT SELECT friend_id FROM Friend
+SELECT COUNT(*) FROM Treatments
+SELECT COUNT( DISTINCT dog_id ) FROM Treatments
+SELECT COUNT( DISTINCT professional_id ) FROM Treatments WHERE dog_id = 1
+SELECT COUNT( DISTINCT name ) FROM Dogs WHERE breed_code = 1
+SELECT cost_of_treatment FROM Treatments ORDER BY cost_of_treatment DESC LIMIT 1
+SELECT cost_of_treatment FROM Treatments ORDER BY date_of_treatment DESC LIMIT 1
+SELECT AVG( age ) FROM Dogs
+SELECT AVG( age ) FROM Dogs
+SELECT age FROM Dogs ORDER BY age DESC LIMIT 1
+SELECT age FROM Dogs ORDER BY age DESC LIMIT 1
+SELECT charge_type FROM Charges ORDER BY charge_amount DESC LIMIT 1
+SELECT charge_amount FROM Charges ORDER BY charge_type DESC LIMIT 1
+SELECT COUNT(*) FROM singer
+SELECT COUNT(*) FROM singer
+SELECT Name FROM singer ORDER BY Net_Worth_Millions ASC
+SELECT Name FROM singer ORDER BY Net_Worth_Millions ASC
+SELECT Name FROM singer WHERE Citizenship != "France"
+SELECT Name FROM singer WHERE Citizenship != "France"
+SELECT Name FROM singer ORDER BY Net_Worth_Millions DESC LIMIT 1
+SELECT Name FROM singer ORDER BY Net_Worth_Millions DESC LIMIT 1
+SELECT COUNT(*) FROM Other_Available_Features

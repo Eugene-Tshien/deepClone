@@ -1,0 +1,2087 @@
+[
+  {
+    "query": "SELECT DISTINCT name FROM races ORDER BY name DESC",
+    "prompt": "What are the different names of all the races in reverse alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT organization_name FROM organizations ORDER BY date_formed DESC LIMIT 1",
+    "prompt": "Find the name of the youngest organization. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT staff_details FROM Research_Staff ORDER BY staff_details ASC",
+    "prompt": "What details are there on the research staff? List the result in ascending alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT LOCATION FROM party ORDER BY Number_of_hosts DESC LIMIT 1",
+    "prompt": "Which party had the most hosts? Give me the party location. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT patient FROM stay WHERE room  =  111 ORDER BY staystart DESC LIMIT 1",
+    "prompt": "Find the patient who most recently stayed in room 111. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT host_city FROM hosting_city ORDER BY YEAR DESC LIMIT 1",
+    "prompt": "What is id of the city that hosted events in the most recent year? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM student WHERE dept_name  =  'History' ORDER BY tot_cred DESC LIMIT 1",
+    "prompt": "What is the name of the student who has the highest total credits in the History department. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM captain ORDER BY age DESC",
+    "prompt": "Sort all captain names by their ages from old to young. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM Person WHERE gender  =  'male' ORDER BY age",
+    "prompt": "Find the name and age of all males in order of their age. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT LOCATION FROM school ORDER BY Founded DESC",
+    "prompt": "List the locations of schools in descending order of founded year. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT DISTINCT name FROM medication ORDER BY name",
+    "prompt": "What is the alphabetically ordered list of all distinct medications? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM Companies ORDER BY Market_Value_billion DESC",
+    "prompt": "List the names of companies in descending order of market value. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT * FROM Assessment_Notes ORDER BY date_of_notes ASC",
+    "prompt": "List all information about the assessment notes sorted by date in ascending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM user_profiles ORDER BY followers DESC LIMIT 5",
+    "prompt": "List the names of 5 users followed by the largest number of other users. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT venue FROM MATCH ORDER BY date DESC",
+    "prompt": "What are the venues of all the matches? Sort them in the descending order of match date. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Votes FROM election ORDER BY Votes DESC",
+    "prompt": "List the votes of elections in descending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT founded FROM university WHERE affiliation != 'Public' ORDER BY founded DESC LIMIT 1",
+    "prompt": "What is the founded year of the non public school that was founded most recently? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT salary FROM salary WHERE YEAR  =  2001 ORDER BY salary DESC LIMIT 3;",
+    "prompt": "List the 3 highest salaries of the players in 2001? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Product_Name FROM Products ORDER BY Product_Price ASC",
+    "prompt": "List all product names in ascending order of price. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM wrestler ORDER BY Days_held DESC",
+    "prompt": "List the names of wrestlers in descending order of days held. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT product_name FROM products WHERE product_type_code  =  'Hardware' ORDER BY product_price DESC LIMIT 1",
+    "prompt": "Find the name of the most expensive hardware product. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT title FROM publication WHERE YEAR  >  2000 ORDER BY citation_num DESC LIMIT 1;",
+    "prompt": "return me the paper after 2000 with the most citations . Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT LOCATION FROM gas_station ORDER BY open_year",
+    "prompt": "order all gas station locations by the opening year. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Starting_Year FROM technician ORDER BY Age DESC LIMIT 1",
+    "prompt": "What is the starting year of the oldest technicians? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Chair_Name FROM festival_detail ORDER BY YEAR ASC",
+    "prompt": "What are the names of the chairs of festivals, sorted in ascending order of the year held? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT founded FROM university ORDER BY enrollment DESC LIMIT 1",
+    "prompt": "Return the founded year for the school with the largest enrollment. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT player FROM match_season ORDER BY College ASC",
+    "prompt": "What are all the players who played in match season, sorted by college in ascending alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT title FROM albums ORDER BY title;",
+    "prompt": "What are the titles of all the albums alphabetically ascending? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT date_from FROM Project_Staff ORDER BY date_from ASC LIMIT 1",
+    "prompt": "When did the first staff for the projects started working? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM Aircraft ORDER BY distance LIMIT 3",
+    "prompt": "Show the name of aircrafts with top three lowest distances. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM swimmer ORDER BY meter_100",
+    "prompt": "Find the names of all swimmers, sorted by their 100 meter scores in ascending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Product_Name FROM Products ORDER BY Product_Price ASC",
+    "prompt": "Sort the names of products in ascending order of their price. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Product_Name FROM Products ORDER BY Product_Price ASC",
+    "prompt": "List the name of products in ascending order of price. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM pilot ORDER BY Age DESC",
+    "prompt": "List names of all pilot in descending order of age. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT organization_name FROM organizations ORDER BY date_formed ASC",
+    "prompt": "What are the names of organizations, ordered by the date they were formed, ascending? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT team_name FROM basketball_match ORDER BY All_Home DESC",
+    "prompt": "List names of all teams in the basketball competition, ordered by all home scores in descending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM stadium ORDER BY capacity DESC LIMIT 1",
+    "prompt": "Find the name of the stadium that has the maximum capacity. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT candidate_id FROM candidate_assessments ORDER BY assessment_date DESC LIMIT 1",
+    "prompt": "Find id of the candidate who most recently accessed the course? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Birth_Date FROM People ORDER BY Height ASC",
+    "prompt": "What are the birthdays of people in ascending order of height? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Country FROM market ORDER BY Number_cities DESC",
+    "prompt": "What are the countries for each market ordered by decreasing number of cities? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT product_name FROM products WHERE product_type_code  =  'Hardware' ORDER BY product_price DESC LIMIT 1",
+    "prompt": "What is the name of the hardware product with the greatest price? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Working_year_starts FROM manager ORDER BY LEVEL DESC",
+    "prompt": "Show the working years of managers in descending order of their level. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Product_Name FROM PRODUCTS ORDER BY Product_Price DESC LIMIT 1",
+    "prompt": "What is the name of the most expensive product? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT other_hotel_details FROM HOTELS ORDER BY price_range DESC LIMIT 3",
+    "prompt": "Show the details of the top 3 most expensive hotels. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT amenity_name FROM dorm_amenity ORDER BY amenity_name",
+    "prompt": "List in alphabetic order all different amenities. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM club ORDER BY name DESC",
+    "prompt": "What are the names of all the clubs ordered in descending alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT College FROM match_season GROUP BY College HAVING count(*)  >=  2 ORDER BY College DESC",
+    "prompt": "What are the names of colleges that have two or more players, listed in descending alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM races ORDER BY date DESC LIMIT 1",
+    "prompt": "What is the name of the race held most recently? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT dname FROM department ORDER BY mgr_start_date",
+    "prompt": "List all department names ordered by their starting date. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT District_name FROM district ORDER BY city_area DESC",
+    "prompt": "Find all the distinct district names ordered by city area in descending. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM manager ORDER BY LEVEL ASC",
+    "prompt": "What are the names of managers in ascending order of level? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Date_Claim_Made FROM Claims ORDER BY Date_Claim_Made ASC LIMIT 1",
+    "prompt": "Tell me the the date when the first claim was made. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM Employee ORDER BY salary ASC LIMIT 3",
+    "prompt": "Show the name of employees with three lowest salaries. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT region_name FROM region ORDER BY region_name",
+    "prompt": "What are the names of the regions in alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT title FROM albums ORDER BY title;",
+    "prompt": "List every album ordered by album title in ascending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Famous_Release_date FROM artist ORDER BY Age DESC LIMIT 1",
+    "prompt": "What is the famous release date of the artist with the oldest age? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM channel ORDER BY rating_in_percent DESC",
+    "prompt": "List all channel names ordered by their rating in percent from big to small. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM program ORDER BY launch DESC LIMIT 1",
+    "prompt": "find the name of the program that was launched most recently. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT origin FROM program ORDER BY origin",
+    "prompt": "What is the list of program origins ordered alphabetically? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT amenity_name FROM dorm_amenity ORDER BY amenity_name",
+    "prompt": "What are the different dorm amenity names in alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT OWNER FROM channel ORDER BY rating_in_percent DESC LIMIT 1",
+    "prompt": "What is the owner of the channel that has the highest rating ratio? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT * FROM Course_Authors_and_Tutors ORDER BY personal_name",
+    "prompt": "Sort the information about course authors and tutors in alphabetical order of the personal name. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT cust_name FROM customer ORDER BY credit_score LIMIT 1",
+    "prompt": "What is the name of the customer with the worst credit score? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT cName FROM College WHERE enr  >  18000 ORDER BY cName",
+    "prompt": "List the name of the colleges whose enrollment is greater 18000 sorted by the college's name. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT city FROM city ORDER BY regional_population DESC LIMIT 3",
+    "prompt": "Which three cities have the largest regional population? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Total_Points FROM gymnast ORDER BY Floor_Exercise_Points DESC",
+    "prompt": "List the total points of gymnasts in descending order of floor exercise points. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM county_public_safety ORDER BY Population DESC LIMIT 1",
+    "prompt": "What is the name of the county with the greatest population? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT County_name FROM county ORDER BY Population ASC LIMIT 3",
+    "prompt": "Show the 3 counties with the smallest population. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT id FROM trip ORDER BY duration LIMIT 1",
+    "prompt": "What is the id of the shortest trip? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Total_Points FROM gymnast ORDER BY Total_Points DESC",
+    "prompt": "List the total points of gymnasts in descending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM WINE ORDER BY Score LIMIT 1",
+    "prompt": "Give the name of the wine with the highest score. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM buildings ORDER BY Height DESC",
+    "prompt": "What are the names of buildings sorted in descending order of building height? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Candidate_ID FROM candidate ORDER BY oppose_rate LIMIT 1",
+    "prompt": "What is the id of the candidate with the lowest oppose rate? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Country FROM market ORDER BY Country ASC",
+    "prompt": "List all countries of markets in ascending alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM People ORDER BY Weight ASC",
+    "prompt": "What are the names of people in ascending order of weight? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT school_name FROM school ORDER BY school_name",
+    "prompt": "Show all school names in alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Team FROM player ORDER BY Age DESC LIMIT 1",
+    "prompt": "Which team has the oldest player? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT appointmentid FROM appointment ORDER BY START DESC LIMIT 1",
+    "prompt": "What is the id of the appointment that started most recently? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT customer_details FROM customers ORDER BY customer_details",
+    "prompt": "List the names of all the customers in alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT patient FROM undergoes ORDER BY dateundergoes LIMIT 1",
+    "prompt": "Which patient is undergoing the most recent treatment? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT organization_name FROM organizations ORDER BY date_formed ASC",
+    "prompt": "List all the name of organizations in order of the date formed. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM Aircraft ORDER BY distance LIMIT 3",
+    "prompt": "What are the aircrafts with top 3 shortest lengthes? List their names. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT support_rate FROM candidate ORDER BY support_rate DESC LIMIT 3",
+    "prompt": "what are the top 3 highest support rates? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Stories FROM buildings ORDER BY Height DESC LIMIT 1",
+    "prompt": "Find the stories of the building with the largest height. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM climber ORDER BY Points DESC",
+    "prompt": "List the names of climbers in descending order of points. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Company FROM entrepreneur ORDER BY Money_Requested DESC",
+    "prompt": "What are the companies of entrepreneurs, ordered descending by amount of money requested? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM People ORDER BY Height ASC",
+    "prompt": "What are the names of people in ascending order of height? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT sum(city_population) FROM district ORDER BY city_area DESC LIMIT 3",
+    "prompt": "Find the total population of the top 3 districts with the largest area. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT cName FROM college ORDER BY enr DESC LIMIT 3",
+    "prompt": "What are the names of the schools with the top 3 largest class sizes? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM Employee ORDER BY salary ASC LIMIT 3",
+    "prompt": "What is the name of the 3 employees who get paid the least? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Publication_Date FROM publication ORDER BY Price ASC LIMIT 3",
+    "prompt": "List the publication dates of publications with 3 lowest prices. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT gdp FROM city ORDER BY Regional_Population DESC LIMIT 1",
+    "prompt": "what is the GDP of the city with the largest population. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT * FROM COURSE ORDER BY Credits",
+    "prompt": "What is all the information about courses, ordered by credits ascending? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT bname FROM bank ORDER BY no_of_customers DESC LIMIT 1",
+    "prompt": "What is the name of the bank branch with the greatest number of customers? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT DISTINCT order_id FROM orders ORDER BY date_order_placed",
+    "prompt": "List the ids of all distinct orders ordered by placed date. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT forename FROM drivers ORDER BY forename ASC",
+    "prompt": "List the forenames of all distinct drivers in alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT name FROM medication ORDER BY name",
+    "prompt": "List the names of all distinct medications, ordered in an alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT acc_percent FROM basketball_match ORDER BY acc_percent DESC LIMIT 1",
+    "prompt": "What is the highest acc percent score in the competition? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT customer_name FROM Customers ORDER BY date_became_customer LIMIT 5",
+    "prompt": "Find the name of the first 5 customers. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT apt_number FROM Apartments ORDER BY bedroom_count DESC LIMIT 1",
+    "prompt": "What is the apartment number of the apartment with the most beds? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT cust_name FROM customer ORDER BY acc_bal",
+    "prompt": "List the name of all customers sorted by their account balance in ascending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT product_name FROM products ORDER BY product_price DESC LIMIT 1",
+    "prompt": "Find the name of the most expensive product. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT DISTINCT Name FROM WINE ORDER BY price",
+    "prompt": "What are the names of wines, sorted by price ascending? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT district_name FROM district ORDER BY city_population DESC LIMIT 1",
+    "prompt": "What is the name of the district with the most residents? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Starting_Year FROM technician ORDER BY Age DESC LIMIT 1",
+    "prompt": "What is the starting year for the oldest technician? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT acc_percent FROM basketball_match ORDER BY acc_percent DESC LIMIT 1",
+    "prompt": "Return the highest acc percent across all basketball matches. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT title FROM publication ORDER BY citation_num DESC LIMIT 1;",
+    "prompt": "return me the paper with the most citations . Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM city ORDER BY Name ASC",
+    "prompt": "What are the names of cities in ascending alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM program ORDER BY launch",
+    "prompt": "list all the names of programs, ordering by launch time. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM projects ORDER BY hours DESC LIMIT 1",
+    "prompt": "Find the name of project that continues for the longest time. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Song FROM volume ORDER BY Song",
+    "prompt": "Please list all songs in volumes in ascending alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Theme FROM farm_competition ORDER BY YEAR ASC",
+    "prompt": "What are the themes of farm competitions sorted by year in ascending order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT truck_details FROM trucks ORDER BY truck_licence_number",
+    "prompt": "Show the details of all trucks in the order of their license number. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT course_name FROM courses ORDER BY course_name",
+    "prompt": "List the names of courses in alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Shop_Name FROM shop ORDER BY Open_Year ASC",
+    "prompt": "What are the names of shops in ascending order of open year? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM county_public_safety ORDER BY Population DESC",
+    "prompt": "What are the names of the counties of public safety, ordered by population descending? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Fname FROM STUDENT ORDER BY Age DESC",
+    "prompt": "Find the first name of students in the descending order of age. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT DISTINCT region_name FROM region ORDER BY Label",
+    "prompt": "What are the different region names, ordered by labels? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM captain ORDER BY age LIMIT 1",
+    "prompt": "Return the name of the youngest captain. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT flno FROM Flight ORDER BY distance ASC LIMIT 3",
+    "prompt": "What are the numbers of the shortest flights? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Builder FROM railway ORDER BY Builder ASC",
+    "prompt": "List the builders of railways in ascending alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT song_name FROM song ORDER BY resolution",
+    "prompt": "What are the names of all songs that are ordered by their resolution numbers? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Shop_Name FROM shop ORDER BY Open_Year DESC LIMIT 1",
+    "prompt": "What is the shop name corresponding to the shop that opened in the most recent year? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT lname FROM authors ORDER BY lname",
+    "prompt": "Retrieve all the last names of authors in alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM buildings ORDER BY Height DESC",
+    "prompt": "List the names of buildings in descending order of building height. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM building ORDER BY height_feet DESC LIMIT 1",
+    "prompt": "What is the name of the tallest building? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM wrestler ORDER BY Days_held ASC LIMIT 1",
+    "prompt": "What is the name of the wrestler with the fewest days held? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT County_name FROM county ORDER BY Population ASC",
+    "prompt": "Return the names of all counties sorted by population in ascending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM ship ORDER BY Tonnage DESC LIMIT 1",
+    "prompt": "What is the name of the ship with the largest tonnage? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT product_id FROM product_suppliers ORDER BY total_amount_purchased DESC LIMIT 3",
+    "prompt": "What are the ids of the top three products that were purchased in the largest amount? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT asset_acquired_date FROM Assets ORDER BY asset_acquired_date ASC LIMIT 1",
+    "prompt": "When was the first asset acquired? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT product_name FROM products ORDER BY product_name",
+    "prompt": "List the names of all distinct products in alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT first_name FROM people ORDER BY first_name",
+    "prompt": "What are the first names of the people in alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT School_Colors FROM school ORDER BY Enrollment DESC LIMIT 1",
+    "prompt": "What is the school color of the school with the largest enrollment? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT DISTINCT Name FROM WINE ORDER BY Name",
+    "prompt": "What are the names of wines, sorted in alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT school_name FROM school ORDER BY enrollment LIMIT 1",
+    "prompt": "List the name of the school with the smallest enrollment. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Pilot_name FROM pilot ORDER BY Rank ASC",
+    "prompt": "List the names of pilots in ascending order of rank. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT address FROM shop ORDER BY open_year",
+    "prompt": "Show the shop addresses ordered by their opening year. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Date FROM game ORDER BY home_team DESC",
+    "prompt": "List the dates of games by the home team name in descending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM Person WHERE gender  =  'male' ORDER BY age",
+    "prompt": "What is the name and age of every male? Order the results by age. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT district_name FROM district ORDER BY city_area ASC LIMIT 1",
+    "prompt": "What is the name of the district with the smallest area? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT customer_details FROM customers ORDER BY customer_details",
+    "prompt": "Sort the customer names in alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT f_id FROM files ORDER BY duration DESC LIMIT 1",
+    "prompt": "Find the id of the song that lasts the longest. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT DISTINCT cName FROM tryout ORDER BY cName",
+    "prompt": "Find the name of different colleges involved in the tryout in alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT date_to FROM Project_Staff ORDER BY date_to DESC LIMIT 1",
+    "prompt": "What is the last date of the staff leaving the projects? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT district_name FROM district ORDER BY city_population DESC LIMIT 1",
+    "prompt": "Which district has the largest population? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT problem_log_id FROM problem_log ORDER BY log_entry_date DESC LIMIT 1",
+    "prompt": "What is the id of the problem log that is created most recently? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT fname FROM authors ORDER BY fname",
+    "prompt": "Sort the first names of all the authors in alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT service_name FROM services ORDER BY service_name",
+    "prompt": "Give me a list of all the service names sorted alphabetically. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Theme FROM farm_competition ORDER BY YEAR ASC",
+    "prompt": "Return the themes of farm competitions, sorted by year ascending. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT Range FROM mountain ORDER BY Prominence DESC LIMIT 3",
+    "prompt": "What are the different ranges of the 3 mountains with the highest prominence? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT dept_name FROM department ORDER BY dept_name",
+    "prompt": "What are the names of all departments in alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT catalog_entry_name FROM catalog_contents ORDER BY height DESC LIMIT 1",
+    "prompt": "What is the product with the highest height? Give me the catalog entry name. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT service_type_code FROM services ORDER BY service_type_code",
+    "prompt": "List the type of the services in alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT product_name FROM product ORDER BY product_name",
+    "prompt": "Sort all the distinct product names in alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT product_name FROM product ORDER BY product_id",
+    "prompt": "What is the list of distinct product names sorted by product id? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT * FROM COURSE ORDER BY Credits",
+    "prompt": "List all information about courses sorted by credits in the ascending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT product_name FROM product ORDER BY product_id",
+    "prompt": "List all the distinct product names ordered by product id? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT name FROM nurse ORDER BY name",
+    "prompt": "List the names of all distinct nurses ordered by alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT patient FROM undergoes ORDER BY dateundergoes LIMIT 1",
+    "prompt": "Find the patient who has the most recent undergoing treatment? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT District_name FROM district ORDER BY city_area DESC",
+    "prompt": "What are the different district names in order of descending city area? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM program ORDER BY launch DESC LIMIT 1",
+    "prompt": "Which program was launched most recently? Return the program name. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Country FROM market ORDER BY Number_cities DESC",
+    "prompt": "List all countries of markets in descending order of number of cities. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT lname FROM authors ORDER BY lname",
+    "prompt": "Give me a list of all the last names of authors sorted in alphabetical order Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT first_name FROM people ORDER BY first_name",
+    "prompt": "List the first names of people in alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM People ORDER BY Weight ASC",
+    "prompt": "Return the names of people, ordered by weight ascending. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT * FROM College ORDER BY enr",
+    "prompt": "What information do you have on colleges sorted by increasing enrollment numbers? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Carrier FROM device ORDER BY Carrier ASC",
+    "prompt": "What are the different carriers for devices, listed in alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT model_name FROM chip_model ORDER BY launch_year",
+    "prompt": "List all the model names sorted by their launch year. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT support_rate FROM candidate ORDER BY support_rate DESC LIMIT 3",
+    "prompt": "Return the top 3 greatest support rates. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT * FROM College ORDER BY enr",
+    "prompt": "List all information about college sorted by enrollment number in the ascending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Song FROM volume ORDER BY Song",
+    "prompt": "What are the the songs in volumes, listed in ascending order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT roomName FROM Rooms ORDER BY maxOccupancy DESC LIMIT 1;",
+    "prompt": "What is the name of the room that can accommodate the most people? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT County_name FROM county ORDER BY Population DESC LIMIT 1",
+    "prompt": "Which county has the largest population? Give me the name of the county. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Crime_rate FROM county_public_safety ORDER BY Police_officers ASC",
+    "prompt": "What are the crime rates of counties sorted by number of offices ascending? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM county_public_safety ORDER BY Population DESC LIMIT 1",
+    "prompt": "List the name of the county with the largest population. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Team FROM player ORDER BY Age DESC LIMIT 1",
+    "prompt": "Find the team of the player of the highest age. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT title FROM albums WHERE title LIKE 'A%' ORDER BY title;",
+    "prompt": "List every album whose title starts with A in alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT city FROM city ORDER BY regional_population DESC LIMIT 3",
+    "prompt": "What are the three largest cities in terms of regional population? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM city ORDER BY White DESC LIMIT 5",
+    "prompt": "List the names of the city with the top 5 white percentages. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Clean_Jerk FROM body_builder ORDER BY Total DESC LIMIT 1",
+    "prompt": "What are the clean and jerk score of the body builder with the highest total score? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT appointmentid FROM appointment ORDER BY START DESC LIMIT 1",
+    "prompt": "Find the id of the appointment with the most recent start date? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT DISTINCT Region FROM club ORDER BY Region ASC",
+    "prompt": "List the distinct region of clubs in ascending alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Lname FROM FACULTY WHERE Building  =  \"Barton\" ORDER BY Lname",
+    "prompt": "Find the last names of faculties in building Barton in alphabetic order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT venue FROM MATCH ORDER BY date DESC",
+    "prompt": "List venues of all matches in the order of their dates starting from the most recent one. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Fname FROM STUDENT ORDER BY Age DESC",
+    "prompt": "What are the first names of students, ordered by age from greatest to least? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Candidate_ID FROM candidate ORDER BY oppose_rate LIMIT 1",
+    "prompt": "Find the id of the candidate who got the lowest oppose rate. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM club ORDER BY Start_year ASC",
+    "prompt": "List all club names in ascending order of start year. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Official_Name FROM city ORDER BY Population DESC",
+    "prompt": "List official names of cities in descending order of population. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Case_burden FROM county_public_safety ORDER BY Population DESC",
+    "prompt": "What are the case burdens of counties, ordered descending by population? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT student_id FROM student_course_attendance WHERE course_id = 301 ORDER BY date_of_attendance DESC LIMIT 1",
+    "prompt": "What is the id of the student who most recently registered course 301? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT other_hotel_details FROM HOTELS ORDER BY price_range DESC LIMIT 3",
+    "prompt": "What are the details of the three most expensive hotels? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Total_Horses FROM farm ORDER BY Total_Horses ASC",
+    "prompt": "What is the total horses record for each farm, sorted ascending? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT School_Colors FROM school ORDER BY Enrollment DESC LIMIT 1",
+    "prompt": "List the school color of the school that has the largest enrollment. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT country FROM airports ORDER BY elevation DESC LIMIT 1",
+    "prompt": "Which country is the airport that has the highest altitude located in? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT origin FROM program ORDER BY origin",
+    "prompt": "List all program origins in the alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM wrestler ORDER BY Days_held DESC",
+    "prompt": "What are the names of the wrestlers, ordered descending by days held? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT catalog_entry_name FROM catalog_contents ORDER BY price_in_dollars DESC LIMIT 1",
+    "prompt": "What is the entry name of the most expensive catalog (in USD)? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT amount FROM payment ORDER BY amount DESC LIMIT 1",
+    "prompt": "Return the amount of the largest payment. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM Companies ORDER BY Market_Value_billion DESC",
+    "prompt": "Sort the company names in descending order of the company's market value. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT LOCATION FROM gas_station ORDER BY open_year",
+    "prompt": "What are the locations of all the gas stations ordered by opening year? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM accounts ORDER BY name",
+    "prompt": "List all customers\u2019 names in the alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT dorm_name FROM dorm ORDER BY student_capacity DESC LIMIT 1",
+    "prompt": "Find the name of the dorm with the largest capacity. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Crime_rate FROM county_public_safety ORDER BY Police_officers ASC",
+    "prompt": "Show the crime rates of counties in ascending order of number of police officers. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM captain ORDER BY age DESC",
+    "prompt": "What are the names of captains, sorted by age descending? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT catalog_entry_name FROM catalog_contents ORDER BY capacity ASC LIMIT 1",
+    "prompt": "Which catalog content has the smallest capacity? Return the catalog entry name. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT product_name FROM product ORDER BY product_name",
+    "prompt": "List the names of all the distinct product names in alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM manager ORDER BY Age DESC LIMIT 1",
+    "prompt": "What is the name of the oldest manager? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM pilot ORDER BY Name ASC",
+    "prompt": "What are the names of the pilots in alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM phone ORDER BY Price ASC",
+    "prompt": "List the names of phones in ascending order of price. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Weight FROM people ORDER BY Height ASC LIMIT 1",
+    "prompt": "Return the weight of the shortest person. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Carrier FROM device ORDER BY Carrier ASC",
+    "prompt": "List the carriers of devices in ascending alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT text FROM tweets ORDER BY createdate",
+    "prompt": "List the text of all tweets in the order of date. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT County_name FROM county ORDER BY Population ASC LIMIT 3",
+    "prompt": "What are the 3 counties that have the smallest population? Give me the county names. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT Name FROM WINE ORDER BY Name",
+    "prompt": "List the names of all distinct wines in alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT * FROM customer_master_index ORDER BY cmi_details DESC",
+    "prompt": "List all information about customer master index, and sort them by details in descending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT sum(market_rate) FROM furniture ORDER BY market_rate DESC LIMIT 2",
+    "prompt": "find the total market rate of the furnitures that have the top 2 market shares. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM People ORDER BY Age DESC LIMIT 5",
+    "prompt": "List the names of the top 5 oldest people. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT product_id FROM product_suppliers ORDER BY total_amount_purchased DESC LIMIT 3",
+    "prompt": "Give the ids of the three products purchased in the largest amounts. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM church ORDER BY open_date DESC",
+    "prompt": "List all church names in descending order of opening date. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM artwork ORDER BY Name ASC",
+    "prompt": "List the name of artworks in ascending alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Total_Points FROM gymnast ORDER BY Total_Points DESC",
+    "prompt": "What are the total points for all gymnasts, ordered by total points descending? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM races ORDER BY date DESC LIMIT 1",
+    "prompt": "What is the name of the race that occurred most recently? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT roomName FROM Rooms ORDER BY basePrice;",
+    "prompt": "Sort all the rooms according to the price. Just report the room names. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Age FROM people ORDER BY Height DESC LIMIT 1",
+    "prompt": "Return the age of the person with the greatest height. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Title FROM ALBUM ORDER BY Title",
+    "prompt": "Please list all album titles in alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT order_id FROM orders ORDER BY date_order_placed DESC LIMIT 1",
+    "prompt": "Find the id of the order made most recently. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT County_name FROM county ORDER BY County_name DESC",
+    "prompt": "Return the names of all counties sorted by county name in descending alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Issue_Date FROM volume ORDER BY Weeks_on_Top ASC LIMIT 1",
+    "prompt": "What is the issue date of the volume with the minimum weeks on top? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM user_profiles ORDER BY followers DESC LIMIT 1",
+    "prompt": "Find the name of the user who has the largest number of followers. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM mountain ORDER BY Height DESC LIMIT 1",
+    "prompt": "Return the name of the mountain with the greatest height. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT * FROM Student_Addresses ORDER BY monthly_rental DESC",
+    "prompt": "Find all information about student addresses, and sort by monthly rental in descending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM branch ORDER BY membership_amount DESC LIMIT 3",
+    "prompt": "What are names for top three branches with most number of membership? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Lname FROM FACULTY WHERE Building  =  \"Barton\" ORDER BY Lname",
+    "prompt": "What are the last names of faculty in building Barton, sorted by last name? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Party FROM people ORDER BY Age ASC LIMIT 1",
+    "prompt": "What is the party of the youngest people? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Speed FROM roller_coaster ORDER BY LENGTH DESC LIMIT 1",
+    "prompt": "What are the speeds of the longest roller coaster? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Team FROM player ORDER BY Team ASC",
+    "prompt": "What are the teams of the players, sorted in ascending alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT region_name FROM region ORDER BY Label",
+    "prompt": "Show all distinct region names ordered by their labels. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM event ORDER BY YEAR DESC",
+    "prompt": "List all the event names by year from the most recent to the oldest. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Total_Horses FROM farm ORDER BY Total_Horses ASC",
+    "prompt": "List the total number of horses on farms in ascending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT id FROM trip ORDER BY duration LIMIT 1",
+    "prompt": "What is the id of the trip that has the shortest duration? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT staff_details FROM Research_Staff ORDER BY staff_details ASC",
+    "prompt": "List the research staff details, and order in ascending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM People ORDER BY Name ASC",
+    "prompt": "What are the names of people in ascending alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT region_name FROM region ORDER BY region_name",
+    "prompt": "List all region names in alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Venue FROM debate ORDER BY Num_of_Audience ASC",
+    "prompt": "List the venues of debates in ascending order of the number of audience. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM mountain ORDER BY Name ASC",
+    "prompt": "Give the names of mountains in alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Player_name FROM player ORDER BY Votes DESC LIMIT 1",
+    "prompt": "What is the name of the player with the largest number of votes? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM WINE ORDER BY Score LIMIT 1",
+    "prompt": "What is the name of the highest rated wine? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Join_Year FROM pilot ORDER BY Rank ASC LIMIT 1",
+    "prompt": "What is the joined year of the pilot of the highest rank? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM company ORDER BY Sales_in_Billion ASC",
+    "prompt": "List the names of companies by ascending number of sales. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Shop_Name FROM shop ORDER BY Open_Year ASC",
+    "prompt": "Return the names of shops, ordered by year of opening ascending. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM pilot ORDER BY Age DESC",
+    "prompt": "What are the names of all pilots listed by descending age? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Publisher FROM publication ORDER BY Price DESC LIMIT 1",
+    "prompt": "List the publisher of the publication with the highest price. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT County_name FROM county ORDER BY Population ASC",
+    "prompt": "Sort the names of all counties in ascending order of population. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT cust_name FROM customer ORDER BY credit_score LIMIT 1",
+    "prompt": "Find the name of customer who has the lowest credit score. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT service_name FROM services ORDER BY service_name",
+    "prompt": "List all the services in the alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT founded FROM university WHERE affiliation != 'Public' ORDER BY founded DESC LIMIT 1",
+    "prompt": "Find the founded year of the newest non public school. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Team FROM player ORDER BY Age DESC LIMIT 5",
+    "prompt": "List the teams of the players with the top 5 largest ages. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT County_name FROM county ORDER BY County_name DESC",
+    "prompt": "Sort the names of all counties in descending alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT route_name FROM Delivery_Routes ORDER BY route_name",
+    "prompt": "List the names of all routes in alphabetic order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT flno FROM Flight ORDER BY distance ASC LIMIT 3",
+    "prompt": "Show the flight number of flights with three lowest distances. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Official_Name FROM city ORDER BY Population DESC",
+    "prompt": "What are the official names of cities, ordered descending by population? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM program ORDER BY launch",
+    "prompt": "What is the list of program names, sorted by the order of launch date? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Carrier FROM phone ORDER BY Price DESC LIMIT 1",
+    "prompt": "What is the carrier of the most expensive phone? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Publication_Date FROM publication ORDER BY Price DESC",
+    "prompt": "What are the dates of publications in descending order of price? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT title FROM item ORDER BY title",
+    "prompt": "List the titles of all items in alphabetic order . Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT forename FROM drivers ORDER BY forename ASC",
+    "prompt": "What are the first names of all the different drivers in alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Title FROM ALBUM ORDER BY Title",
+    "prompt": "What are all the album titles, in alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT course_name FROM courses ORDER BY course_name",
+    "prompt": "What are the names of the courses in alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Date FROM performance ORDER BY Attendance DESC LIMIT 1",
+    "prompt": "What is the date of the performance with the highest number of attendees? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Party_Theme FROM party ORDER BY Number_of_hosts ASC",
+    "prompt": "What are the themes of parties ordered by the number of hosts in ascending manner? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM browser ORDER BY market_share DESC",
+    "prompt": "List the name of browsers in descending order by market share. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT emp_fname FROM employee WHERE emp_jobcode  =  'PROF' ORDER BY emp_dob",
+    "prompt": "List the first name of all employees with job code PROF ordered by their date of birth. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM people ORDER BY date_of_birth",
+    "prompt": "What are the names of all people, ordered by their date of birth? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM procedures ORDER BY cost LIMIT 3",
+    "prompt": "What are the three most costly procedures? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM procedures ORDER BY cost LIMIT 3",
+    "prompt": "Find the three most expensive procedures. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT poll_source FROM candidate ORDER BY oppose_rate DESC LIMIT 1",
+    "prompt": "which poll source does the highest oppose rate come from? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Winery FROM WINE ORDER BY SCORE LIMIT 1",
+    "prompt": "Which winery is the wine that has the highest score from? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT title FROM albums WHERE title LIKE 'A%' ORDER BY title;",
+    "prompt": "What are the titles of all albums that start with A in alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT name FROM races ORDER BY name DESC",
+    "prompt": "List the names of all distinct races in reversed  lexicographic order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT LName FROM STUDENT WHERE Sex  =  \"F\" ORDER BY Age DESC",
+    "prompt": "Find the last name of female (sex is F) students in the descending order of age. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM enzyme ORDER BY name DESC",
+    "prompt": "List the name of enzymes in descending lexicographical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT LOCATION FROM school ORDER BY Enrollment ASC",
+    "prompt": "What is the list of school locations sorted in ascending order of school enrollment? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT dept_name FROM department ORDER BY budget LIMIT 1",
+    "prompt": "Which department has the lowest budget? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Nationality FROM journalist ORDER BY Years_working DESC LIMIT 1",
+    "prompt": "What is the nationality of the journalist with the largest number of years working? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT catalog_entry_name FROM catalog_contents ORDER BY capacity ASC LIMIT 1",
+    "prompt": "Find the name of the product that has the smallest capacity. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Issue_Date FROM volume ORDER BY Weeks_on_Top ASC LIMIT 1",
+    "prompt": "Return the issue date of the volume that has spent the fewest weeks on top. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM student WHERE dept_name  =  'History' ORDER BY tot_cred DESC LIMIT 1",
+    "prompt": "Give the name of the student in the History department with the most credits. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT LOCATION FROM school ORDER BY Founded DESC",
+    "prompt": "What is the list of school locations sorted in descending order of school foundation year? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT LOCATION FROM festival_detail ORDER BY Num_of_Audience DESC LIMIT 1",
+    "prompt": "What is the location of the festival with the largest number of audience? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT College FROM match_season GROUP BY College HAVING count(*)  >=  2 ORDER BY College DESC",
+    "prompt": "Show the name of colleges that have at least two players in descending alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT payment_date FROM payment ORDER BY payment_date ASC LIMIT 1",
+    "prompt": "What was the date of the earliest payment? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Age FROM people ORDER BY Height DESC LIMIT 1",
+    "prompt": "What is the age of the tallest person? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Festival_Name FROM festival_detail ORDER BY YEAR DESC LIMIT 3",
+    "prompt": "Show the names of the three most recent festivals. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT district_name FROM district ORDER BY city_area ASC LIMIT 1",
+    "prompt": "Which district has the least area? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT player FROM match_season ORDER BY College ASC",
+    "prompt": "Return all players sorted by college in ascending alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT fname FROM authors ORDER BY fname",
+    "prompt": "Find the first names of all the authors ordered in alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT CName FROM COURSE ORDER BY Credits",
+    "prompt": "What are the course names, ordered by credits? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT apt_number FROM Apartments ORDER BY bedroom_count DESC LIMIT 1",
+    "prompt": "Return the apartment number with the largest number of bedrooms. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM ship ORDER BY Tonnage ASC",
+    "prompt": "what are the names of the ships ordered by ascending tonnage? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM Person ORDER BY age DESC",
+    "prompt": "What are the names of everybody sorted by age in descending order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Song FROM volume ORDER BY Weeks_on_Top DESC LIMIT 1",
+    "prompt": "What is the song in the volume with the maximum weeks on top? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT amount FROM payment ORDER BY amount DESC LIMIT 1",
+    "prompt": "What is the largest payment amount? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM channel ORDER BY rating_in_percent DESC",
+    "prompt": "Give me a list of all the channel names sorted by the channel rating in descending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM ship ORDER BY Tonnage ASC",
+    "prompt": "List the name of ships in ascending order of tonnage. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Product_Name FROM Products ORDER BY Product_Price DESC LIMIT 1",
+    "prompt": "What is the name of the product with the highest price? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT County_name FROM county ORDER BY Population DESC LIMIT 1",
+    "prompt": "Show the name of the county with the biggest population. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT CName FROM COURSE ORDER BY Credits",
+    "prompt": "List the course name of courses sorted by credits. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Winery FROM WINE ORDER BY SCORE LIMIT 1",
+    "prompt": "What is the winery at which the wine with the highest score was made? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT organization_name FROM organizations ORDER BY date_formed DESC LIMIT 1",
+    "prompt": "What is the name of the organization that was formed most recently? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT OWNER FROM channel ORDER BY rating_in_percent DESC LIMIT 1",
+    "prompt": "Show me the owner of the channel with the highest rating. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT payment_date FROM payment ORDER BY payment_date ASC LIMIT 1",
+    "prompt": "When did the first payment happen? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Party_Theme FROM party ORDER BY Number_of_hosts ASC",
+    "prompt": "List the themes of parties in ascending order of number of hosts. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT cName FROM tryout ORDER BY cName",
+    "prompt": "What are the different names of the colleges involved in the tryout in alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT Name FROM WINE ORDER BY price",
+    "prompt": "List the names of all distinct wines ordered by price. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM scientists ORDER BY name",
+    "prompt": "List the names of all scientists sorted in alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM club ORDER BY name DESC",
+    "prompt": "List all club names in descending alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT bname FROM bank ORDER BY no_of_customers DESC LIMIT 1",
+    "prompt": "Find the branch name of the bank that has the most number of customers. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT problem_log_id FROM problem_log ORDER BY log_entry_date DESC LIMIT 1",
+    "prompt": "Which problem log was created most recently? Give me the log id. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT date_to FROM Project_Staff ORDER BY date_to DESC LIMIT 1",
+    "prompt": "What is the last date that a staff member left a project? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT roomName FROM Rooms ORDER BY basePrice;",
+    "prompt": "List the name of all rooms sorted by their prices. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT Region FROM club ORDER BY Region ASC",
+    "prompt": "What are the different regions of clubs in ascending alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Date_Claim_Made FROM Claims ORDER BY Date_Claim_Made ASC LIMIT 1",
+    "prompt": "Of all the claims, what was the earliest date when any claim was made? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM ship ORDER BY Tonnage DESC LIMIT 1",
+    "prompt": "What is the ship with the largest amount of tonnage called? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT pName FROM Player WHERE yCard  =  'yes' ORDER BY HS DESC",
+    "prompt": "What are the name of the players who received a card in descending order of the hours of training? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Total_Points FROM gymnast ORDER BY Floor_Exercise_Points DESC",
+    "prompt": "What are the total points of gymnasts, ordered by their floor exercise points descending? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT minister FROM party ORDER BY left_office DESC LIMIT 1",
+    "prompt": "Return the minister who left office at the latest time. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT catalog_entry_name FROM catalog_contents ORDER BY price_in_dollars DESC LIMIT 1",
+    "prompt": "Find the entry name of the catalog with the highest price (in USD). Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM buildings WHERE Status  =  \"on-hold\" ORDER BY Stories ASC",
+    "prompt": "Find the names of the buildings in \"on-hold\" status, and sort them in ascending order of building stories. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Company FROM entrepreneur ORDER BY Money_Requested DESC",
+    "prompt": "List the companies of entrepreneurs in descending order of money requested. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Park FROM roller_coaster ORDER BY Speed DESC LIMIT 1",
+    "prompt": "Show the park of the roller coaster with the highest speed. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM wrestler ORDER BY Days_held ASC LIMIT 1",
+    "prompt": "Return the name of the wrestler who had the lowest number of days held. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM enzyme ORDER BY name DESC",
+    "prompt": "What are the names of enzymes in descending order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT roomName FROM Rooms ORDER BY maxOccupancy DESC LIMIT 1;",
+    "prompt": "Find the name of the room with the maximum occupancy. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM captain ORDER BY age LIMIT 1",
+    "prompt": "What is the name of the youngest captain? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM accounts ORDER BY name",
+    "prompt": "What are the names of all the customers in alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM journalist ORDER BY Years_working ASC",
+    "prompt": "List the names of journalists in ascending order of years working. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM roller_coaster ORDER BY LENGTH ASC",
+    "prompt": "List the names of roller coasters by ascending order of length. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT apt_number FROM Apartments ORDER BY room_count ASC",
+    "prompt": "Return all the apartment numbers sorted by the room count in ascending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT date_from FROM Project_Staff ORDER BY date_from ASC LIMIT 1",
+    "prompt": "When did the first staff member start working? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Stories FROM buildings ORDER BY Height DESC LIMIT 1",
+    "prompt": "What is the stories of highest building? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT poll_source FROM candidate ORDER BY oppose_rate DESC LIMIT 1",
+    "prompt": "Return the poll source corresponding to the candidate who has the oppose rate. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM technician ORDER BY Age ASC",
+    "prompt": "List the names of technicians in ascending order of age. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT * FROM Course_Authors_and_Tutors ORDER BY personal_name",
+    "prompt": "List all the information about course authors and tutors in alphabetical order of the personal name. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT team_name FROM basketball_match ORDER BY All_Home DESC",
+    "prompt": "What are the names of all the teams in the basketball competition, sorted by all home scores in descending order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM city ORDER BY White DESC LIMIT 5",
+    "prompt": "What are the names of the five cities with the greatest proportion of white people? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Team FROM player ORDER BY Team ASC",
+    "prompt": "Find the team of each player and sort them in ascending alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT HOST FROM performance ORDER BY Attendance ASC",
+    "prompt": "List the hosts of performances in ascending order of attendance. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT LName FROM STUDENT WHERE Sex  =  \"F\" ORDER BY Age DESC",
+    "prompt": "What are the last names of female students, ordered by age descending? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT host_city FROM hosting_city ORDER BY YEAR DESC LIMIT 1",
+    "prompt": "Find the city that hosted some events in the most recent year. What is the id of this city? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT salary FROM salary WHERE YEAR  =  2001 ORDER BY salary DESC LIMIT 3;",
+    "prompt": "How much salary did the top 3 well-paid players get in 2001? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Case_burden FROM county_public_safety ORDER BY Population DESC",
+    "prompt": "Show the case burden of counties in descending order of population. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM driver ORDER BY age DESC",
+    "prompt": "Show the name of drivers in descending order of age. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM event ORDER BY YEAR DESC LIMIT 1",
+    "prompt": "What is the name of the event that happened in the most recent year? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM county_public_safety ORDER BY Population DESC",
+    "prompt": "List the names of counties in descending order of population. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT dept_name FROM department ORDER BY budget LIMIT 1",
+    "prompt": "Give the name of the department with the lowest budget. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT order_id FROM orders ORDER BY date_order_placed DESC LIMIT 1",
+    "prompt": "What is the id of the most recent order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT * FROM airport ORDER BY International_Passengers DESC LIMIT 1",
+    "prompt": "What is all the information on the airport with the largest number of international passengers? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT catalog_entry_name FROM catalog_contents ORDER BY height DESC LIMIT 1",
+    "prompt": "Which catalog content has the highest height? Give me the catalog entry name. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT LOCATION FROM party ORDER BY Number_of_hosts DESC LIMIT 1",
+    "prompt": "What is the location of the party with the most hosts? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Player_name FROM player ORDER BY Votes ASC",
+    "prompt": "List the names of players in ascending order of votes. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM mountain ORDER BY Name ASC",
+    "prompt": "What are the names of mountains in ascending alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT founded FROM university ORDER BY enrollment DESC LIMIT 1",
+    "prompt": "When was the school with the largest enrollment founded? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Fname FROM FACULTY WHERE Rank  =  \"Professor\" ORDER BY Fname",
+    "prompt": "What are the first names for all faculty professors, ordered by first name? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM people ORDER BY date_of_birth",
+    "prompt": "List all people names in the order of their date of birth from old to young. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM scientists ORDER BY name",
+    "prompt": "What are the names of all the scientists in alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT DISTINCT order_id FROM orders ORDER BY date_order_placed",
+    "prompt": "What are ids of the all distinct orders, sorted by placement date? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT city FROM Addresses ORDER BY city",
+    "prompt": "List all cities of addresses in alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT cName FROM college ORDER BY enr DESC LIMIT 3",
+    "prompt": "What are the names of schools with the top 3 largest size? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT dept_name FROM department ORDER BY dept_name",
+    "prompt": "list names of all departments ordered by their names. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM pilot WHERE Age  <=  30 ORDER BY Name DESC",
+    "prompt": "What are the names of all pilots 30 years old or young in descending alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT DISTINCT name FROM nurse ORDER BY name",
+    "prompt": "What is the alphabetically ordered list of all the distinct names of nurses? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Team FROM player ORDER BY Age DESC LIMIT 5",
+    "prompt": "What are the teams that have the 5 oldest players? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Fname FROM FACULTY WHERE Rank  =  \"Professor\" ORDER BY Fname",
+    "prompt": "Find the first names of faculties of rank Professor in alphabetic order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT pName FROM Player WHERE yCard  =  'yes' ORDER BY HS DESC",
+    "prompt": "Find the name of players whose card is yes in the descending order of training hours. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT emp_fname FROM employee WHERE emp_jobcode  =  'PROF' ORDER BY emp_dob",
+    "prompt": "What are the first names of all employees that are professors ordered by date of birth? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM pilot WHERE Age  <=  30 ORDER BY Name DESC",
+    "prompt": "List names of all pilot aged 30 or younger in descending alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM climber ORDER BY Points DESC",
+    "prompt": "What are the names of the climbers, ordered by points descending? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM buildings WHERE Status  =  \"on-hold\" ORDER BY Stories ASC",
+    "prompt": "Please show the names of the buildings whose status is \"on-hold\", in ascending order of stories. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Product_Name FROM PRODUCTS ORDER BY Product_Price DESC LIMIT 1",
+    "prompt": "Tell me the name of the most pricy product. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Famous_Release_date FROM artist ORDER BY Age DESC LIMIT 1",
+    "prompt": "Return the famous release date for the oldest artist. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT DISTINCT product_name FROM products ORDER BY product_name",
+    "prompt": "Sort all the distinct products in alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT LOCATION FROM school ORDER BY Enrollment ASC",
+    "prompt": "List the locations of schools in ascending order of enrollment. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM pilot ORDER BY Name ASC",
+    "prompt": "List all pilot names in ascending alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Country FROM market ORDER BY Country ASC",
+    "prompt": "What are the countries for each market, ordered alphabetically? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM mountain ORDER BY Height DESC LIMIT 1",
+    "prompt": "What is the name of the highest mountain? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT minister FROM party ORDER BY left_office DESC LIMIT 1",
+    "prompt": "Which minister left office the latest? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Title FROM book ORDER BY Issues ASC",
+    "prompt": "List the titles of the books in ascending order of issues. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT f_id FROM files ORDER BY duration DESC LIMIT 1",
+    "prompt": "What is the id of the longest song? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT * FROM airport ORDER BY International_Passengers DESC LIMIT 1",
+    "prompt": "Show all information on the airport that has the largest number of international passengers. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM member ORDER BY Name ASC",
+    "prompt": "List the names of members in ascending alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM branch ORDER BY membership_amount DESC LIMIT 3",
+    "prompt": "What are the names for the 3 branches that have the most memberships? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM city ORDER BY Name ASC",
+    "prompt": "Return the names of cities, ordered alphabetically. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Total FROM body_builder ORDER BY Total ASC",
+    "prompt": "List the total scores of body builders in ascending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT candidate_id FROM candidate_assessments ORDER BY assessment_date DESC LIMIT 1",
+    "prompt": "What is the id of the candidate who most recently accessed the course? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM People ORDER BY Age DESC LIMIT 5",
+    "prompt": "What are the names of the five oldest people? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT patient FROM stay WHERE room  =  111 ORDER BY staystart DESC LIMIT 1",
+    "prompt": "What is the id of the patient who stayed in room 111 most recently? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT name FROM club ORDER BY Start_year ASC",
+    "prompt": "What are the names of all the clubs starting with the oldest? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Writer FROM book ORDER BY Writer ASC",
+    "prompt": "List the writers of the books in ascending alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Song FROM volume ORDER BY Weeks_on_Top DESC LIMIT 1",
+    "prompt": "Return the song in the volume that has spent the most weeks on top? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT sum(city_population) FROM district ORDER BY city_area DESC LIMIT 3",
+    "prompt": "What is the total number of residents for the districts with the 3 largest areas? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT dorm_name FROM dorm ORDER BY student_capacity DESC LIMIT 1",
+    "prompt": "What are the names of the dorm with the largest capacity? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT cust_name FROM customer ORDER BY acc_bal",
+    "prompt": "What are the names of all customers, ordered by account balance? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM technician ORDER BY Age ASC",
+    "prompt": "What are the names of the technicians by ascending order of age? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT student_id FROM student_course_attendance WHERE course_id = 301 ORDER BY date_of_attendance DESC LIMIT 1",
+    "prompt": "What are the ids of the students who registered for course 301 most recently? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM People ORDER BY Name ASC",
+    "prompt": "Return the names of people, ordered alphabetically. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM Person ORDER BY age DESC",
+    "prompt": "Find the names of all person sorted in the descending order using age. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT apt_number FROM Apartments ORDER BY room_count ASC",
+    "prompt": "Sort the apartment numbers in ascending order of room count. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT song_name FROM song ORDER BY resolution",
+    "prompt": "Give me a list of the names of all songs ordered by their resolution. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Shop_Name FROM shop ORDER BY Open_Year DESC LIMIT 1",
+    "prompt": "List the name of the shop with the latest open year. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT DISTINCT Range FROM mountain ORDER BY Prominence DESC LIMIT 3",
+    "prompt": "List the distinct ranges of the mountains with the top 3 prominence. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT cName FROM College WHERE enr  >  18000 ORDER BY cName",
+    "prompt": "What is the name of every college in alphabetical order that has more than 18000 students enrolled? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM projects ORDER BY hours DESC LIMIT 1",
+    "prompt": "What is the name of the project with the most hours? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT gdp FROM city ORDER BY Regional_Population DESC LIMIT 1",
+    "prompt": "Find the GDP of the city with the largest regional population. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Weight FROM people ORDER BY Height ASC LIMIT 1",
+    "prompt": "What is the weight of the shortest person? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT country FROM airports ORDER BY elevation DESC LIMIT 1",
+    "prompt": "What is the country of the airport with the highest elevation? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Headquarters FROM company ORDER BY Sales_in_Billion DESC LIMIT 1",
+    "prompt": "What is the headquarter of the company with the largest sales? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  }
+]

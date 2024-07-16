@@ -1,0 +1,258 @@
+SELECT count(*) FROM singer	concert_singer
+SELECT count(*) FROM singer	concert_singer
+SELECT DISTINCT country FROM singer WHERE age  >  20	concert_singer
+SELECT DISTINCT country FROM singer WHERE age  >  20	concert_singer
+SELECT count(*) FROM pets WHERE weight  >  10	pets_1
+SELECT count(*) FROM pets WHERE weight  >  10	pets_1
+SELECT weight FROM pets ORDER BY pet_age LIMIT 1	pets_1
+SELECT weight FROM pets ORDER BY pet_age LIMIT 1	pets_1
+SELECT count(DISTINCT pettype) FROM pets	pets_1
+SELECT count(DISTINCT pettype) FROM pets	pets_1
+SELECT count(*) FROM CONTINENTS;	car_1
+SELECT count(*) FROM CONTINENTS;	car_1
+SELECT count(*) FROM COUNTRIES;	car_1
+SELECT count(*) FROM COUNTRIES;	car_1
+SELECT avg(mpg) FROM CARS_DATA WHERE Cylinders  =  4;	car_1
+SELECT avg(mpg) FROM CARS_DATA WHERE Cylinders  =  4;	car_1
+SELECT count(*) FROM CARS_DATA WHERE horsepower  >  150;	car_1
+SELECT count(*) FROM CARS_DATA WHERE horsepower  >  150;	car_1
+SELECT avg(horsepower) FROM CARS_DATA WHERE YEAR  <  1980;	car_1
+SELECT avg(horsepower) FROM CARS_DATA WHERE YEAR  <  1980;	car_1
+SELECT count(*) FROM CARS_DATA WHERE Cylinders  >  4;	car_1
+SELECT count(*) FROM CARS_DATA WHERE Cylinders  >  4;	car_1
+SELECT count(*) FROM CARS_DATA WHERE YEAR  =  1980;	car_1
+SELECT count(*) FROM CARS_DATA WHERE YEAR  =  1980;	car_1
+SELECT COUNT(*) FROM CARS_DATA WHERE Cylinders  >  6;	car_1
+SELECT COUNT(*) FROM CARS_DATA WHERE Cylinders  >  6;	car_1
+SELECT Country FROM AIRLINES WHERE Airline  =  "JetBlue Airways"	flight_2
+SELECT Country FROM AIRLINES WHERE Airline  =  "JetBlue Airways"	flight_2
+SELECT Abbreviation FROM AIRLINES WHERE Airline  =  "JetBlue Airways"	flight_2
+SELECT Abbreviation FROM AIRLINES WHERE Airline  =  "JetBlue Airways"	flight_2
+SELECT count(*) FROM AIRLINES	flight_2
+SELECT count(*) FROM AIRLINES	flight_2
+SELECT count(*) FROM AIRPORTS	flight_2
+SELECT count(*) FROM AIRPORTS	flight_2
+SELECT count(*) FROM FLIGHTS	flight_2
+SELECT count(*) FROM FLIGHTS	flight_2
+SELECT Airline FROM AIRLINES WHERE Abbreviation  =  "UAL"	flight_2
+SELECT Airline FROM AIRLINES WHERE Abbreviation  =  "UAL"	flight_2
+SELECT count(*) FROM AIRLINES WHERE Country  =  "USA"	flight_2
+SELECT count(*) FROM AIRLINES WHERE Country  =  "USA"	flight_2
+SELECT AirportName FROM AIRPORTS WHERE AirportCode  =  "AKO"	flight_2
+SELECT AirportName FROM AIRPORTS WHERE AirportCode  =  "AKO"	flight_2
+SELECT AirportName FROM AIRPORTS WHERE City = "Aberdeen"	flight_2
+SELECT AirportName FROM AIRPORTS WHERE City = "Aberdeen"	flight_2
+SELECT count(*) FROM FLIGHTS WHERE SourceAirport  =  "APG"	flight_2
+SELECT count(*) FROM FLIGHTS WHERE SourceAirport  =  "APG"	flight_2
+SELECT count(*) FROM FLIGHTS WHERE DestAirport  =  "ATO"	flight_2
+SELECT count(*) FROM FLIGHTS WHERE DestAirport  =  "ATO"	flight_2
+SELECT FlightNo FROM FLIGHTS WHERE SourceAirport  =  "APG"	flight_2
+SELECT FlightNo FROM FLIGHTS WHERE SourceAirport  =  "APG"	flight_2
+SELECT FlightNo FROM FLIGHTS WHERE DestAirport  =  "APG"	flight_2
+SELECT FlightNo FROM FLIGHTS WHERE DestAirport  =  "APG"	flight_2
+SELECT count(*) FROM employee	employee_hire_evaluation
+SELECT count(*) FROM employee	employee_hire_evaluation
+SELECT name FROM employee ORDER BY age	employee_hire_evaluation
+SELECT name FROM employee ORDER BY age	employee_hire_evaluation
+SELECT city FROM employee WHERE age  <  30 GROUP BY city HAVING count(*)  >  1	employee_hire_evaluation
+SELECT city FROM employee WHERE age  <  30 GROUP BY city HAVING count(*)  >  1	employee_hire_evaluation
+SELECT sum(bonus) FROM evaluation	employee_hire_evaluation
+SELECT sum(bonus) FROM evaluation	employee_hire_evaluation
+SELECT * FROM hiring	employee_hire_evaluation
+SELECT * FROM hiring	employee_hire_evaluation
+SELECT count(DISTINCT LOCATION) FROM shop	employee_hire_evaluation
+SELECT count(DISTINCT LOCATION) FROM shop	employee_hire_evaluation
+SELECT count(*) FROM Documents	cre_Doc_Template_Mgt
+SELECT count(*) FROM Documents	cre_Doc_Template_Mgt
+SELECT count(DISTINCT template_id) FROM Documents	cre_Doc_Template_Mgt
+SELECT count(DISTINCT template_id) FROM Documents	cre_Doc_Template_Mgt
+SELECT template_id FROM Documents GROUP BY template_id HAVING count(*)  >  1	cre_Doc_Template_Mgt
+SELECT template_id FROM Documents GROUP BY template_id HAVING count(*)  >  1	cre_Doc_Template_Mgt
+SELECT template_id FROM Templates EXCEPT SELECT template_id FROM Documents	cre_Doc_Template_Mgt
+SELECT template_id FROM Templates EXCEPT SELECT template_id FROM Documents	cre_Doc_Template_Mgt
+SELECT count(*) FROM Templates	cre_Doc_Template_Mgt
+SELECT count(*) FROM Templates	cre_Doc_Template_Mgt
+SELECT DISTINCT template_type_code FROM Templates	cre_Doc_Template_Mgt
+SELECT DISTINCT template_type_code FROM Templates	cre_Doc_Template_Mgt
+SELECT count(*) FROM Templates WHERE template_type_code  =  "CV"	cre_Doc_Template_Mgt
+SELECT count(*) FROM Templates WHERE template_type_code  =  "CV"	cre_Doc_Template_Mgt
+SELECT template_type_code FROM Templates GROUP BY template_type_code HAVING count(*)  <  3	cre_Doc_Template_Mgt
+SELECT template_type_code FROM Templates GROUP BY template_type_code HAVING count(*)  <  3	cre_Doc_Template_Mgt
+SELECT template_type_description FROM Ref_template_types WHERE template_type_code  =  "AD"	cre_Doc_Template_Mgt
+SELECT template_type_description FROM Ref_template_types WHERE template_type_code  =  "AD"	cre_Doc_Template_Mgt
+SELECT template_type_code FROM Ref_template_types WHERE template_type_description  =  "Book"	cre_Doc_Template_Mgt
+SELECT template_type_code FROM Ref_template_types WHERE template_type_description  =  "Book"	cre_Doc_Template_Mgt
+SELECT count(*) FROM Paragraphs	cre_Doc_Template_Mgt
+SELECT count(*) FROM Paragraphs	cre_Doc_Template_Mgt
+SELECT Other_Details FROM Paragraphs WHERE paragraph_text  =  'Korea'	cre_Doc_Template_Mgt
+SELECT Other_Details FROM Paragraphs WHERE paragraph_text  =  'Korea'	cre_Doc_Template_Mgt
+SELECT document_id FROM Paragraphs GROUP BY document_id HAVING count(*)  >=  2	cre_Doc_Template_Mgt
+SELECT document_id FROM Paragraphs GROUP BY document_id HAVING count(*)  >=  2	cre_Doc_Template_Mgt
+SELECT count(*) FROM teacher	course_teach
+SELECT count(*) FROM teacher	course_teach
+SELECT Name FROM teacher ORDER BY Age ASC	course_teach
+SELECT Name FROM teacher ORDER BY Age ASC	course_teach
+SELECT Name FROM teacher WHERE Hometown != "Little Lever Urban Distric"	course_teach
+SELECT Name FROM teacher WHERE Hometown != "Little Lever Urban Distric"	course_teach
+SELECT Hometown FROM teacher ORDER BY Age ASC LIMIT 1	course_teach
+SELECT Hometown FROM teacher ORDER BY Age ASC LIMIT 1	course_teach
+SELECT Hometown FROM teacher GROUP BY Hometown HAVING COUNT(*)  >=  2	course_teach
+SELECT Hometown FROM teacher GROUP BY Hometown HAVING COUNT(*)  >=  2	course_teach
+SELECT avg(num_of_staff) FROM museum WHERE open_year  <  2009	museum_visit
+SELECT count(*) FROM players	wta_1
+SELECT count(*) FROM players	wta_1
+SELECT count(*) FROM matches	wta_1
+SELECT count(*) FROM matches	wta_1
+SELECT avg(winner_rank) FROM matches	wta_1
+SELECT avg(winner_rank) FROM matches	wta_1
+SELECT min(loser_rank) FROM matches	wta_1
+SELECT min(loser_rank) FROM matches	wta_1
+SELECT count(DISTINCT country_code) FROM players	wta_1
+SELECT count(DISTINCT country_code) FROM players	wta_1
+SELECT count(DISTINCT loser_name) FROM matches	wta_1
+SELECT count(DISTINCT loser_name) FROM matches	wta_1
+SELECT tourney_name FROM matches GROUP BY tourney_name HAVING count(*)  >  10	wta_1
+SELECT tourney_name FROM matches GROUP BY tourney_name HAVING count(*)  >  10	wta_1
+SELECT winner_name FROM matches WHERE tourney_name  =  'Australian Open' ORDER BY winner_rank_points DESC LIMIT 1	wta_1
+SELECT winner_name FROM matches WHERE tourney_name  =  'Australian Open' ORDER BY winner_rank_points DESC LIMIT 1	wta_1
+SELECT country_code FROM players GROUP BY country_code HAVING count(*)  >  50	wta_1
+SELECT country_code FROM players GROUP BY country_code HAVING count(*)  >  50	wta_1
+SELECT count(*) FROM ship WHERE disposition_of_ship  =  'Captured'	battle_death
+SELECT avg(injured) FROM death	battle_death
+SELECT count(DISTINCT RESULT) FROM battle	battle_death
+SELECT note FROM death WHERE note LIKE '%East%'	battle_death
+SELECT count(*) FROM Courses	student_transcripts_tracking
+SELECT count(*) FROM Courses	student_transcripts_tracking
+SELECT course_description FROM Courses WHERE course_name  =  'math'	student_transcripts_tracking
+SELECT course_description FROM Courses WHERE course_name  =  'math'	student_transcripts_tracking
+SELECT zip_postcode FROM Addresses WHERE city  =  'Port Chelsea'	student_transcripts_tracking
+SELECT zip_postcode FROM Addresses WHERE city  =  'Port Chelsea'	student_transcripts_tracking
+SELECT count(DISTINCT department_id) FROM Degree_Programs	student_transcripts_tracking
+SELECT count(DISTINCT department_id) FROM Degree_Programs	student_transcripts_tracking
+SELECT count(DISTINCT degree_summary_name) FROM Degree_Programs	student_transcripts_tracking
+SELECT count(DISTINCT degree_summary_name) FROM Degree_Programs	student_transcripts_tracking
+SELECT section_name FROM Sections ORDER BY section_name DESC	student_transcripts_tracking
+SELECT section_name FROM Sections ORDER BY section_name DESC	student_transcripts_tracking
+SELECT department_description FROM Departments WHERE department_name LIKE '%computer%'	student_transcripts_tracking
+SELECT department_description FROM Departments WHERE department_name LIKE '%computer%'	student_transcripts_tracking
+SELECT avg(transcript_date) FROM Transcripts	student_transcripts_tracking
+SELECT avg(transcript_date) FROM Transcripts	student_transcripts_tracking
+SELECT count(*) FROM Transcripts	student_transcripts_tracking
+SELECT count(*) FROM Transcripts	student_transcripts_tracking
+SELECT transcript_date FROM Transcripts ORDER BY transcript_date DESC LIMIT 1	student_transcripts_tracking
+SELECT transcript_date FROM Transcripts ORDER BY transcript_date DESC LIMIT 1	student_transcripts_tracking
+SELECT count(DISTINCT current_address_id) FROM Students	student_transcripts_tracking
+SELECT count(DISTINCT current_address_id) FROM Students	student_transcripts_tracking
+SELECT other_student_details FROM Students ORDER BY other_student_details DESC	student_transcripts_tracking
+SELECT other_student_details FROM Students ORDER BY other_student_details DESC	student_transcripts_tracking
+SELECT section_description FROM Sections WHERE section_name  =  'h'	student_transcripts_tracking
+SELECT section_description FROM Sections WHERE section_name  =  'h'	student_transcripts_tracking
+SELECT Title FROM Cartoon ORDER BY title	tvshow
+SELECT Title FROM Cartoon ORDER BY title	tvshow
+SELECT Title FROM Cartoon WHERE Directed_by = "Ben Jones";	tvshow
+SELECT Title FROM Cartoon WHERE Directed_by = "Ben Jones";	tvshow
+SELECT count(*) FROM Cartoon WHERE Written_by = "Joseph Kuhr";	tvshow
+SELECT count(*) FROM Cartoon WHERE Written_by = "Joseph Kuhr";	tvshow
+SELECT Content FROM TV_Channel WHERE series_name = "Sky Radio";	tvshow
+SELECT Content FROM TV_Channel WHERE series_name = "Sky Radio";	tvshow
+SELECT Package_Option FROM TV_Channel WHERE series_name = "Sky Radio";	tvshow
+SELECT Package_Option FROM TV_Channel WHERE series_name = "Sky Radio";	tvshow
+SELECT count(*) FROM TV_Channel WHERE LANGUAGE = "English";	tvshow
+SELECT count(*) FROM TV_Channel WHERE LANGUAGE = "English";	tvshow
+SELECT Episode FROM TV_series ORDER BY rating	tvshow
+SELECT Episode FROM TV_series ORDER BY rating	tvshow
+SELECT Air_Date FROM TV_series WHERE Episode = "A Love of a Lifetime";	tvshow
+SELECT Air_Date FROM TV_series WHERE Episode = "A Love of a Lifetime";	tvshow
+SELECT Weekly_Rank FROM TV_series WHERE Episode = "A Love of a Lifetime";	tvshow
+SELECT Weekly_Rank FROM TV_series WHERE Episode = "A Love of a Lifetime";	tvshow
+SELECT id FROM tv_channel GROUP BY country HAVING count(*)  >  2	tvshow
+SELECT id FROM tv_channel GROUP BY country HAVING count(*)  >  2	tvshow
+SELECT count(*) FROM poker_player	poker_player
+SELECT count(*) FROM poker_player	poker_player
+SELECT Earnings FROM poker_player ORDER BY Earnings DESC	poker_player
+SELECT Earnings FROM poker_player ORDER BY Earnings DESC	poker_player
+SELECT avg(Earnings) FROM poker_player	poker_player
+SELECT avg(Earnings) FROM poker_player	poker_player
+SELECT Money_Rank FROM poker_player ORDER BY Earnings DESC LIMIT 1	poker_player
+SELECT Money_Rank FROM poker_player ORDER BY Earnings DESC LIMIT 1	poker_player
+SELECT max(Final_Table_Made) FROM poker_player WHERE Earnings  <  200000	poker_player
+SELECT max(Final_Table_Made) FROM poker_player WHERE Earnings  <  200000	poker_player
+SELECT Nationality FROM people GROUP BY Nationality HAVING COUNT(*)  >=  2	poker_player
+SELECT Nationality FROM people GROUP BY Nationality HAVING COUNT(*)  >=  2	poker_player
+SELECT Name FROM people WHERE Nationality != "Russia"	poker_player
+SELECT Name FROM people WHERE Nationality != "Russia"	poker_player
+SELECT count(DISTINCT Nationality) FROM people	poker_player
+SELECT count(DISTINCT Nationality) FROM people	poker_player
+SELECT count(*) FROM area_code_state	voter_1
+SELECT max(created) FROM votes WHERE state  =  'CA'	voter_1
+SELECT contestant_name FROM contestants WHERE contestant_name != 'Jessie Alloway'	voter_1
+SELECT contestant_name FROM contestants WHERE contestant_name LIKE "%Al%"	voter_1
+SELECT Name FROM country WHERE IndepYear  >  1950	world_1
+SELECT Name FROM country WHERE IndepYear  >  1950	world_1
+SELECT count(*) FROM country WHERE GovernmentForm  =  "Republic"	world_1
+SELECT count(*) FROM country WHERE GovernmentForm  =  "Republic"	world_1
+SELECT sum(SurfaceArea) FROM country WHERE Region  =  "Caribbean"	world_1
+SELECT sum(SurfaceArea) FROM country WHERE Region  =  "Caribbean"	world_1
+SELECT Continent FROM country WHERE Name  =  "Anguilla"	world_1
+SELECT Continent FROM country WHERE Name  =  "Anguilla"	world_1
+SELECT avg(LifeExpectancy) FROM country WHERE Region  =  "Central Africa"	world_1
+SELECT avg(LifeExpectancy) FROM country WHERE Region  =  "Central Africa"	world_1
+SELECT Name FROM country WHERE Continent  =  "Asia" ORDER BY LifeExpectancy LIMIT 1	world_1
+SELECT Name FROM country WHERE Continent  =  "Asia" ORDER BY LifeExpectancy LIMIT 1	world_1
+SELECT sum(Population) FROM city WHERE District  =  "Gelderland"	world_1
+SELECT sum(Population) FROM city WHERE District  =  "Gelderland"	world_1
+SELECT count(DISTINCT LANGUAGE) FROM countrylanguage	world_1
+SELECT count(DISTINCT LANGUAGE) FROM countrylanguage	world_1
+SELECT count(DISTINCT GovernmentForm) FROM country WHERE Continent  =  "Africa"	world_1
+SELECT count(DISTINCT GovernmentForm) FROM country WHERE Continent  =  "Africa"	world_1
+SELECT DISTINCT CountryCode FROM countrylanguage WHERE LANGUAGE != "English"	world_1
+SELECT DISTINCT CountryCode FROM countrylanguage WHERE LANGUAGE != "English"	world_1
+SELECT Name FROM country ORDER BY Population DESC LIMIT 3	world_1
+SELECT Name FROM country ORDER BY Population DESC LIMIT 3	world_1
+SELECT Name FROM country ORDER BY Population ASC LIMIT 3	world_1
+SELECT Name FROM country ORDER BY Population ASC LIMIT 3	world_1
+SELECT count(*) FROM country WHERE continent  =  "Asia"	world_1
+SELECT count(*) FROM country WHERE continent  =  "Asia"	world_1
+SELECT count(*) FROM conductor	orchestra
+SELECT count(*) FROM conductor	orchestra
+SELECT Record_Company FROM orchestra ORDER BY Year_of_Founded DESC	orchestra
+SELECT Record_Company FROM orchestra ORDER BY Year_of_Founded DESC	orchestra
+SELECT avg(Attendance) FROM SHOW	orchestra
+SELECT avg(Attendance) FROM SHOW	orchestra
+SELECT count(DISTINCT Nationality) FROM conductor	orchestra
+SELECT count(DISTINCT Nationality) FROM conductor	orchestra
+SELECT count(*) FROM Highschooler	network_1
+SELECT count(*) FROM Highschooler	network_1
+SELECT grade FROM Highschooler	network_1
+SELECT grade FROM Highschooler	network_1
+SELECT grade FROM Highschooler WHERE name  =  "Kyle"	network_1
+SELECT grade FROM Highschooler WHERE name  =  "Kyle"	network_1
+SELECT name FROM Highschooler WHERE grade  =  10	network_1
+SELECT name FROM Highschooler WHERE grade  =  10	network_1
+SELECT ID FROM Highschooler WHERE name  =  "Kyle"	network_1
+SELECT ID FROM Highschooler WHERE name  =  "Kyle"	network_1
+SELECT grade FROM Highschooler GROUP BY grade HAVING count(*)  >=  4	network_1
+SELECT grade FROM Highschooler GROUP BY grade HAVING count(*)  >=  4	network_1
+SELECT id FROM Highschooler EXCEPT SELECT student_id FROM Friend	network_1
+SELECT id FROM Highschooler EXCEPT SELECT student_id FROM Friend	network_1
+SELECT count(DISTINCT dog_id) FROM Treatments	dog_kennels
+SELECT count(DISTINCT dog_id) FROM Treatments	dog_kennels
+SELECT count(DISTINCT professional_id) FROM Treatments	dog_kennels
+SELECT count(DISTINCT professional_id) FROM Treatments	dog_kennels
+SELECT cost_of_treatment FROM Treatments ORDER BY date_of_treatment DESC LIMIT 1	dog_kennels
+SELECT cost_of_treatment FROM Treatments ORDER BY date_of_treatment DESC LIMIT 1	dog_kennels
+SELECT avg(age) FROM Dogs	dog_kennels
+SELECT avg(age) FROM Dogs	dog_kennels
+SELECT max(age) FROM Dogs	dog_kennels
+SELECT max(age) FROM Dogs	dog_kennels
+SELECT max(charge_amount) FROM Charges	dog_kennels
+SELECT max(charge_amount) FROM Charges	dog_kennels
+SELECT count(*) FROM singer	singer
+SELECT count(*) FROM singer	singer
+SELECT Name FROM singer ORDER BY Net_Worth_Millions ASC	singer
+SELECT Name FROM singer ORDER BY Net_Worth_Millions ASC	singer
+SELECT Name FROM singer WHERE Citizenship != "France"	singer
+SELECT Name FROM singer WHERE Citizenship != "France"	singer
+SELECT Name FROM singer ORDER BY Net_Worth_Millions DESC LIMIT 1	singer
+SELECT Name FROM singer ORDER BY Net_Worth_Millions DESC LIMIT 1	singer
+SELECT count(*) FROM Other_Available_Features	real_estate_properties

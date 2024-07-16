@@ -1,0 +1,192 @@
+[
+  {
+    "query": "SELECT weight FROM pets ORDER BY pet_age LIMIT 1",
+    "prompt": "Find the weight of the youngest dog. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT weight FROM pets ORDER BY pet_age LIMIT 1",
+    "prompt": "How much does the youngest dog weigh? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM employee ORDER BY age",
+    "prompt": "Sort employee names by their age in ascending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT name FROM employee ORDER BY age",
+    "prompt": "List the names of employees and sort in ascending order of age. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM teacher ORDER BY Age ASC",
+    "prompt": "List the names of teachers in ascending order of age. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM teacher ORDER BY Age ASC",
+    "prompt": "What are the names of the teachers ordered by ascending age? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Hometown FROM teacher ORDER BY Age ASC LIMIT 1",
+    "prompt": "What is the hometown of the youngest teacher? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Hometown FROM teacher ORDER BY Age ASC LIMIT 1",
+    "prompt": "Where is the youngest teacher from? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT winner_name FROM matches WHERE tourney_name  =  'Australian Open' ORDER BY winner_rank_points DESC LIMIT 1",
+    "prompt": "Find the name of the winner who has the highest rank points and participated in the Australian Open tourney. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT winner_name FROM matches WHERE tourney_name  =  'Australian Open' ORDER BY winner_rank_points DESC LIMIT 1",
+    "prompt": "What is the name of the winner with the most rank points who participated in the Australian Open tournament? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT section_name FROM Sections ORDER BY section_name DESC",
+    "prompt": "List the section_name in reversed lexicographical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT section_name FROM Sections ORDER BY section_name DESC",
+    "prompt": "What are the names of the sections in reverse alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT transcript_date FROM Transcripts ORDER BY transcript_date DESC LIMIT 1",
+    "prompt": "What is the last transcript release date? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT transcript_date FROM Transcripts ORDER BY transcript_date DESC LIMIT 1",
+    "prompt": "When was the last transcript released? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT other_student_details FROM Students ORDER BY other_student_details DESC",
+    "prompt": "List all the student details in reversed lexicographical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT other_student_details FROM Students ORDER BY other_student_details DESC",
+    "prompt": "What other details can you tell me about students in reverse alphabetical order? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Title FROM Cartoon ORDER BY title",
+    "prompt": "List the title of all cartoons in alphabetical order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Title FROM Cartoon ORDER BY title",
+    "prompt": "What are the titles of the cartoons sorted alphabetically? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Episode FROM TV_series ORDER BY rating",
+    "prompt": "List the Episode of all TV series sorted by rating. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Episode FROM TV_series ORDER BY rating",
+    "prompt": "What are all of the episodes ordered by ratings? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Earnings FROM poker_player ORDER BY Earnings DESC",
+    "prompt": "List the earnings of poker players in descending order. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Earnings FROM poker_player ORDER BY Earnings DESC",
+    "prompt": "What are the earnings of poker players, ordered descending by value? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Money_Rank FROM poker_player ORDER BY Earnings DESC LIMIT 1",
+    "prompt": "What is the money rank of the poker player with the highest earnings? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Money_Rank FROM poker_player ORDER BY Earnings DESC LIMIT 1",
+    "prompt": "Return the money rank of the player with the greatest earnings. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM country WHERE Continent  =  \"Asia\" ORDER BY LifeExpectancy LIMIT 1",
+    "prompt": "What is the name of country that has the shortest life expectancy in Asia? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM country WHERE Continent  =  \"Asia\" ORDER BY LifeExpectancy LIMIT 1",
+    "prompt": "Give the name of the country in Asia with the lowest life expectancy. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM country ORDER BY Population DESC LIMIT 3",
+    "prompt": "What are names of countries with the top 3 largest population? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM country ORDER BY Population DESC LIMIT 3",
+    "prompt": "Return the names of the 3 most populated countries. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM country ORDER BY Population ASC LIMIT 3",
+    "prompt": "What are the names of the nations with the 3 lowest populations? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM country ORDER BY Population ASC LIMIT 3",
+    "prompt": "Return the names of the 3 countries with the fewest people. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Record_Company FROM orchestra ORDER BY Year_of_Founded DESC",
+    "prompt": "What are the record companies of orchestras in descending order of years in which they were founded? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Record_Company FROM orchestra ORDER BY Year_of_Founded DESC",
+    "prompt": "Return the record companies of orchestras, sorted descending by the years in which they were founded. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT cost_of_treatment FROM Treatments ORDER BY date_of_treatment DESC LIMIT 1",
+    "prompt": "How much does the most recent treatment cost? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT cost_of_treatment FROM Treatments ORDER BY date_of_treatment DESC LIMIT 1",
+    "prompt": "Show me the cost of the most recently performed treatment. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM singer ORDER BY Net_Worth_Millions ASC",
+    "prompt": "List the name of singers in ascending order of net worth. Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM singer ORDER BY Net_Worth_Millions ASC",
+    "prompt": "What are the names of singers ordered by ascending net worth? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "1"
+  },
+  {
+    "query": "SELECT Name FROM singer ORDER BY Net_Worth_Millions DESC LIMIT 1",
+    "prompt": "What is the name of the singer with the largest net worth? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Name FROM singer ORDER BY Net_Worth_Millions DESC LIMIT 1",
+    "prompt": "What is the name of the singer who is worth the most? Answer 1 for ASC, Answer 2 for DESC, the answer should be Answer ",
+    "target": "2"
+  }
+]

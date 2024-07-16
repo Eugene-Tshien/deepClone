@@ -1,0 +1,102 @@
+[
+  {
+    "query": "SELECT city FROM employee WHERE age  <  30 GROUP BY city HAVING count(*)  >  1",
+    "prompt": "Which cities do more than one employee under age 30 come from? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT city FROM employee WHERE age  <  30 GROUP BY city HAVING count(*)  >  1",
+    "prompt": "Find the cities that have more than one employee under age 30. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT template_id FROM Documents GROUP BY template_id HAVING count(*)  >  1",
+    "prompt": "Show ids for all templates that are used by more than one document. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT template_id FROM Documents GROUP BY template_id HAVING count(*)  >  1",
+    "prompt": "What are the template ids of any templates used in more than a single document? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT template_type_code FROM Templates GROUP BY template_type_code HAVING count(*)  <  3",
+    "prompt": "Show all template type codes with less than three templates. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT template_type_code FROM Templates GROUP BY template_type_code HAVING count(*)  <  3",
+    "prompt": "What are the codes of template types that have fewer than 3 templates? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT document_id FROM Paragraphs GROUP BY document_id HAVING count(*)  >=  2",
+    "prompt": "List all document ids with at least two paragraphs. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT document_id FROM Paragraphs GROUP BY document_id HAVING count(*)  >=  2",
+    "prompt": "What are the ids of documents that have 2 or more paragraphs? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Hometown FROM teacher GROUP BY Hometown HAVING COUNT(*)  >=  2",
+    "prompt": "Show the hometowns shared by at least two teachers. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Hometown FROM teacher GROUP BY Hometown HAVING COUNT(*)  >=  2",
+    "prompt": "What are the towns from which at least two teachers come from? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT tourney_name FROM matches GROUP BY tourney_name HAVING count(*)  >  10",
+    "prompt": "Find the name of tourney that has more than 10 matches. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT tourney_name FROM matches GROUP BY tourney_name HAVING count(*)  >  10",
+    "prompt": "What are the names of tournaments that have more than 10 matches? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT country_code FROM players GROUP BY country_code HAVING count(*)  >  50",
+    "prompt": "Find the codes of countries that have more than 50 players. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT country_code FROM players GROUP BY country_code HAVING count(*)  >  50",
+    "prompt": "What are the codes of countries with more than 50 players? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT id FROM tv_channel GROUP BY country HAVING count(*)  >  2",
+    "prompt": "find id of the tv channels that from the countries where have more than two tv channels. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT id FROM tv_channel GROUP BY country HAVING count(*)  >  2",
+    "prompt": "What are the ids of all tv channels that have more than 2 TV channels? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Nationality FROM people GROUP BY Nationality HAVING COUNT(*)  >=  2",
+    "prompt": "What are the nationalities that are shared by at least two people? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT Nationality FROM people GROUP BY Nationality HAVING COUNT(*)  >=  2",
+    "prompt": "Return the nationalities for which there are two or more people. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT grade FROM Highschooler GROUP BY grade HAVING count(*)  >=  4",
+    "prompt": "Show me all grades that have at least 4 students. Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  },
+  {
+    "query": "SELECT grade FROM Highschooler GROUP BY grade HAVING count(*)  >=  4",
+    "prompt": "Which grades have 4 or more high schoolers? Answer 1 for empty, Answer 2 for HAVING, the answer should be Answer ",
+    "target": "2"
+  }
+]

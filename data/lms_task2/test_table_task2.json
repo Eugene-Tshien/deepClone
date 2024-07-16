@@ -1,0 +1,1836 @@
+[
+  {
+    "prompt": "How many singers do we have? SELECT FROM [table], Answer 1 for stadium,  Answer 2 for singer,  Answer 3 for concert,  Answer 4 for singer in concert, the answer should be Answer ",
+    "target": "2",
+    "table": "singer",
+    "db": "concert_singer",
+    "query": "SELECT count(*) FROM singer"
+  },
+  {
+    "prompt": "What is the total number of singers? SELECT FROM [table], Answer 1 for stadium,  Answer 2 for singer,  Answer 3 for concert,  Answer 4 for singer in concert, the answer should be Answer ",
+    "target": "2",
+    "table": "singer",
+    "db": "concert_singer",
+    "query": "SELECT count(*) FROM singer"
+  },
+  {
+    "prompt": "What are all distinct countries where singers above age 20 are from? SELECT FROM [table], Answer 1 for stadium,  Answer 2 for singer,  Answer 3 for concert,  Answer 4 for singer in concert, the answer should be Answer ",
+    "target": "2",
+    "table": "singer",
+    "db": "concert_singer",
+    "query": "SELECT DISTINCT country FROM singer WHERE age  >  20"
+  },
+  {
+    "prompt": "What are  the different countries with singers above age 20? SELECT FROM [table], Answer 1 for stadium,  Answer 2 for singer,  Answer 3 for concert,  Answer 4 for singer in concert, the answer should be Answer ",
+    "target": "2",
+    "table": "singer",
+    "db": "concert_singer",
+    "query": "SELECT DISTINCT country FROM singer WHERE age  >  20"
+  },
+  {
+    "prompt": "Find the number of pets whose weight is heavier than 10. SELECT FROM [table], Answer 1 for student,  Answer 2 for has pet,  Answer 3 for pets, the answer should be Answer ",
+    "target": "3",
+    "table": "pets",
+    "db": "pets_1",
+    "query": "SELECT count(*) FROM pets WHERE weight  >  10"
+  },
+  {
+    "prompt": "How many pets have a greater weight than 10? SELECT FROM [table], Answer 1 for student,  Answer 2 for has pet,  Answer 3 for pets, the answer should be Answer ",
+    "target": "3",
+    "table": "pets",
+    "db": "pets_1",
+    "query": "SELECT count(*) FROM pets WHERE weight  >  10"
+  },
+  {
+    "prompt": "Find the weight of the youngest dog. SELECT FROM [table], Answer 1 for student,  Answer 2 for has pet,  Answer 3 for pets, the answer should be Answer ",
+    "target": "3",
+    "table": "pets",
+    "db": "pets_1",
+    "query": "SELECT weight FROM pets ORDER BY pet_age LIMIT 1"
+  },
+  {
+    "prompt": "How much does the youngest dog weigh? SELECT FROM [table], Answer 1 for student,  Answer 2 for has pet,  Answer 3 for pets, the answer should be Answer ",
+    "target": "3",
+    "table": "pets",
+    "db": "pets_1",
+    "query": "SELECT weight FROM pets ORDER BY pet_age LIMIT 1"
+  },
+  {
+    "prompt": "Find the number of distinct type of pets. SELECT FROM [table], Answer 1 for student,  Answer 2 for has pet,  Answer 3 for pets, the answer should be Answer ",
+    "target": "3",
+    "table": "pets",
+    "db": "pets_1",
+    "query": "SELECT count(DISTINCT pettype) FROM pets"
+  },
+  {
+    "prompt": "How many different types of pet are there? SELECT FROM [table], Answer 1 for student,  Answer 2 for has pet,  Answer 3 for pets, the answer should be Answer ",
+    "target": "3",
+    "table": "pets",
+    "db": "pets_1",
+    "query": "SELECT count(DISTINCT pettype) FROM pets"
+  },
+  {
+    "prompt": "How many continents are there? SELECT FROM [table], Answer 1 for continents,  Answer 2 for countries,  Answer 3 for car makers,  Answer 4 for model list,  Answer 5 for car names,  Answer 6 for cars data, the answer should be Answer ",
+    "target": "1",
+    "table": "continents",
+    "db": "car_1",
+    "query": "SELECT count(*) FROM CONTINENTS;"
+  },
+  {
+    "prompt": "What is the number of continents? SELECT FROM [table], Answer 1 for continents,  Answer 2 for countries,  Answer 3 for car makers,  Answer 4 for model list,  Answer 5 for car names,  Answer 6 for cars data, the answer should be Answer ",
+    "target": "1",
+    "table": "continents",
+    "db": "car_1",
+    "query": "SELECT count(*) FROM CONTINENTS;"
+  },
+  {
+    "prompt": "How many countries are listed? SELECT FROM [table], Answer 1 for continents,  Answer 2 for countries,  Answer 3 for car makers,  Answer 4 for model list,  Answer 5 for car names,  Answer 6 for cars data, the answer should be Answer ",
+    "target": "2",
+    "table": "countries",
+    "db": "car_1",
+    "query": "SELECT count(*) FROM COUNTRIES;"
+  },
+  {
+    "prompt": "How many countries exist? SELECT FROM [table], Answer 1 for continents,  Answer 2 for countries,  Answer 3 for car makers,  Answer 4 for model list,  Answer 5 for car names,  Answer 6 for cars data, the answer should be Answer ",
+    "target": "2",
+    "table": "countries",
+    "db": "car_1",
+    "query": "SELECT count(*) FROM COUNTRIES;"
+  },
+  {
+    "prompt": "What is the average miles per gallon(mpg) of the cars with 4 cylinders? SELECT FROM [table], Answer 1 for continents,  Answer 2 for countries,  Answer 3 for car makers,  Answer 4 for model list,  Answer 5 for car names,  Answer 6 for cars data, the answer should be Answer ",
+    "target": "6",
+    "table": "cars data",
+    "db": "car_1",
+    "query": "SELECT avg(mpg) FROM CARS_DATA WHERE Cylinders  =  4;"
+  },
+  {
+    "prompt": "What is the average miles per gallon of all the cards with 4 cylinders? SELECT FROM [table], Answer 1 for continents,  Answer 2 for countries,  Answer 3 for car makers,  Answer 4 for model list,  Answer 5 for car names,  Answer 6 for cars data, the answer should be Answer ",
+    "target": "6",
+    "table": "cars data",
+    "db": "car_1",
+    "query": "SELECT avg(mpg) FROM CARS_DATA WHERE Cylinders  =  4;"
+  },
+  {
+    "prompt": "What is the number of the cars with horsepower more than 150? SELECT FROM [table], Answer 1 for continents,  Answer 2 for countries,  Answer 3 for car makers,  Answer 4 for model list,  Answer 5 for car names,  Answer 6 for cars data, the answer should be Answer ",
+    "target": "6",
+    "table": "cars data",
+    "db": "car_1",
+    "query": "SELECT count(*) FROM CARS_DATA WHERE horsepower  >  150;"
+  },
+  {
+    "prompt": "What is the number of cars with a horsepower greater than 150? SELECT FROM [table], Answer 1 for continents,  Answer 2 for countries,  Answer 3 for car makers,  Answer 4 for model list,  Answer 5 for car names,  Answer 6 for cars data, the answer should be Answer ",
+    "target": "6",
+    "table": "cars data",
+    "db": "car_1",
+    "query": "SELECT count(*) FROM CARS_DATA WHERE horsepower  >  150;"
+  },
+  {
+    "prompt": "What is the average horsepower of the cars before 1980? SELECT FROM [table], Answer 1 for continents,  Answer 2 for countries,  Answer 3 for car makers,  Answer 4 for model list,  Answer 5 for car names,  Answer 6 for cars data, the answer should be Answer ",
+    "target": "6",
+    "table": "cars data",
+    "db": "car_1",
+    "query": "SELECT avg(horsepower) FROM CARS_DATA WHERE YEAR  <  1980;"
+  },
+  {
+    "prompt": "What is the average horsepower for all cars produced before 1980 ? SELECT FROM [table], Answer 1 for continents,  Answer 2 for countries,  Answer 3 for car makers,  Answer 4 for model list,  Answer 5 for car names,  Answer 6 for cars data, the answer should be Answer ",
+    "target": "6",
+    "table": "cars data",
+    "db": "car_1",
+    "query": "select avg(horsepower) from cars_data where year  <  1980;"
+  },
+  {
+    "prompt": "How many cars have more than 4 cylinders? SELECT FROM [table], Answer 1 for continents,  Answer 2 for countries,  Answer 3 for car makers,  Answer 4 for model list,  Answer 5 for car names,  Answer 6 for cars data, the answer should be Answer ",
+    "target": "6",
+    "table": "cars data",
+    "db": "car_1",
+    "query": "SELECT count(*) FROM CARS_DATA WHERE Cylinders  >  4;"
+  },
+  {
+    "prompt": "What is the number of cars with more than 4 cylinders? SELECT FROM [table], Answer 1 for continents,  Answer 2 for countries,  Answer 3 for car makers,  Answer 4 for model list,  Answer 5 for car names,  Answer 6 for cars data, the answer should be Answer ",
+    "target": "6",
+    "table": "cars data",
+    "db": "car_1",
+    "query": "SELECT count(*) FROM CARS_DATA WHERE Cylinders  >  4;"
+  },
+  {
+    "prompt": "how many cars were produced in 1980? SELECT FROM [table], Answer 1 for continents,  Answer 2 for countries,  Answer 3 for car makers,  Answer 4 for model list,  Answer 5 for car names,  Answer 6 for cars data, the answer should be Answer ",
+    "target": "6",
+    "table": "cars data",
+    "db": "car_1",
+    "query": "SELECT count(*) FROM CARS_DATA WHERE YEAR  =  1980;"
+  },
+  {
+    "prompt": "In 1980, how many cars were made? SELECT FROM [table], Answer 1 for continents,  Answer 2 for countries,  Answer 3 for car makers,  Answer 4 for model list,  Answer 5 for car names,  Answer 6 for cars data, the answer should be Answer ",
+    "target": "6",
+    "table": "cars data",
+    "db": "car_1",
+    "query": "SELECT count(*) FROM CARS_DATA WHERE YEAR  =  1980;"
+  },
+  {
+    "prompt": "How many cars has over 6 cylinders? SELECT FROM [table], Answer 1 for continents,  Answer 2 for countries,  Answer 3 for car makers,  Answer 4 for model list,  Answer 5 for car names,  Answer 6 for cars data, the answer should be Answer ",
+    "target": "6",
+    "table": "cars data",
+    "db": "car_1",
+    "query": "SELECT COUNT(*) FROM CARS_DATA WHERE Cylinders  >  6;"
+  },
+  {
+    "prompt": "What is the number of carsw ith over 6 cylinders? SELECT FROM [table], Answer 1 for continents,  Answer 2 for countries,  Answer 3 for car makers,  Answer 4 for model list,  Answer 5 for car names,  Answer 6 for cars data, the answer should be Answer ",
+    "target": "6",
+    "table": "cars data",
+    "db": "car_1",
+    "query": "SELECT COUNT(*) FROM CARS_DATA WHERE Cylinders  >  6;"
+  },
+  {
+    "prompt": "Which country does Airline \"JetBlue Airways\" belong to? SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "1",
+    "table": "airlines",
+    "db": "flight_2",
+    "query": "SELECT Country FROM AIRLINES WHERE Airline  =  \"JetBlue Airways\""
+  },
+  {
+    "prompt": "What country is Jetblue Airways affiliated with? SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "1",
+    "table": "airlines",
+    "db": "flight_2",
+    "query": "SELECT Country FROM AIRLINES WHERE Airline  =  \"JetBlue Airways\""
+  },
+  {
+    "prompt": "What is the abbreviation of Airline \"JetBlue Airways\"? SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "1",
+    "table": "airlines",
+    "db": "flight_2",
+    "query": "SELECT Abbreviation FROM AIRLINES WHERE Airline  =  \"JetBlue Airways\""
+  },
+  {
+    "prompt": "Which abbreviation corresponds to Jetblue Airways? SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "1",
+    "table": "airlines",
+    "db": "flight_2",
+    "query": "SELECT Abbreviation FROM AIRLINES WHERE Airline  =  \"JetBlue Airways\""
+  },
+  {
+    "prompt": "How many airlines do we have? SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "1",
+    "table": "airlines",
+    "db": "flight_2",
+    "query": "SELECT count(*) FROM AIRLINES"
+  },
+  {
+    "prompt": "What is the total number of airlines? SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "1",
+    "table": "airlines",
+    "db": "flight_2",
+    "query": "SELECT count(*) FROM AIRLINES"
+  },
+  {
+    "prompt": "How many airports do we have? SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "2",
+    "table": "airports",
+    "db": "flight_2",
+    "query": "SELECT count(*) FROM AIRPORTS"
+  },
+  {
+    "prompt": "Return the number of  airports. SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "2",
+    "table": "airports",
+    "db": "flight_2",
+    "query": "SELECT count(*) FROM AIRPORTS"
+  },
+  {
+    "prompt": "How many flights do we have? SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "3",
+    "table": "flights",
+    "db": "flight_2",
+    "query": "SELECT count(*) FROM FLIGHTS"
+  },
+  {
+    "prompt": "Return the number of flights. SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "3",
+    "table": "flights",
+    "db": "flight_2",
+    "query": "SELECT count(*) FROM FLIGHTS"
+  },
+  {
+    "prompt": "Which airline has abbreviation 'UAL'? SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "1",
+    "table": "airlines",
+    "db": "flight_2",
+    "query": "SELECT Airline FROM AIRLINES WHERE Abbreviation  =  \"UAL\""
+  },
+  {
+    "prompt": "Give the airline with abbreviation 'UAL'. SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "1",
+    "table": "airlines",
+    "db": "flight_2",
+    "query": "SELECT Airline FROM AIRLINES WHERE Abbreviation  =  \"UAL\""
+  },
+  {
+    "prompt": "How many airlines are from USA? SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "1",
+    "table": "airlines",
+    "db": "flight_2",
+    "query": "SELECT count(*) FROM AIRLINES WHERE Country  =  \"USA\""
+  },
+  {
+    "prompt": "Return the number of airlines in the USA. SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "1",
+    "table": "airlines",
+    "db": "flight_2",
+    "query": "SELECT count(*) FROM AIRLINES WHERE Country  =  \"USA\""
+  },
+  {
+    "prompt": "What is the airport name for airport 'AKO'? SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "2",
+    "table": "airports",
+    "db": "flight_2",
+    "query": "SELECT AirportName FROM AIRPORTS WHERE AirportCode  =  \"AKO\""
+  },
+  {
+    "prompt": "Return the name of the airport with code 'AKO'. SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "2",
+    "table": "airports",
+    "db": "flight_2",
+    "query": "SELECT AirportName FROM AIRPORTS WHERE AirportCode  =  \"AKO\""
+  },
+  {
+    "prompt": "What are airport names at City 'Aberdeen'? SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "2",
+    "table": "airports",
+    "db": "flight_2",
+    "query": "SELECT AirportName FROM AIRPORTS WHERE City = \"Aberdeen\""
+  },
+  {
+    "prompt": "What are the names of airports in Aberdeen? SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "2",
+    "table": "airports",
+    "db": "flight_2",
+    "query": "SELECT AirportName FROM AIRPORTS WHERE City = \"Aberdeen\""
+  },
+  {
+    "prompt": "How many flights depart from 'APG'? SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "3",
+    "table": "flights",
+    "db": "flight_2",
+    "query": "SELECT count(*) FROM FLIGHTS WHERE SourceAirport  =  \"APG\""
+  },
+  {
+    "prompt": "Count the number of flights departing from 'APG'. SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "3",
+    "table": "flights",
+    "db": "flight_2",
+    "query": "SELECT count(*) FROM FLIGHTS WHERE SourceAirport  =  \"APG\""
+  },
+  {
+    "prompt": "How many flights have destination ATO? SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "3",
+    "table": "flights",
+    "db": "flight_2",
+    "query": "SELECT count(*) FROM FLIGHTS WHERE DestAirport  =  \"ATO\""
+  },
+  {
+    "prompt": "Count the number of flights into ATO. SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "3",
+    "table": "flights",
+    "db": "flight_2",
+    "query": "SELECT count(*) FROM FLIGHTS WHERE DestAirport  =  \"ATO\""
+  },
+  {
+    "prompt": "What are flight numbers of flights departing from Airport \"APG\"? SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "3",
+    "table": "flights",
+    "db": "flight_2",
+    "query": "SELECT FlightNo FROM FLIGHTS WHERE SourceAirport  =  \"APG\""
+  },
+  {
+    "prompt": "Give the flight numbers of flights leaving from APG. SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "3",
+    "table": "flights",
+    "db": "flight_2",
+    "query": "SELECT FlightNo FROM FLIGHTS WHERE SourceAirport  =  \"APG\""
+  },
+  {
+    "prompt": "What are flight numbers of flights arriving at Airport \"APG\"? SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "3",
+    "table": "flights",
+    "db": "flight_2",
+    "query": "SELECT FlightNo FROM FLIGHTS WHERE DestAirport  =  \"APG\""
+  },
+  {
+    "prompt": "Give the flight numbers of flights landing at APG. SELECT FROM [table], Answer 1 for airlines,  Answer 2 for airports,  Answer 3 for flights, the answer should be Answer ",
+    "target": "3",
+    "table": "flights",
+    "db": "flight_2",
+    "query": "SELECT FlightNo FROM FLIGHTS WHERE DestAirport  =  \"APG\""
+  },
+  {
+    "prompt": "How many employees are there? SELECT FROM [table], Answer 1 for employee,  Answer 2 for shop,  Answer 3 for hiring,  Answer 4 for evaluation, the answer should be Answer ",
+    "target": "1",
+    "table": "employee",
+    "db": "employee_hire_evaluation",
+    "query": "SELECT count(*) FROM employee"
+  },
+  {
+    "prompt": "Count the number of employees SELECT FROM [table], Answer 1 for employee,  Answer 2 for shop,  Answer 3 for hiring,  Answer 4 for evaluation, the answer should be Answer ",
+    "target": "1",
+    "table": "employee",
+    "db": "employee_hire_evaluation",
+    "query": "SELECT count(*) FROM employee"
+  },
+  {
+    "prompt": "Sort employee names by their age in ascending order. SELECT FROM [table], Answer 1 for employee,  Answer 2 for shop,  Answer 3 for hiring,  Answer 4 for evaluation, the answer should be Answer ",
+    "target": "1",
+    "table": "employee",
+    "db": "employee_hire_evaluation",
+    "query": "SELECT name FROM employee ORDER BY age"
+  },
+  {
+    "prompt": "List the names of employees and sort in ascending order of age. SELECT FROM [table], Answer 1 for employee,  Answer 2 for shop,  Answer 3 for hiring,  Answer 4 for evaluation, the answer should be Answer ",
+    "target": "1",
+    "table": "employee",
+    "db": "employee_hire_evaluation",
+    "query": "SELECT name FROM employee ORDER BY age"
+  },
+  {
+    "prompt": "Which cities do more than one employee under age 30 come from? SELECT FROM [table], Answer 1 for employee,  Answer 2 for shop,  Answer 3 for hiring,  Answer 4 for evaluation, the answer should be Answer ",
+    "target": "1",
+    "table": "employee",
+    "db": "employee_hire_evaluation",
+    "query": "SELECT city FROM employee WHERE age  <  30 GROUP BY city HAVING count(*)  >  1"
+  },
+  {
+    "prompt": "Find the cities that have more than one employee under age 30. SELECT FROM [table], Answer 1 for employee,  Answer 2 for shop,  Answer 3 for hiring,  Answer 4 for evaluation, the answer should be Answer ",
+    "target": "1",
+    "table": "employee",
+    "db": "employee_hire_evaluation",
+    "query": "SELECT city FROM employee WHERE age  <  30 GROUP BY city HAVING count(*)  >  1"
+  },
+  {
+    "prompt": "What is total bonus given in all evaluations? SELECT FROM [table], Answer 1 for employee,  Answer 2 for shop,  Answer 3 for hiring,  Answer 4 for evaluation, the answer should be Answer ",
+    "target": "4",
+    "table": "evaluation",
+    "db": "employee_hire_evaluation",
+    "query": "SELECT sum(bonus) FROM evaluation"
+  },
+  {
+    "prompt": "Find the total amount of bonus given in all the evaluations. SELECT FROM [table], Answer 1 for employee,  Answer 2 for shop,  Answer 3 for hiring,  Answer 4 for evaluation, the answer should be Answer ",
+    "target": "4",
+    "table": "evaluation",
+    "db": "employee_hire_evaluation",
+    "query": "SELECT sum(bonus) FROM evaluation"
+  },
+  {
+    "prompt": "Give me all the information about hiring. SELECT FROM [table], Answer 1 for employee,  Answer 2 for shop,  Answer 3 for hiring,  Answer 4 for evaluation, the answer should be Answer ",
+    "target": "3",
+    "table": "hiring",
+    "db": "employee_hire_evaluation",
+    "query": "SELECT * FROM hiring"
+  },
+  {
+    "prompt": "What is all the information about hiring? SELECT FROM [table], Answer 1 for employee,  Answer 2 for shop,  Answer 3 for hiring,  Answer 4 for evaluation, the answer should be Answer ",
+    "target": "3",
+    "table": "hiring",
+    "db": "employee_hire_evaluation",
+    "query": "SELECT * FROM hiring"
+  },
+  {
+    "prompt": "How many different store locations are there? SELECT FROM [table], Answer 1 for employee,  Answer 2 for shop,  Answer 3 for hiring,  Answer 4 for evaluation, the answer should be Answer ",
+    "target": "2",
+    "table": "shop",
+    "db": "employee_hire_evaluation",
+    "query": "SELECT count(DISTINCT LOCATION) FROM shop"
+  },
+  {
+    "prompt": "Count the number of distinct store locations. SELECT FROM [table], Answer 1 for employee,  Answer 2 for shop,  Answer 3 for hiring,  Answer 4 for evaluation, the answer should be Answer ",
+    "target": "2",
+    "table": "shop",
+    "db": "employee_hire_evaluation",
+    "query": "SELECT count(DISTINCT LOCATION) FROM shop"
+  },
+  {
+    "prompt": "How many documents do we have? SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "3",
+    "table": "documents",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT count(*) FROM Documents"
+  },
+  {
+    "prompt": "Count the number of documents. SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "3",
+    "table": "documents",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT count(*) FROM Documents"
+  },
+  {
+    "prompt": "How many different templates do all document use? SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "3",
+    "table": "documents",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT count(DISTINCT template_id) FROM Documents"
+  },
+  {
+    "prompt": "Count the number of different templates used for documents. SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "3",
+    "table": "documents",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT count(DISTINCT template_id) FROM Documents"
+  },
+  {
+    "prompt": "Show ids for all templates that are used by more than one document. SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "3",
+    "table": "documents",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT template_id FROM Documents GROUP BY template_id HAVING count(*)  >  1"
+  },
+  {
+    "prompt": "What are the template ids of any templates used in more than a single document? SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "3",
+    "table": "documents",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT template_id FROM Documents GROUP BY template_id HAVING count(*)  >  1"
+  },
+  {
+    "prompt": "Show ids for all templates not used by any document. SELECT FROM [table], Answer 1 for templates,  Answer 2 for reference template types,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "1",
+    "table": "templates",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT template_id FROM Templates EXCEPT SELECT template_id FROM Documents"
+  },
+  {
+    "prompt": "Show ids for all templates not used by any document. EXCEPT [table], Answer 1 for reference template types,  Answer 2 for documents, the answer should be Answer ",
+    "target": "2",
+    "table": "documents",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT template_id FROM Templates EXCEPT SELECT template_id FROM Documents"
+  },
+  {
+    "prompt": "What are the ids for templates that are not used in any documents? SELECT FROM [table], Answer 1 for templates,  Answer 2 for reference template types,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "1",
+    "table": "templates",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT template_id FROM Templates EXCEPT SELECT template_id FROM Documents"
+  },
+  {
+    "prompt": "What are the ids for templates that are not used in any documents? EXCEPT [table], Answer 1 for reference template types,  Answer 2 for documents, the answer should be Answer ",
+    "target": "2",
+    "table": "documents",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT template_id FROM Templates EXCEPT SELECT template_id FROM Documents"
+  },
+  {
+    "prompt": "How many templates do we have? SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "2",
+    "table": "templates",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT count(*) FROM Templates"
+  },
+  {
+    "prompt": "Count the number of templates. SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "2",
+    "table": "templates",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT count(*) FROM Templates"
+  },
+  {
+    "prompt": "Show all distinct template type codes for all templates. SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "2",
+    "table": "templates",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT DISTINCT template_type_code FROM Templates"
+  },
+  {
+    "prompt": "What are the different template type codes? SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "2",
+    "table": "templates",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT DISTINCT template_type_code FROM Templates"
+  },
+  {
+    "prompt": "How many templates have template type code CV? SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "2",
+    "table": "templates",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT count(*) FROM Templates WHERE template_type_code  =  \"CV\""
+  },
+  {
+    "prompt": "Count the number of templates of the type CV. SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "2",
+    "table": "templates",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT count(*) FROM Templates WHERE template_type_code  =  \"CV\""
+  },
+  {
+    "prompt": "Show all template type codes with less than three templates. SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "2",
+    "table": "templates",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT template_type_code FROM Templates GROUP BY template_type_code HAVING count(*)  <  3"
+  },
+  {
+    "prompt": "What are the codes of template types that have fewer than 3 templates? SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "2",
+    "table": "templates",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT template_type_code FROM Templates GROUP BY template_type_code HAVING count(*)  <  3"
+  },
+  {
+    "prompt": "What is the template type descriptions for template type code \"AD\". SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "1",
+    "table": "reference template types",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT template_type_description FROM Ref_template_types WHERE template_type_code  =  \"AD\""
+  },
+  {
+    "prompt": "Return the template type description of the template type with the code AD. SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "1",
+    "table": "reference template types",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT template_type_description FROM Ref_template_types WHERE template_type_code  =  \"AD\""
+  },
+  {
+    "prompt": "What is the template type code for template type description \"Book\". SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "1",
+    "table": "reference template types",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT template_type_code FROM Ref_template_types WHERE template_type_description  =  \"Book\""
+  },
+  {
+    "prompt": "Return the type code of the template type with the description \"Book\". SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "1",
+    "table": "reference template types",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT template_type_code FROM Ref_template_types WHERE template_type_description  =  \"Book\""
+  },
+  {
+    "prompt": "How many paragraphs in total? SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "4",
+    "table": "paragraphs",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT count(*) FROM Paragraphs"
+  },
+  {
+    "prompt": "Count the number of paragraphs. SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "4",
+    "table": "paragraphs",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT count(*) FROM Paragraphs"
+  },
+  {
+    "prompt": "Show paragraph details for paragraph with text 'Korea ' . SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "4",
+    "table": "paragraphs",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "select other_details from paragraphs where paragraph_text like 'korea'"
+  },
+  {
+    "prompt": "What are the details for the paragraph that includes the text 'Korea ' ? SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "4",
+    "table": "paragraphs",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "select other_details from paragraphs where paragraph_text like 'korea'"
+  },
+  {
+    "prompt": "List all document ids with at least two paragraphs. SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "4",
+    "table": "paragraphs",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT document_id FROM Paragraphs GROUP BY document_id HAVING count(*)  >=  2"
+  },
+  {
+    "prompt": "What are the ids of documents that have 2 or more paragraphs? SELECT FROM [table], Answer 1 for reference template types,  Answer 2 for templates,  Answer 3 for documents,  Answer 4 for paragraphs, the answer should be Answer ",
+    "target": "4",
+    "table": "paragraphs",
+    "db": "cre_Doc_Template_Mgt",
+    "query": "SELECT document_id FROM Paragraphs GROUP BY document_id HAVING count(*)  >=  2"
+  },
+  {
+    "prompt": "How many teachers are there? SELECT FROM [table], Answer 1 for course,  Answer 2 for teacher,  Answer 3 for course arrange, the answer should be Answer ",
+    "target": "2",
+    "table": "teacher",
+    "db": "course_teach",
+    "query": "SELECT count(*) FROM teacher"
+  },
+  {
+    "prompt": "What is the total count of teachers? SELECT FROM [table], Answer 1 for course,  Answer 2 for teacher,  Answer 3 for course arrange, the answer should be Answer ",
+    "target": "2",
+    "table": "teacher",
+    "db": "course_teach",
+    "query": "SELECT count(*) FROM teacher"
+  },
+  {
+    "prompt": "List the names of teachers in ascending order of age. SELECT FROM [table], Answer 1 for course,  Answer 2 for teacher,  Answer 3 for course arrange, the answer should be Answer ",
+    "target": "2",
+    "table": "teacher",
+    "db": "course_teach",
+    "query": "SELECT Name FROM teacher ORDER BY Age ASC"
+  },
+  {
+    "prompt": "What are the names of the teachers ordered by ascending age? SELECT FROM [table], Answer 1 for course,  Answer 2 for teacher,  Answer 3 for course arrange, the answer should be Answer ",
+    "target": "2",
+    "table": "teacher",
+    "db": "course_teach",
+    "query": "SELECT Name FROM teacher ORDER BY Age ASC"
+  },
+  {
+    "prompt": "List the name of teachers whose hometown is not `` Little Lever Urban District '' . SELECT FROM [table], Answer 1 for course,  Answer 2 for teacher,  Answer 3 for course arrange, the answer should be Answer ",
+    "target": "2",
+    "table": "teacher",
+    "db": "course_teach",
+    "query": "select name from teacher where hometown != \"little lever urban district\""
+  },
+  {
+    "prompt": "What are the names of the teachers whose hometown is not `` Little Lever Urban District '' ? SELECT FROM [table], Answer 1 for course,  Answer 2 for teacher,  Answer 3 for course arrange, the answer should be Answer ",
+    "target": "2",
+    "table": "teacher",
+    "db": "course_teach",
+    "query": "select name from teacher where hometown != \"little lever urban district\""
+  },
+  {
+    "prompt": "What is the hometown of the youngest teacher? SELECT FROM [table], Answer 1 for course,  Answer 2 for teacher,  Answer 3 for course arrange, the answer should be Answer ",
+    "target": "2",
+    "table": "teacher",
+    "db": "course_teach",
+    "query": "SELECT Hometown FROM teacher ORDER BY Age ASC LIMIT 1"
+  },
+  {
+    "prompt": "Where is the youngest teacher from? SELECT FROM [table], Answer 1 for course,  Answer 2 for teacher,  Answer 3 for course arrange, the answer should be Answer ",
+    "target": "2",
+    "table": "teacher",
+    "db": "course_teach",
+    "query": "SELECT Hometown FROM teacher ORDER BY Age ASC LIMIT 1"
+  },
+  {
+    "prompt": "Show the hometowns shared by at least two teachers. SELECT FROM [table], Answer 1 for course,  Answer 2 for teacher,  Answer 3 for course arrange, the answer should be Answer ",
+    "target": "2",
+    "table": "teacher",
+    "db": "course_teach",
+    "query": "SELECT Hometown FROM teacher GROUP BY Hometown HAVING COUNT(*)  >=  2"
+  },
+  {
+    "prompt": "What are the towns from which at least two teachers come from? SELECT FROM [table], Answer 1 for course,  Answer 2 for teacher,  Answer 3 for course arrange, the answer should be Answer ",
+    "target": "2",
+    "table": "teacher",
+    "db": "course_teach",
+    "query": "SELECT Hometown FROM teacher GROUP BY Hometown HAVING COUNT(*)  >=  2"
+  },
+  {
+    "prompt": "Find the average number of staff working for the museums that were open before 2009. SELECT FROM [table], Answer 1 for museum,  Answer 2 for customer,  Answer 3 for visit, the answer should be Answer ",
+    "target": "1",
+    "table": "museum",
+    "db": "museum_visit",
+    "query": "SELECT avg(num_of_staff) FROM museum WHERE open_year  <  2009"
+  },
+  {
+    "prompt": "Find the total number of players. SELECT FROM [table], Answer 1 for players,  Answer 2 for matches,  Answer 3 for rankings, the answer should be Answer ",
+    "target": "1",
+    "table": "players",
+    "db": "wta_1",
+    "query": "SELECT count(*) FROM players"
+  },
+  {
+    "prompt": "How many players are there? SELECT FROM [table], Answer 1 for players,  Answer 2 for matches,  Answer 3 for rankings, the answer should be Answer ",
+    "target": "1",
+    "table": "players",
+    "db": "wta_1",
+    "query": "SELECT count(*) FROM players"
+  },
+  {
+    "prompt": "Find the total number of matches. SELECT FROM [table], Answer 1 for players,  Answer 2 for matches,  Answer 3 for rankings, the answer should be Answer ",
+    "target": "2",
+    "table": "matches",
+    "db": "wta_1",
+    "query": "SELECT count(*) FROM matches"
+  },
+  {
+    "prompt": "Count the number of matches. SELECT FROM [table], Answer 1 for players,  Answer 2 for matches,  Answer 3 for rankings, the answer should be Answer ",
+    "target": "2",
+    "table": "matches",
+    "db": "wta_1",
+    "query": "SELECT count(*) FROM matches"
+  },
+  {
+    "prompt": "Find the average rank of winners in all matches. SELECT FROM [table], Answer 1 for players,  Answer 2 for matches,  Answer 3 for rankings, the answer should be Answer ",
+    "target": "2",
+    "table": "matches",
+    "db": "wta_1",
+    "query": "SELECT avg(winner_rank) FROM matches"
+  },
+  {
+    "prompt": "What is the average rank for winners in all matches? SELECT FROM [table], Answer 1 for players,  Answer 2 for matches,  Answer 3 for rankings, the answer should be Answer ",
+    "target": "2",
+    "table": "matches",
+    "db": "wta_1",
+    "query": "SELECT avg(winner_rank) FROM matches"
+  },
+  {
+    "prompt": "Find the highest rank of losers in all matches. SELECT FROM [table], Answer 1 for players,  Answer 2 for matches,  Answer 3 for rankings, the answer should be Answer ",
+    "target": "2",
+    "table": "matches",
+    "db": "wta_1",
+    "query": "SELECT min(loser_rank) FROM matches"
+  },
+  {
+    "prompt": "What is the best rank of losers across all matches? SELECT FROM [table], Answer 1 for players,  Answer 2 for matches,  Answer 3 for rankings, the answer should be Answer ",
+    "target": "2",
+    "table": "matches",
+    "db": "wta_1",
+    "query": "SELECT min(loser_rank) FROM matches"
+  },
+  {
+    "prompt": "find the number of distinct country codes of all players. SELECT FROM [table], Answer 1 for players,  Answer 2 for matches,  Answer 3 for rankings, the answer should be Answer ",
+    "target": "1",
+    "table": "players",
+    "db": "wta_1",
+    "query": "SELECT count(DISTINCT country_code) FROM players"
+  },
+  {
+    "prompt": "How many distinct countries do players come from? SELECT FROM [table], Answer 1 for players,  Answer 2 for matches,  Answer 3 for rankings, the answer should be Answer ",
+    "target": "1",
+    "table": "players",
+    "db": "wta_1",
+    "query": "SELECT count(DISTINCT country_code) FROM players"
+  },
+  {
+    "prompt": "Find the number of distinct name of losers. SELECT FROM [table], Answer 1 for players,  Answer 2 for matches,  Answer 3 for rankings, the answer should be Answer ",
+    "target": "2",
+    "table": "matches",
+    "db": "wta_1",
+    "query": "SELECT count(DISTINCT loser_name) FROM matches"
+  },
+  {
+    "prompt": "How many different loser names are there? SELECT FROM [table], Answer 1 for players,  Answer 2 for matches,  Answer 3 for rankings, the answer should be Answer ",
+    "target": "2",
+    "table": "matches",
+    "db": "wta_1",
+    "query": "SELECT count(DISTINCT loser_name) FROM matches"
+  },
+  {
+    "prompt": "Find the name of tourney that has more than 10 matches. SELECT FROM [table], Answer 1 for players,  Answer 2 for matches,  Answer 3 for rankings, the answer should be Answer ",
+    "target": "2",
+    "table": "matches",
+    "db": "wta_1",
+    "query": "SELECT tourney_name FROM matches GROUP BY tourney_name HAVING count(*)  >  10"
+  },
+  {
+    "prompt": "What are the names of tournaments that have more than 10 matches? SELECT FROM [table], Answer 1 for players,  Answer 2 for matches,  Answer 3 for rankings, the answer should be Answer ",
+    "target": "2",
+    "table": "matches",
+    "db": "wta_1",
+    "query": "SELECT tourney_name FROM matches GROUP BY tourney_name HAVING count(*)  >  10"
+  },
+  {
+    "prompt": "Find the name of the winner who has the highest rank points and participated in the Australian Open tourney. SELECT FROM [table], Answer 1 for players,  Answer 2 for matches,  Answer 3 for rankings, the answer should be Answer ",
+    "target": "2",
+    "table": "matches",
+    "db": "wta_1",
+    "query": "SELECT winner_name FROM matches WHERE tourney_name  =  'Australian Open' ORDER BY winner_rank_points DESC LIMIT 1"
+  },
+  {
+    "prompt": "What is the name of the winner with the most rank points who participated in the Australian Open tournament? SELECT FROM [table], Answer 1 for players,  Answer 2 for matches,  Answer 3 for rankings, the answer should be Answer ",
+    "target": "2",
+    "table": "matches",
+    "db": "wta_1",
+    "query": "SELECT winner_name FROM matches WHERE tourney_name  =  'Australian Open' ORDER BY winner_rank_points DESC LIMIT 1"
+  },
+  {
+    "prompt": "Find the codes of countries that have more than 50 players. SELECT FROM [table], Answer 1 for players,  Answer 2 for matches,  Answer 3 for rankings, the answer should be Answer ",
+    "target": "1",
+    "table": "players",
+    "db": "wta_1",
+    "query": "SELECT country_code FROM players GROUP BY country_code HAVING count(*)  >  50"
+  },
+  {
+    "prompt": "What are the codes of countries with more than 50 players? SELECT FROM [table], Answer 1 for players,  Answer 2 for matches,  Answer 3 for rankings, the answer should be Answer ",
+    "target": "1",
+    "table": "players",
+    "db": "wta_1",
+    "query": "SELECT country_code FROM players GROUP BY country_code HAVING count(*)  >  50"
+  },
+  {
+    "prompt": "How many ships ended up being 'Captured'? SELECT FROM [table], Answer 1 for battle,  Answer 2 for ship,  Answer 3 for death, the answer should be Answer ",
+    "target": "2",
+    "table": "ship",
+    "db": "battle_death",
+    "query": "SELECT count(*) FROM ship WHERE disposition_of_ship  =  'Captured'"
+  },
+  {
+    "prompt": "What is the average number of injuries caused each time? SELECT FROM [table], Answer 1 for battle,  Answer 2 for ship,  Answer 3 for death, the answer should be Answer ",
+    "target": "3",
+    "table": "death",
+    "db": "battle_death",
+    "query": "SELECT avg(injured) FROM death"
+  },
+  {
+    "prompt": "How many different results are there for the battles? SELECT FROM [table], Answer 1 for battle,  Answer 2 for ship,  Answer 3 for death, the answer should be Answer ",
+    "target": "1",
+    "table": "battle",
+    "db": "battle_death",
+    "query": "SELECT count(DISTINCT RESULT) FROM battle"
+  },
+  {
+    "prompt": "What are the notes of the death events which has substring 'East'? SELECT FROM [table], Answer 1 for battle,  Answer 2 for ship,  Answer 3 for death, the answer should be Answer ",
+    "target": "3",
+    "table": "death",
+    "db": "battle_death",
+    "query": "SELECT note FROM death WHERE note LIKE '%East%'"
+  },
+  {
+    "prompt": "How many courses in total are listed? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "2",
+    "table": "courses",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT count(*) FROM Courses"
+  },
+  {
+    "prompt": "How many courses are there? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "2",
+    "table": "courses",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT count(*) FROM Courses"
+  },
+  {
+    "prompt": "How is the math course described? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "2",
+    "table": "courses",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT course_description FROM Courses WHERE course_name  =  'math'"
+  },
+  {
+    "prompt": "What are the descriptions for all the math courses? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "2",
+    "table": "courses",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT course_description FROM Courses WHERE course_name  =  'math'"
+  },
+  {
+    "prompt": "What is the zip code of the address in the city Port Chelsea? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "1",
+    "table": "addresses",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT zip_postcode FROM Addresses WHERE city  =  'Port Chelsea'"
+  },
+  {
+    "prompt": "What is the zip code for Port Chelsea? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "1",
+    "table": "addresses",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT zip_postcode FROM Addresses WHERE city  =  'Port Chelsea'"
+  },
+  {
+    "prompt": "How many departments offer any degree? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "4",
+    "table": "degree programs",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT count(DISTINCT department_id) FROM Degree_Programs"
+  },
+  {
+    "prompt": "How many different departments offer degrees? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "4",
+    "table": "degree programs",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT count(DISTINCT department_id) FROM Degree_Programs"
+  },
+  {
+    "prompt": "How many different degree names are offered? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "4",
+    "table": "degree programs",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT count(DISTINCT degree_summary_name) FROM Degree_Programs"
+  },
+  {
+    "prompt": "How many different degrees are offered? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "4",
+    "table": "degree programs",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT count(DISTINCT degree_summary_name) FROM Degree_Programs"
+  },
+  {
+    "prompt": "List the section_name in reversed lexicographical order. SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "5",
+    "table": "sections",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT section_name FROM Sections ORDER BY section_name DESC"
+  },
+  {
+    "prompt": "What are the names of the sections in reverse alphabetical order? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "5",
+    "table": "sections",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT section_name FROM Sections ORDER BY section_name DESC"
+  },
+  {
+    "prompt": "What is the description of the department whose name has the substring the computer? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "3",
+    "table": "departments",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT department_description FROM Departments WHERE department_name LIKE '%computer%'"
+  },
+  {
+    "prompt": "What is the department description for the one whose name has the word computer? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "3",
+    "table": "departments",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT department_description FROM Departments WHERE department_name LIKE '%computer%'"
+  },
+  {
+    "prompt": "On average, when were the transcripts printed? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "10",
+    "table": "transcripts",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT avg(transcript_date) FROM Transcripts"
+  },
+  {
+    "prompt": "What is the average transcript date? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "10",
+    "table": "transcripts",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT avg(transcript_date) FROM Transcripts"
+  },
+  {
+    "prompt": "How many transcripts are released? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "10",
+    "table": "transcripts",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT count(*) FROM Transcripts"
+  },
+  {
+    "prompt": "How many transcripts are listed? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "10",
+    "table": "transcripts",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT count(*) FROM Transcripts"
+  },
+  {
+    "prompt": "What is the last transcript release date? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "10",
+    "table": "transcripts",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT transcript_date FROM Transcripts ORDER BY transcript_date DESC LIMIT 1"
+  },
+  {
+    "prompt": "When was the last transcript released? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "10",
+    "table": "transcripts",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT transcript_date FROM Transcripts ORDER BY transcript_date DESC LIMIT 1"
+  },
+  {
+    "prompt": "How many different addresses do the students currently live? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "7",
+    "table": "students",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT count(DISTINCT current_address_id) FROM Students"
+  },
+  {
+    "prompt": "What are the different addresses that have students living there? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "7",
+    "table": "students",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT count(DISTINCT current_address_id) FROM Students"
+  },
+  {
+    "prompt": "List all the student details in reversed lexicographical order. SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "7",
+    "table": "students",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT other_student_details FROM Students ORDER BY other_student_details DESC"
+  },
+  {
+    "prompt": "What other details can you tell me about students in reverse alphabetical order? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "7",
+    "table": "students",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT other_student_details FROM Students ORDER BY other_student_details DESC"
+  },
+  {
+    "prompt": "Describe the section h. SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "5",
+    "table": "sections",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT section_description FROM Sections WHERE section_name  =  'h'"
+  },
+  {
+    "prompt": "What is the description for the section named h? SELECT FROM [table], Answer 1 for addresses,  Answer 2 for courses,  Answer 3 for departments,  Answer 4 for degree programs,  Answer 5 for sections,  Answer 6 for semesters,  Answer 7 for students,  Answer 8 for student enrolment,  Answer 9 for student enrolment courses,  Answer 10 for transcripts,  Answer 11 for transcript contents, the answer should be Answer ",
+    "target": "5",
+    "table": "sections",
+    "db": "student_transcripts_tracking",
+    "query": "SELECT section_description FROM Sections WHERE section_name  =  'h'"
+  },
+  {
+    "prompt": "List the title of all cartoons in alphabetical order. SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "3",
+    "table": "cartoon",
+    "db": "tvshow",
+    "query": "SELECT Title FROM Cartoon ORDER BY title"
+  },
+  {
+    "prompt": "What are the titles of the cartoons sorted alphabetically? SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "3",
+    "table": "cartoon",
+    "db": "tvshow",
+    "query": "SELECT Title FROM Cartoon ORDER BY title"
+  },
+  {
+    "prompt": "List all cartoon directed by \"Ben Jones\". SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "3",
+    "table": "cartoon",
+    "db": "tvshow",
+    "query": "SELECT Title FROM Cartoon WHERE Directed_by = \"Ben Jones\";"
+  },
+  {
+    "prompt": "What are the names of all cartoons directed by Ben Jones? SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "3",
+    "table": "cartoon",
+    "db": "tvshow",
+    "query": "SELECT Title FROM Cartoon WHERE Directed_by = \"Ben Jones\";"
+  },
+  {
+    "prompt": "How many cartoons were written by \"Joseph Kuhr\"? SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "3",
+    "table": "cartoon",
+    "db": "tvshow",
+    "query": "SELECT count(*) FROM Cartoon WHERE Written_by = \"Joseph Kuhr\";"
+  },
+  {
+    "prompt": "What is the number of cartoones written by Joseph Kuhr? SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "3",
+    "table": "cartoon",
+    "db": "tvshow",
+    "query": "SELECT count(*) FROM Cartoon WHERE Written_by = \"Joseph Kuhr\";"
+  },
+  {
+    "prompt": "What is the content of TV Channel with serial name \"Sky Radio\"? SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "1",
+    "table": "tv channel",
+    "db": "tvshow",
+    "query": "SELECT Content FROM TV_Channel WHERE series_name = \"Sky Radio\";"
+  },
+  {
+    "prompt": "What is the content of the series Sky Radio? SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "1",
+    "table": "tv channel",
+    "db": "tvshow",
+    "query": "SELECT Content FROM TV_Channel WHERE series_name = \"Sky Radio\";"
+  },
+  {
+    "prompt": "What is the Package Option of TV Channel with serial name \"Sky Radio\"? SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "1",
+    "table": "tv channel",
+    "db": "tvshow",
+    "query": "SELECT Package_Option FROM TV_Channel WHERE series_name = \"Sky Radio\";"
+  },
+  {
+    "prompt": "What are the Package Options of the TV Channels whose series names are Sky Radio? SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "1",
+    "table": "tv channel",
+    "db": "tvshow",
+    "query": "SELECT Package_Option FROM TV_Channel WHERE series_name = \"Sky Radio\";"
+  },
+  {
+    "prompt": "How many TV Channel using language English? SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "1",
+    "table": "tv channel",
+    "db": "tvshow",
+    "query": "SELECT count(*) FROM TV_Channel WHERE LANGUAGE = \"English\";"
+  },
+  {
+    "prompt": "How many TV Channels use the English language? SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "1",
+    "table": "tv channel",
+    "db": "tvshow",
+    "query": "SELECT count(*) FROM TV_Channel WHERE LANGUAGE = \"English\";"
+  },
+  {
+    "prompt": "List the Episode of all TV series sorted by rating. SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "2",
+    "table": "tv series",
+    "db": "tvshow",
+    "query": "SELECT Episode FROM TV_series ORDER BY rating"
+  },
+  {
+    "prompt": "What are all of the episodes ordered by ratings? SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "2",
+    "table": "tv series",
+    "db": "tvshow",
+    "query": "SELECT Episode FROM TV_series ORDER BY rating"
+  },
+  {
+    "prompt": "What is the air date of TV series with Episode \"A Love of a Lifetime\"? SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "2",
+    "table": "tv series",
+    "db": "tvshow",
+    "query": "SELECT Air_Date FROM TV_series WHERE Episode = \"A Love of a Lifetime\";"
+  },
+  {
+    "prompt": "When did the episode \"A Love of a Lifetime\" air? SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "2",
+    "table": "tv series",
+    "db": "tvshow",
+    "query": "SELECT Air_Date FROM TV_series WHERE Episode = \"A Love of a Lifetime\";"
+  },
+  {
+    "prompt": "What is Weekly Rank of TV series with Episode \"A Love of a Lifetime\"? SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "2",
+    "table": "tv series",
+    "db": "tvshow",
+    "query": "SELECT Weekly_Rank FROM TV_series WHERE Episode = \"A Love of a Lifetime\";"
+  },
+  {
+    "prompt": "What is the weekly rank for the episode \"A Love of a Lifetime\"? SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "2",
+    "table": "tv series",
+    "db": "tvshow",
+    "query": "SELECT Weekly_Rank FROM TV_series WHERE Episode = \"A Love of a Lifetime\";"
+  },
+  {
+    "prompt": "find id of the tv channels that from the countries where have more than two tv channels. SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "1",
+    "table": "tv channel",
+    "db": "tvshow",
+    "query": "SELECT id FROM tv_channel GROUP BY country HAVING count(*)  >  2"
+  },
+  {
+    "prompt": "What are the ids of all tv channels that have more than 2 TV channels? SELECT FROM [table], Answer 1 for tv channel,  Answer 2 for tv series,  Answer 3 for cartoon, the answer should be Answer ",
+    "target": "1",
+    "table": "tv channel",
+    "db": "tvshow",
+    "query": "SELECT id FROM tv_channel GROUP BY country HAVING count(*)  >  2"
+  },
+  {
+    "prompt": "How many poker players are there? SELECT FROM [table], Answer 1 for poker player,  Answer 2 for people, the answer should be Answer ",
+    "target": "1",
+    "table": "poker player",
+    "db": "poker_player",
+    "query": "SELECT count(*) FROM poker_player"
+  },
+  {
+    "prompt": "Count the number of poker players. SELECT FROM [table], Answer 1 for poker player,  Answer 2 for people, the answer should be Answer ",
+    "target": "1",
+    "table": "poker player",
+    "db": "poker_player",
+    "query": "SELECT count(*) FROM poker_player"
+  },
+  {
+    "prompt": "List the earnings of poker players in descending order. SELECT FROM [table], Answer 1 for poker player,  Answer 2 for people, the answer should be Answer ",
+    "target": "1",
+    "table": "poker player",
+    "db": "poker_player",
+    "query": "SELECT Earnings FROM poker_player ORDER BY Earnings DESC"
+  },
+  {
+    "prompt": "What are the earnings of poker players, ordered descending by value? SELECT FROM [table], Answer 1 for poker player,  Answer 2 for people, the answer should be Answer ",
+    "target": "1",
+    "table": "poker player",
+    "db": "poker_player",
+    "query": "SELECT Earnings FROM poker_player ORDER BY Earnings DESC"
+  },
+  {
+    "prompt": "What is the average earnings of poker players? SELECT FROM [table], Answer 1 for poker player,  Answer 2 for people, the answer should be Answer ",
+    "target": "1",
+    "table": "poker player",
+    "db": "poker_player",
+    "query": "SELECT avg(Earnings) FROM poker_player"
+  },
+  {
+    "prompt": "Return the average earnings across all poker players. SELECT FROM [table], Answer 1 for poker player,  Answer 2 for people, the answer should be Answer ",
+    "target": "1",
+    "table": "poker player",
+    "db": "poker_player",
+    "query": "SELECT avg(Earnings) FROM poker_player"
+  },
+  {
+    "prompt": "What is the money rank of the poker player with the highest earnings? SELECT FROM [table], Answer 1 for poker player,  Answer 2 for people, the answer should be Answer ",
+    "target": "1",
+    "table": "poker player",
+    "db": "poker_player",
+    "query": "SELECT Money_Rank FROM poker_player ORDER BY Earnings DESC LIMIT 1"
+  },
+  {
+    "prompt": "Return the money rank of the player with the greatest earnings. SELECT FROM [table], Answer 1 for poker player,  Answer 2 for people, the answer should be Answer ",
+    "target": "1",
+    "table": "poker player",
+    "db": "poker_player",
+    "query": "SELECT Money_Rank FROM poker_player ORDER BY Earnings DESC LIMIT 1"
+  },
+  {
+    "prompt": "What is the maximum number of final tables made among poker players with earnings less than 200000? SELECT FROM [table], Answer 1 for poker player,  Answer 2 for people, the answer should be Answer ",
+    "target": "1",
+    "table": "poker player",
+    "db": "poker_player",
+    "query": "SELECT max(Final_Table_Made) FROM poker_player WHERE Earnings  <  200000"
+  },
+  {
+    "prompt": "Return the maximum final tables made across all poker players who have earnings below 200000. SELECT FROM [table], Answer 1 for poker player,  Answer 2 for people, the answer should be Answer ",
+    "target": "1",
+    "table": "poker player",
+    "db": "poker_player",
+    "query": "SELECT max(Final_Table_Made) FROM poker_player WHERE Earnings  <  200000"
+  },
+  {
+    "prompt": "What are the nationalities that are shared by at least two people? SELECT FROM [table], Answer 1 for poker player,  Answer 2 for people, the answer should be Answer ",
+    "target": "2",
+    "table": "people",
+    "db": "poker_player",
+    "query": "SELECT Nationality FROM people GROUP BY Nationality HAVING COUNT(*)  >=  2"
+  },
+  {
+    "prompt": "Return the nationalities for which there are two or more people. SELECT FROM [table], Answer 1 for poker player,  Answer 2 for people, the answer should be Answer ",
+    "target": "2",
+    "table": "people",
+    "db": "poker_player",
+    "query": "SELECT Nationality FROM people GROUP BY Nationality HAVING COUNT(*)  >=  2"
+  },
+  {
+    "prompt": "Show names of people whose nationality is not \"Russia\". SELECT FROM [table], Answer 1 for poker player,  Answer 2 for people, the answer should be Answer ",
+    "target": "2",
+    "table": "people",
+    "db": "poker_player",
+    "query": "SELECT Name FROM people WHERE Nationality != \"Russia\""
+  },
+  {
+    "prompt": "What are the names of people who are not from Russia? SELECT FROM [table], Answer 1 for poker player,  Answer 2 for people, the answer should be Answer ",
+    "target": "2",
+    "table": "people",
+    "db": "poker_player",
+    "query": "SELECT Name FROM people WHERE Nationality != \"Russia\""
+  },
+  {
+    "prompt": "How many distinct nationalities are there? SELECT FROM [table], Answer 1 for poker player,  Answer 2 for people, the answer should be Answer ",
+    "target": "2",
+    "table": "people",
+    "db": "poker_player",
+    "query": "SELECT count(DISTINCT Nationality) FROM people"
+  },
+  {
+    "prompt": "Count the number of different nationalities. SELECT FROM [table], Answer 1 for poker player,  Answer 2 for people, the answer should be Answer ",
+    "target": "2",
+    "table": "people",
+    "db": "poker_player",
+    "query": "SELECT count(DISTINCT Nationality) FROM people"
+  },
+  {
+    "prompt": "How many states are there? SELECT FROM [table], Answer 1 for area code state,  Answer 2 for contestants,  Answer 3 for votes, the answer should be Answer ",
+    "target": "1",
+    "table": "area code state",
+    "db": "voter_1",
+    "query": "SELECT count(*) FROM area_code_state"
+  },
+  {
+    "prompt": "What is last date created of votes from the state 'CA'? SELECT FROM [table], Answer 1 for area code state,  Answer 2 for contestants,  Answer 3 for votes, the answer should be Answer ",
+    "target": "3",
+    "table": "votes",
+    "db": "voter_1",
+    "query": "SELECT max(created) FROM votes WHERE state  =  'CA'"
+  },
+  {
+    "prompt": "What are the names of the contestants whose names are not 'Jessie Alloway' SELECT FROM [table], Answer 1 for area code state,  Answer 2 for contestants,  Answer 3 for votes, the answer should be Answer ",
+    "target": "2",
+    "table": "contestants",
+    "db": "voter_1",
+    "query": "SELECT contestant_name FROM contestants WHERE contestant_name != 'Jessie Alloway'"
+  },
+  {
+    "prompt": "Return the names of the contestants whose names contain the substring 'Al' . SELECT FROM [table], Answer 1 for area code state,  Answer 2 for contestants,  Answer 3 for votes, the answer should be Answer ",
+    "target": "2",
+    "table": "contestants",
+    "db": "voter_1",
+    "query": "select contestant_name from contestants where contestant_name like \"%al%\""
+  },
+  {
+    "prompt": "What are the names of all the countries that became independent after 1950? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT Name FROM country WHERE IndepYear  >  1950"
+  },
+  {
+    "prompt": "Give the names of the nations that were founded after 1950. SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT Name FROM country WHERE IndepYear  >  1950"
+  },
+  {
+    "prompt": "How many countries have a republic as their form of government? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT count(*) FROM country WHERE GovernmentForm  =  \"Republic\""
+  },
+  {
+    "prompt": "How many countries have governments that are republics? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT count(*) FROM country WHERE GovernmentForm  =  \"Republic\""
+  },
+  {
+    "prompt": "What is the total surface area of the countries in the Caribbean region? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT sum(SurfaceArea) FROM country WHERE Region  =  \"Caribbean\""
+  },
+  {
+    "prompt": "How much surface area do the countires in the Carribean cover together? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT sum(SurfaceArea) FROM country WHERE Region  =  \"Caribbean\""
+  },
+  {
+    "prompt": "Which continent is Anguilla in? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT Continent FROM country WHERE Name  =  \"Anguilla\""
+  },
+  {
+    "prompt": "What is the continent name which Anguilla belongs to? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT Continent FROM country WHERE Name  =  \"Anguilla\""
+  },
+  {
+    "prompt": "What is the average expected life expectancy for countries in the region of Central Africa? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT avg(LifeExpectancy) FROM country WHERE Region  =  \"Central Africa\""
+  },
+  {
+    "prompt": "How long is the people\u2019s average life expectancy in Central Africa? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT avg(LifeExpectancy) FROM country WHERE Region  =  \"Central Africa\""
+  },
+  {
+    "prompt": "What is the name of country that has the shortest life expectancy in Asia? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT Name FROM country WHERE Continent  =  \"Asia\" ORDER BY LifeExpectancy LIMIT 1"
+  },
+  {
+    "prompt": "Give the name of the country in Asia with the lowest life expectancy. SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT Name FROM country WHERE Continent  =  \"Asia\" ORDER BY LifeExpectancy LIMIT 1"
+  },
+  {
+    "prompt": "How many people live in Gelderland district? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "1",
+    "table": "city",
+    "db": "world_1",
+    "query": "SELECT sum(Population) FROM city WHERE District  =  \"Gelderland\""
+  },
+  {
+    "prompt": "What is the total population of Gelderland district? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "1",
+    "table": "city",
+    "db": "world_1",
+    "query": "SELECT sum(Population) FROM city WHERE District  =  \"Gelderland\""
+  },
+  {
+    "prompt": "How many unique languages are spoken in the world? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "4",
+    "table": "countrylanguage",
+    "db": "world_1",
+    "query": "SELECT count(DISTINCT LANGUAGE) FROM countrylanguage"
+  },
+  {
+    "prompt": "What is the number of distinct languages used around the world? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "4",
+    "table": "countrylanguage",
+    "db": "world_1",
+    "query": "SELECT count(DISTINCT LANGUAGE) FROM countrylanguage"
+  },
+  {
+    "prompt": "How many type of governments are in Africa? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT count(DISTINCT GovernmentForm) FROM country WHERE Continent  =  \"Africa\""
+  },
+  {
+    "prompt": "How many different forms of governments are there in Africa? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT count(DISTINCT GovernmentForm) FROM country WHERE Continent  =  \"Africa\""
+  },
+  {
+    "prompt": "What are the country codes of countries where people use languages other than English? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "4",
+    "table": "countrylanguage",
+    "db": "world_1",
+    "query": "SELECT DISTINCT CountryCode FROM countrylanguage WHERE LANGUAGE != \"English\""
+  },
+  {
+    "prompt": "Give the country codes for countries in which people speak langauges that are not English. SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "4",
+    "table": "countrylanguage",
+    "db": "world_1",
+    "query": "SELECT DISTINCT CountryCode FROM countrylanguage WHERE LANGUAGE != \"English\""
+  },
+  {
+    "prompt": "What are names of countries with the top 3 largest population? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT Name FROM country ORDER BY Population DESC LIMIT 3"
+  },
+  {
+    "prompt": "Return the names of the 3 most populated countries. SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT Name FROM country ORDER BY Population DESC LIMIT 3"
+  },
+  {
+    "prompt": "What are the names of the nations with the 3 lowest populations? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT Name FROM country ORDER BY Population ASC LIMIT 3"
+  },
+  {
+    "prompt": "Return the names of the 3 countries with the fewest people. SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT Name FROM country ORDER BY Population ASC LIMIT 3"
+  },
+  {
+    "prompt": "how many countries are in Asia? SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT count(*) FROM country WHERE continent  =  \"Asia\""
+  },
+  {
+    "prompt": "Count the number of countries in Asia. SELECT FROM [table], Answer 1 for city,  Answer 2 for sqlite sequence,  Answer 3 for country,  Answer 4 for countrylanguage, the answer should be Answer ",
+    "target": "3",
+    "table": "country",
+    "db": "world_1",
+    "query": "SELECT count(*) FROM country WHERE continent  =  \"Asia\""
+  },
+  {
+    "prompt": "How many conductors are there? SELECT FROM [table], Answer 1 for conductor,  Answer 2 for orchestra,  Answer 3 for performance,  Answer 4 for show, the answer should be Answer ",
+    "target": "1",
+    "table": "conductor",
+    "db": "orchestra",
+    "query": "SELECT count(*) FROM conductor"
+  },
+  {
+    "prompt": "Count the number of conductors. SELECT FROM [table], Answer 1 for conductor,  Answer 2 for orchestra,  Answer 3 for performance,  Answer 4 for show, the answer should be Answer ",
+    "target": "1",
+    "table": "conductor",
+    "db": "orchestra",
+    "query": "SELECT count(*) FROM conductor"
+  },
+  {
+    "prompt": "What are the record companies of orchestras in descending order of years in which they were founded? SELECT FROM [table], Answer 1 for conductor,  Answer 2 for orchestra,  Answer 3 for performance,  Answer 4 for show, the answer should be Answer ",
+    "target": "2",
+    "table": "orchestra",
+    "db": "orchestra",
+    "query": "SELECT Record_Company FROM orchestra ORDER BY Year_of_Founded DESC"
+  },
+  {
+    "prompt": "Return the record companies of orchestras, sorted descending by the years in which they were founded. SELECT FROM [table], Answer 1 for conductor,  Answer 2 for orchestra,  Answer 3 for performance,  Answer 4 for show, the answer should be Answer ",
+    "target": "2",
+    "table": "orchestra",
+    "db": "orchestra",
+    "query": "SELECT Record_Company FROM orchestra ORDER BY Year_of_Founded DESC"
+  },
+  {
+    "prompt": "What is the average attendance of shows? SELECT FROM [table], Answer 1 for conductor,  Answer 2 for orchestra,  Answer 3 for performance,  Answer 4 for show, the answer should be Answer ",
+    "target": "4",
+    "table": "show",
+    "db": "orchestra",
+    "query": "SELECT avg(Attendance) FROM SHOW"
+  },
+  {
+    "prompt": "Return the average attendance across all shows. SELECT FROM [table], Answer 1 for conductor,  Answer 2 for orchestra,  Answer 3 for performance,  Answer 4 for show, the answer should be Answer ",
+    "target": "4",
+    "table": "show",
+    "db": "orchestra",
+    "query": "SELECT avg(Attendance) FROM SHOW"
+  },
+  {
+    "prompt": "How many different nationalities do conductors have? SELECT FROM [table], Answer 1 for conductor,  Answer 2 for orchestra,  Answer 3 for performance,  Answer 4 for show, the answer should be Answer ",
+    "target": "1",
+    "table": "conductor",
+    "db": "orchestra",
+    "query": "SELECT count(DISTINCT Nationality) FROM conductor"
+  },
+  {
+    "prompt": "Count the number of different nationalities of conductors. SELECT FROM [table], Answer 1 for conductor,  Answer 2 for orchestra,  Answer 3 for performance,  Answer 4 for show, the answer should be Answer ",
+    "target": "1",
+    "table": "conductor",
+    "db": "orchestra",
+    "query": "SELECT count(DISTINCT Nationality) FROM conductor"
+  },
+  {
+    "prompt": "How many high schoolers are there? SELECT FROM [table], Answer 1 for high schooler,  Answer 2 for friend,  Answer 3 for likes, the answer should be Answer ",
+    "target": "1",
+    "table": "high schooler",
+    "db": "network_1",
+    "query": "SELECT count(*) FROM Highschooler"
+  },
+  {
+    "prompt": "Count the number of high schoolers. SELECT FROM [table], Answer 1 for high schooler,  Answer 2 for friend,  Answer 3 for likes, the answer should be Answer ",
+    "target": "1",
+    "table": "high schooler",
+    "db": "network_1",
+    "query": "SELECT count(*) FROM Highschooler"
+  },
+  {
+    "prompt": "Show all the grades of the high schoolers. SELECT FROM [table], Answer 1 for high schooler,  Answer 2 for friend,  Answer 3 for likes, the answer should be Answer ",
+    "target": "1",
+    "table": "high schooler",
+    "db": "network_1",
+    "query": "SELECT grade FROM Highschooler"
+  },
+  {
+    "prompt": "What is the grade of each high schooler? SELECT FROM [table], Answer 1 for high schooler,  Answer 2 for friend,  Answer 3 for likes, the answer should be Answer ",
+    "target": "1",
+    "table": "high schooler",
+    "db": "network_1",
+    "query": "SELECT grade FROM Highschooler"
+  },
+  {
+    "prompt": "What grade is Kyle in? SELECT FROM [table], Answer 1 for high schooler,  Answer 2 for friend,  Answer 3 for likes, the answer should be Answer ",
+    "target": "1",
+    "table": "high schooler",
+    "db": "network_1",
+    "query": "SELECT grade FROM Highschooler WHERE name  =  \"Kyle\""
+  },
+  {
+    "prompt": "Return the grade for the high schooler named Kyle. SELECT FROM [table], Answer 1 for high schooler,  Answer 2 for friend,  Answer 3 for likes, the answer should be Answer ",
+    "target": "1",
+    "table": "high schooler",
+    "db": "network_1",
+    "query": "SELECT grade FROM Highschooler WHERE name  =  \"Kyle\""
+  },
+  {
+    "prompt": "Show the names of all high schoolers in grade 10. SELECT FROM [table], Answer 1 for high schooler,  Answer 2 for friend,  Answer 3 for likes, the answer should be Answer ",
+    "target": "1",
+    "table": "high schooler",
+    "db": "network_1",
+    "query": "SELECT name FROM Highschooler WHERE grade  =  10"
+  },
+  {
+    "prompt": "What are the names of all high schoolers in grade 10? SELECT FROM [table], Answer 1 for high schooler,  Answer 2 for friend,  Answer 3 for likes, the answer should be Answer ",
+    "target": "1",
+    "table": "high schooler",
+    "db": "network_1",
+    "query": "SELECT name FROM Highschooler WHERE grade  =  10"
+  },
+  {
+    "prompt": "Show the ID of the high schooler named Kyle. SELECT FROM [table], Answer 1 for high schooler,  Answer 2 for friend,  Answer 3 for likes, the answer should be Answer ",
+    "target": "1",
+    "table": "high schooler",
+    "db": "network_1",
+    "query": "SELECT ID FROM Highschooler WHERE name  =  \"Kyle\""
+  },
+  {
+    "prompt": "What is Kyle's id? SELECT FROM [table], Answer 1 for high schooler,  Answer 2 for friend,  Answer 3 for likes, the answer should be Answer ",
+    "target": "1",
+    "table": "high schooler",
+    "db": "network_1",
+    "query": "SELECT ID FROM Highschooler WHERE name  =  \"Kyle\""
+  },
+  {
+    "prompt": "Show me all grades that have at least 4 students. SELECT FROM [table], Answer 1 for high schooler,  Answer 2 for friend,  Answer 3 for likes, the answer should be Answer ",
+    "target": "1",
+    "table": "high schooler",
+    "db": "network_1",
+    "query": "SELECT grade FROM Highschooler GROUP BY grade HAVING count(*)  >=  4"
+  },
+  {
+    "prompt": "Which grades have 4 or more high schoolers? SELECT FROM [table], Answer 1 for high schooler,  Answer 2 for friend,  Answer 3 for likes, the answer should be Answer ",
+    "target": "1",
+    "table": "high schooler",
+    "db": "network_1",
+    "query": "SELECT grade FROM Highschooler GROUP BY grade HAVING count(*)  >=  4"
+  },
+  {
+    "prompt": "Show ids of all students who do not have any friends. SELECT FROM [table], Answer 1 for friend,  Answer 2 for high schooler,  Answer 3 for likes, the answer should be Answer ",
+    "target": "2",
+    "table": "high schooler",
+    "db": "network_1",
+    "query": "SELECT id FROM Highschooler EXCEPT SELECT student_id FROM Friend"
+  },
+  {
+    "prompt": "Show ids of all students who do not have any friends. EXCEPT [table], Answer 1 for friend,  Answer 2 for likes, the answer should be Answer ",
+    "target": "1",
+    "table": "friend",
+    "db": "network_1",
+    "query": "SELECT id FROM Highschooler EXCEPT SELECT student_id FROM Friend"
+  },
+  {
+    "prompt": "What are the ids of high school students who do not have friends? SELECT FROM [table], Answer 1 for friend,  Answer 2 for high schooler,  Answer 3 for likes, the answer should be Answer ",
+    "target": "2",
+    "table": "high schooler",
+    "db": "network_1",
+    "query": "SELECT id FROM Highschooler EXCEPT SELECT student_id FROM Friend"
+  },
+  {
+    "prompt": "What are the ids of high school students who do not have friends? EXCEPT [table], Answer 1 for friend,  Answer 2 for likes, the answer should be Answer ",
+    "target": "1",
+    "table": "friend",
+    "db": "network_1",
+    "query": "SELECT id FROM Highschooler EXCEPT SELECT student_id FROM Friend"
+  },
+  {
+    "prompt": "How many dogs went through any treatments? SELECT FROM [table], Answer 1 for breeds,  Answer 2 for charges,  Answer 3 for sizes,  Answer 4 for treatment types,  Answer 5 for owners,  Answer 6 for dogs,  Answer 7 for professionals,  Answer 8 for treatments, the answer should be Answer ",
+    "target": "8",
+    "table": "treatments",
+    "db": "dog_kennels",
+    "query": "SELECT count(DISTINCT dog_id) FROM Treatments"
+  },
+  {
+    "prompt": "Count the number of dogs that went through a treatment. SELECT FROM [table], Answer 1 for breeds,  Answer 2 for charges,  Answer 3 for sizes,  Answer 4 for treatment types,  Answer 5 for owners,  Answer 6 for dogs,  Answer 7 for professionals,  Answer 8 for treatments, the answer should be Answer ",
+    "target": "8",
+    "table": "treatments",
+    "db": "dog_kennels",
+    "query": "SELECT count(DISTINCT dog_id) FROM Treatments"
+  },
+  {
+    "prompt": "How many professionals have performed any treatment to dogs? SELECT FROM [table], Answer 1 for breeds,  Answer 2 for charges,  Answer 3 for sizes,  Answer 4 for treatment types,  Answer 5 for owners,  Answer 6 for dogs,  Answer 7 for professionals,  Answer 8 for treatments, the answer should be Answer ",
+    "target": "8",
+    "table": "treatments",
+    "db": "dog_kennels",
+    "query": "SELECT count(DISTINCT professional_id) FROM Treatments"
+  },
+  {
+    "prompt": "Find the number of professionals who have ever treated dogs. SELECT FROM [table], Answer 1 for breeds,  Answer 2 for charges,  Answer 3 for sizes,  Answer 4 for treatment types,  Answer 5 for owners,  Answer 6 for dogs,  Answer 7 for professionals,  Answer 8 for treatments, the answer should be Answer ",
+    "target": "8",
+    "table": "treatments",
+    "db": "dog_kennels",
+    "query": "SELECT count(DISTINCT professional_id) FROM Treatments"
+  },
+  {
+    "prompt": "How much does the most recent treatment cost? SELECT FROM [table], Answer 1 for breeds,  Answer 2 for charges,  Answer 3 for sizes,  Answer 4 for treatment types,  Answer 5 for owners,  Answer 6 for dogs,  Answer 7 for professionals,  Answer 8 for treatments, the answer should be Answer ",
+    "target": "8",
+    "table": "treatments",
+    "db": "dog_kennels",
+    "query": "SELECT cost_of_treatment FROM Treatments ORDER BY date_of_treatment DESC LIMIT 1"
+  },
+  {
+    "prompt": "Show me the cost of the most recently performed treatment. SELECT FROM [table], Answer 1 for breeds,  Answer 2 for charges,  Answer 3 for sizes,  Answer 4 for treatment types,  Answer 5 for owners,  Answer 6 for dogs,  Answer 7 for professionals,  Answer 8 for treatments, the answer should be Answer ",
+    "target": "8",
+    "table": "treatments",
+    "db": "dog_kennels",
+    "query": "SELECT cost_of_treatment FROM Treatments ORDER BY date_of_treatment DESC LIMIT 1"
+  },
+  {
+    "prompt": "What is the average age of all the dogs? SELECT FROM [table], Answer 1 for breeds,  Answer 2 for charges,  Answer 3 for sizes,  Answer 4 for treatment types,  Answer 5 for owners,  Answer 6 for dogs,  Answer 7 for professionals,  Answer 8 for treatments, the answer should be Answer ",
+    "target": "6",
+    "table": "dogs",
+    "db": "dog_kennels",
+    "query": "SELECT avg(age) FROM Dogs"
+  },
+  {
+    "prompt": "Compute the average age of all the dogs. SELECT FROM [table], Answer 1 for breeds,  Answer 2 for charges,  Answer 3 for sizes,  Answer 4 for treatment types,  Answer 5 for owners,  Answer 6 for dogs,  Answer 7 for professionals,  Answer 8 for treatments, the answer should be Answer ",
+    "target": "6",
+    "table": "dogs",
+    "db": "dog_kennels",
+    "query": "SELECT avg(age) FROM Dogs"
+  },
+  {
+    "prompt": "What is the age of the oldest dog? SELECT FROM [table], Answer 1 for breeds,  Answer 2 for charges,  Answer 3 for sizes,  Answer 4 for treatment types,  Answer 5 for owners,  Answer 6 for dogs,  Answer 7 for professionals,  Answer 8 for treatments, the answer should be Answer ",
+    "target": "6",
+    "table": "dogs",
+    "db": "dog_kennels",
+    "query": "SELECT max(age) FROM Dogs"
+  },
+  {
+    "prompt": "Tell me the age of the oldest dog. SELECT FROM [table], Answer 1 for breeds,  Answer 2 for charges,  Answer 3 for sizes,  Answer 4 for treatment types,  Answer 5 for owners,  Answer 6 for dogs,  Answer 7 for professionals,  Answer 8 for treatments, the answer should be Answer ",
+    "target": "6",
+    "table": "dogs",
+    "db": "dog_kennels",
+    "query": "SELECT max(age) FROM Dogs"
+  },
+  {
+    "prompt": "How much does the most expensive charge type costs? SELECT FROM [table], Answer 1 for breeds,  Answer 2 for charges,  Answer 3 for sizes,  Answer 4 for treatment types,  Answer 5 for owners,  Answer 6 for dogs,  Answer 7 for professionals,  Answer 8 for treatments, the answer should be Answer ",
+    "target": "2",
+    "table": "charges",
+    "db": "dog_kennels",
+    "query": "SELECT max(charge_amount) FROM Charges"
+  },
+  {
+    "prompt": "What is the charge amount of the most expensive charge type? SELECT FROM [table], Answer 1 for breeds,  Answer 2 for charges,  Answer 3 for sizes,  Answer 4 for treatment types,  Answer 5 for owners,  Answer 6 for dogs,  Answer 7 for professionals,  Answer 8 for treatments, the answer should be Answer ",
+    "target": "2",
+    "table": "charges",
+    "db": "dog_kennels",
+    "query": "SELECT max(charge_amount) FROM Charges"
+  },
+  {
+    "prompt": "How many singers are there? SELECT FROM [table], Answer 1 for singer,  Answer 2 for song, the answer should be Answer ",
+    "target": "1",
+    "table": "singer",
+    "db": "singer",
+    "query": "SELECT count(*) FROM singer"
+  },
+  {
+    "prompt": "What is the count of singers? SELECT FROM [table], Answer 1 for singer,  Answer 2 for song, the answer should be Answer ",
+    "target": "1",
+    "table": "singer",
+    "db": "singer",
+    "query": "SELECT count(*) FROM singer"
+  },
+  {
+    "prompt": "List the name of singers in ascending order of net worth. SELECT FROM [table], Answer 1 for singer,  Answer 2 for song, the answer should be Answer ",
+    "target": "1",
+    "table": "singer",
+    "db": "singer",
+    "query": "SELECT Name FROM singer ORDER BY Net_Worth_Millions ASC"
+  },
+  {
+    "prompt": "What are the names of singers ordered by ascending net worth? SELECT FROM [table], Answer 1 for singer,  Answer 2 for song, the answer should be Answer ",
+    "target": "1",
+    "table": "singer",
+    "db": "singer",
+    "query": "SELECT Name FROM singer ORDER BY Net_Worth_Millions ASC"
+  },
+  {
+    "prompt": "List the name of singers whose citizenship is not \"France\". SELECT FROM [table], Answer 1 for singer,  Answer 2 for song, the answer should be Answer ",
+    "target": "1",
+    "table": "singer",
+    "db": "singer",
+    "query": "SELECT Name FROM singer WHERE Citizenship != \"France\""
+  },
+  {
+    "prompt": "What are the names of the singers who are not French citizens? SELECT FROM [table], Answer 1 for singer,  Answer 2 for song, the answer should be Answer ",
+    "target": "1",
+    "table": "singer",
+    "db": "singer",
+    "query": "SELECT Name FROM singer WHERE Citizenship != \"France\""
+  },
+  {
+    "prompt": "What is the name of the singer with the largest net worth? SELECT FROM [table], Answer 1 for singer,  Answer 2 for song, the answer should be Answer ",
+    "target": "1",
+    "table": "singer",
+    "db": "singer",
+    "query": "SELECT Name FROM singer ORDER BY Net_Worth_Millions DESC LIMIT 1"
+  },
+  {
+    "prompt": "What is the name of the singer who is worth the most? SELECT FROM [table], Answer 1 for singer,  Answer 2 for song, the answer should be Answer ",
+    "target": "1",
+    "table": "singer",
+    "db": "singer",
+    "query": "SELECT Name FROM singer ORDER BY Net_Worth_Millions DESC LIMIT 1"
+  },
+  {
+    "prompt": "How many available features are there in total? SELECT FROM [table], Answer 1 for reference feature types,  Answer 2 for reference property types,  Answer 3 for other available features,  Answer 4 for properties,  Answer 5 for other property features, the answer should be Answer ",
+    "target": "3",
+    "table": "other available features",
+    "db": "real_estate_properties",
+    "query": "SELECT count(*) FROM Other_Available_Features"
+  }
+]

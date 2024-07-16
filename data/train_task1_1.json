@@ -1,0 +1,51 @@
+[
+  {
+    "question": "'Count the number of party events.'",
+    "db": "'party_people'",
+    "query_or": "SELECT count(*) FROM party_events",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT(*)'",
+      "'FROM'",
+      "'party events'"
+    ]
+  },
+  {
+    "question": "'How many kinds of different ratings are listed?'",
+    "db": "'sakila_1'",
+    "query_or": "SELECT count(DISTINCT rating) FROM film",
+    "query_gt": [
+      "'SELECT'",
+      "'COUNT('",
+      "'DISTINCT'",
+      "'rating'",
+      "')'",
+      "'FROM'",
+      "'film'"
+    ]
+  },
+  {
+    "question": "'What is the average hours across all projects?'",
+    "db": "'scientist_1'",
+    "query_or": "SELECT avg(hours) FROM projects",
+    "query_gt": [
+      "'SELECT'",
+      "'AVG('",
+      "'hours'",
+      "')'",
+      "'FROM'",
+      "'projects'"
+    ]
+  },
+  {
+    "question": "'What are the names of all clubs?'",
+    "db": "'club_1'",
+    "query_or": "SELECT clubname FROM club",
+    "query_gt": [
+      "'SELECT'",
+      "'club name'",
+      "'FROM'",
+      "'club'"
+    ]
+  }
+]
